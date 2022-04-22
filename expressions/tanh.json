@@ -1,0 +1,44 @@
+{
+   "Name": "tanh",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "Hyperbolic tangent function ",
+   "Imports": null,
+   "Expression": 
+   {
+      "OpName": "/",
+      "Left": 
+      {
+         "OpName": "sinh",
+         "PostFix": false,
+         "NodeType": "UnaryOP",
+         "Parameter": 
+         {
+            "Operator": null,
+            "Symbol": null,
+            "NodeType": "Identifier",
+            "Kind": "Unknown",
+            "Name": "x"
+         }
+      },
+      "NodeType": "BinaryOP",
+      "Right": 
+      {
+         "OpName": "cosh",
+         "PostFix": false,
+         "NodeType": "UnaryOP",
+         "Parameter": 
+         {
+            "Operator": null,
+            "Symbol": null,
+            "NodeType": "Identifier",
+            "Kind": "Unknown",
+            "Name": "x"
+         }
+      },
+      "OpType": "Binary"
+   },
+   "NodeType": "Profile"
+}

@@ -1,0 +1,36 @@
+{
+   "Name": "drv'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": null,
+   "Imports": 
+   {
+      "DxF": 
+      {
+         "function": "f",
+         "variable": "x",
+         "syntax": "Lagrange",
+         "description": "df/dx",
+         "run": "0.001",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathDerivative",
+         "order": "1"
+      }
+   },
+   "Expression": 
+   {
+      "OpName": "DxF",
+      "PostFix": false,
+      "NodeType": "UnaryOP",
+      "Parameter": 
+      {
+         "Operator": null,
+         "Symbol": "AssignedVariableStorage",
+         "NodeType": "Identifier",
+         "Kind": "Variable",
+         "Name": "x"
+      }
+   },
+   "NodeType": "Profile"
+}

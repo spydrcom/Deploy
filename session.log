@@ -1,0 +1,1687 @@
+
+Library: application
+Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@181cc225
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@359ebeba
+Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
+2022.0401
+
+Library: keywords-declarations
+
+Library: keywords-primitive
+
+Library: keywords-render
+
+Library: keywords-properties
+
+Library: keywords-workspace
+
+Library: keywords-spline
+
+Library: keywords-script
+
+Library: keywords-tree
+
+Library: keywords-Matrix
+
+Library: keywords-plotting
+
+Library: keywords-diffeq
+
+Library: keywords-features
+
+Library: algebraic
+Symbol Override Detected for 'e' from library 'algebraic' by instance in 'algebraic'
+Symbol Override Detected for 'pi' from library 'algebraic' by instance in 'algebraic'
+
+Library: arithmetic
+NEGATE  (Negate)  to render as -
+MINUS  (Subtraction)  to render as -
+*  (Multiplication)  to render as ·
+/  (Division)  to render as ÷
+
+Library: boolean-logical
+
+Library: boolean-relational
+
+Library: calculus
+'  (Prime)  to render as ?
+''  (DPrime)  to render as ?
+INTEGRALC  (Contour)  to render as ?
+INTEGRALS  (Integral)  to render as ?
+INTEGRALV  (Integral)  to render as ?
+
+Library: matrix
+
+Library: matrix-access
+
+Library: matrix-arithmetic
+
+Library: matrix-algebra
+
+Library: polynomial-computation
+
+Library: polynomial-evaluation
+
+Library: vector
+.  (Dot)  to render as ·
+SIGMA  (Summation)  to render as ?
+INTEGRAL  (Integral)  to render as ?
+SUMMATION  (Summation)  to render as ?
+PI  (Pi)  to render as ?
+
+Library: statistics
+
+Library: power
+
+Library: trigpow
+
+Library: coltlib
+
+Library: clreal
+B  (BernoulliNumber)  to render as ?
+Bessel: J(p = 2.5)
+Bessel: K(a = 0.3333333333333333)
+
+Library: clmath
+Symbol Override Detected for 'exp' from library 'power' by instance in 'clmath'
+GAMMA  (Gamma)  to render as ?
+Factorization Table Computation Starting, initialization complete
+10000 Factorizations Computed
+---
+Sieve Of Eratosthenes (DEFAULT) used for prime generation
+Algorithm TABLE SCAN will be used for prime range selection
+Total primes recognized 1229
+---
+7ms
+---
+Euler Product initialized, 1229 primes prepared as factors
+
+Library: mpmath
+Symbol Override Detected for 'loggamma' from library 'clmath' by instance in 'mpmath'
+PointCountWeighted added to list
+IterationCrossRefWeighted added to list
+PointCountWeightedWithSaturation added to list
+PointCountWeightedWithValueSaturation added to list
+LegacyAlternativeAlgorithm added to list
+ValueWeightedWithAggregation added to list
+IterationWeighted added to list
+
+******************************
+* Symbol Collection Compiled *
+******************************
+
+Algorithms: net.myorb.math.expressions.algorithms
+BuiltinLibrary: net.myorb.math.expressions.algorithms.TrigPowJREImpl
+CalctoolsCommands: net.myorb.calctools.commands
+CalctoolsDictionary: net.myorb.calctools.dictionary
+CalctoolsLibs: net.myorb.calctools.libraries
+CalctoolsSyms: net.myorb.calctools.symbols
+Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
+Command: net.myorb.calctools.symbols.Command
+ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
+Constant: net.myorb.calctools.symbols.Constant
+CurrentVersion: 2022.0401
+DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
+Function: net.myorb.calctools.symbols.Function
+JREtrigPow: net.myorb.math.expressions.algorithms.TrigPowJREImpl
+LIBRARIAN: net.myorb.math.expressions.symbols.LibraryManager
+MasterCfg: net.myorb.math.libraries.DefaultLibrary
+Operator: net.myorb.calctools.symbols.Operator
+PowerImplementation: net.myorb.math.expressions.algorithms.ComboPrimitives
+PrettyPrinter: net.myorb.math.expressions.PrettyPrinter
+Renderer: net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib
+TrigPow: net.myorb.math.expressions.algorithms.TrigPowPrimitives
+Value: net.myorb.calctools.symbols.Value
+
+algebraic (9 symbols):
+	PlusMinus (+|-) {OP-7} - Plus or Minus operator
+	MinusPlus (-|+) {OP-7} - Minus or Plus operator
+	INF (INFINITY) {CON} '10000' * - Approximation to use for infinity
+	Abs (abs) {OP-11} - ABS function value of parameter
+	E (e) {VAL}  <algebraic> - Symbol for the irrational value of e; Epsilon base of natural log
+	e (e) {CON} '2.718281828459' >algebraic<  * - Epsilon base of natural log
+	Pi (pi) {VAL}  <algebraic> - Symbol for the irrational value of pi; Trigonometric ratio of circle diameter to perimeter
+	pi (pi) {CON} '3.141592653589793' >algebraic<  * - Symbol for the irrational value of pi
+	Sgn (sgn) {OP-7} - Sign SGN function value of parameter
+
+
+application (1 symbol):
+	Status (VERSION) {CON} '2022.0401' * - software development version
+
+
+arithmetic (7 symbols):
+	Fraction (#/#) {OP-8} - Arithmetic division operator (expressed as fraction)
+	Multiplication (*) {OP-8} '·' - Arithmetic multiplication operator
+	Addition (+) {OP-7} - Arithmetic addition operator
+	Subtraction (-) {OP-7} - Arithmetic (binary) subtraction or (unary) negate operator
+	Division (/) {OP-8} '÷' - Arithmetic division operator
+	Subtraction (MINUS) {OP-7} '-' - Arithmetic binary subtraction operator
+	Negate (NEGATE) {OP-8} '-' - Arithmetic unary negation operator
+
+
+boolean_logical (15 symbols):
+	And (&) {OP-10} - Logical AND
+	Choose (:) {OP-7} - Choice based on condition code
+	ImpliedBy (<<=) {OP-10} - Logical implied by
+	Implies (=>>) {OP-10} - Logical implies
+	ConditionCode (?) {OP-10} - Logical condition code set
+	False (FALSE) {VAL} - Logical FALSE
+	True (TRUE) {VAL} - Logical TRUE
+	Or (|) {OP-10} - Logical OR
+	Xor (|~) {OP-10} - Logical XOR
+	Not (~) {OP-10} - Logical NOT
+	Nand (~&) {OP-10} - Logical NAND
+	NimpliedBy (~<<=) {OP-10} - Logical NOT implied by
+	Nimplies (~=>>) {OP-10} - Logical NOT implies
+	Nor (~|) {OP-10} - Logical NOR
+	Nxor (~|~) {OP-10} - Logical NOT XOR
+
+
+boolean_relational (8 symbols):
+	Lt (<) {OP-9} - Less than
+	Le (<=) {OP-9} - Less than or equal to
+	LtAbs (<||) {OP-9} - Less than absolute value of
+	Eq (==) {OP-9} - Equal to
+	Gt (>) {OP-9} - Greater than
+	Ge (>=) {OP-9} - Greater than or equal to
+	GtAbs (>||) {OP-9} - Greater than absolute value of
+	Ne (~=) {OP-9} - Not equal to
+
+
+calculus (12 symbols):
+	TrapQuad ($#) {OP-11} - Mark function call for Trapezoidal integral approximation
+	TrapAdjust ($%) {OP-11} - Mark function call for adjustment for brute force approximation
+	DCTQuad ($@) {OP-11} - Mark function call for Clenshaw-Curtis integral approximation
+	TSQuad ($|) {OP-11} - Mark function call for Tanh-Sinh integral approximation
+	Prime (') {OP-11} '?' - Mark function call for first derivative approximation
+	DPrime ('') {OP-11} '?' - Mark function call for second derivative approximation
+	IntegrationDelta (<*>) {OP-10} - Integral delta marker for presentation
+	Delta (<>) {OP-8} - Derivative approximation evaluated at left parameter using delta value in right parameter
+	Contour (INTEGRALC) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional contour integral notation
+	Integral (INTEGRALS) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional surface integral notation
+	Integral (INTEGRALV) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional volume integral notation
+	Interval (||) {OP-11} - Mark function call for interval evaluation
+
+chartoptions: MeshPlotEdgeSize=50;ContourPlotEdgeSize=400
+
+clmath (5 symbols):
+	Gamma (GAMMA) {FUN} '?' - Lanczos Gamma function approximation
+	EulerProduct (ep) {OP-10} - Euler Product function
+	Exp (exp) {FUN}  >power< - Euler exponential function
+	IncompleteGamma (gammainc) {FUN} - Incomplete Gamma function
+	Loggamma (loggamma) {FUN}  <mpmath> - Loggamma function
+
+clmathselected: Exp Loggamma Incgamma Gamma
+
+clreal (8 symbols):
+	AiryAi (Ai) {FUN} - Airy Ai function
+	BernoulliNumber (B) {OP-10} '?' - Bernoulli Number
+	AiryBi (Bi) {FUN} - Airy Bi function
+	E1Integral (E1) {OP-10} - E1 Exponential Integral
+	ExponentialIntegral (Ei) {OP-10} - Exponential Integral
+	Bessel (Jp) {OP-10} - Bessel Jp
+	Bessel (Ka) {OP-10} - Bessel Ka
+	LogarithmicIntegral (li) {OP-10} - Logarithmic Integral
+
+
+coltlib (10 symbols):
+	I0 (I0) {FUN} - Bessel I0 function
+	I0e (I0e) {FUN} - Bessel I0e function
+	I1 (I1) {FUN} - Bessel I1 function
+	I1e (I1e) {FUN} - Bessel I1e function
+	J0 (J0) {FUN} - Bessel J0 function
+	Jn (Jn) {FUN} - Bessel Jn function
+	K0 (K0) {FUN} - Bessel K0 function
+	Kn (Kn) {FUN} - Bessel Kn function
+	Y0 (Y0) {FUN} - Bessel Y0 function
+	Yn (Yn) {FUN} - Bessel Yn function
+
+coltlibselected: I0 I0e I1 I1e J0 K0 Y0 Jn Kn Yn
+
+commands_declarations (12 symbols):
+	Define (!!) {KEY} - Shorthand alias for DEFINE command
+	SegmentedFunction (!$) {KEY} - Define a segmented user function as a list of polynomials
+	HGPolynomial (!%) {KEY} - Declare a user function as a Hyper-Geometric polynomial
+	Transform (!*) {KEY} - Define a function transform
+	LibImport (!+) {KEY} - Define a user function as a library import
+	TransformEnable (!^) {KEY} - Define a function as an integration transform source
+	Configure (CONFIGURE) {KEY} - Configure a library of functions
+	Define (DEFINE) {KEY} - Define a user function
+	Family (FAMILY) {KEY} - Import polynomial power functions for named family
+	Init (INIT) {KEY} - Init a symbol imported from a JAR source
+	Instance (INSTANCE) {KEY} - Instance a symbol described by a library
+	Library (LIBRARY) {KEY} - Construct a library of functions
+
+
+commands_diffeq (4 symbols):
+	Difeq (DIFEQ) {KEY} - Identify differential equation and describe
+	Prepare (PREPARE) {KEY} - Alias selected function and derivatives for Diff EQ solution test
+	PrepPoly (PREPPOLY) {KEY} - Alias selected polynomial and derivatives for Diff EQ solution test
+	Tdes (TDES) {KEY} - Run error test of differential equation solution
+
+
+commands_features (7 symbols):
+	Dct (DCT) {KEY} - Apply Discrete Cosine Tranform to function
+	Mandelbrot (MANDELBROT) {KEY} - Display a plot of the Mandelbrot set
+	MaxMin (MAXMINOF) {KEY} - Find Max/Min of function near specified approximation
+	Polynomial (POLYNOMIAL) {KEY} - Analyze a polynomial and tabulate key points
+	Request (REQUEST) {KEY} - Request a value be entered for the specified variable
+	Root (ROOTOF) {KEY} - Find root of function near specified approximation
+	Rpn (RPN) {KEY} - Start the RPN calculator
+
+
+commands_matrix (2 symbols):
+	Export (EXPORT) {KEY} - Export data to a file from specified matrix
+	Import (IMPORT) {KEY} - Import data from a file into specified matrix
+
+
+commands_plotting (13 symbols):
+	Chart (CHART) {KEY} - Display a chart for a set of symbols
+	Derive (DERIVE) {KEY} - Plot derivatives of a polynomial
+	Entitled (ENTITLED) {KEY} - Change the title of the last frame displayed
+	Fft (FFT) {KEY} - Compute and display a fast Fourier transform
+	Graph (GRAPH) {KEY} - Display a graph of an array of data points
+	Plot3d (PLOT3D) {KEY} - Plot a specified 2D domain of a 3D user defined function
+	Plotc (PLOTC) {KEY} - Plot a specified 2D domain with contours of a 3D user defined function
+	Plotf (PLOTF) {KEY} - Plot a specified range of a user defined function
+	Plotm (PLOTM) {KEY} - Display tabular plot with data taken from a matrix
+	Plott (PLOTT) {KEY} - Tabular plot with data taken from file
+	Scatter (SCATTER) {KEY} - Produce an X/Y scatter plot
+	SetContour (SETCONTOUR) {KEY} - Set color scheme manager for contour plots
+	Comparison (SIDEBYSIDE) {KEY} - Produce a side-by-side plot comparison
+
+
+commands_primitive (16 symbols):
+	Comment (//) {KEY} - Add a comment to the output stream
+	Comment (//*) {KEY} - Associate a defining comment with a script
+	Assert (ASSERT) {KEY} - Make a conditional assertion
+	Background (BACKGROUND) {KEY} - Read a script file and execute as a background task
+	Calculate (CALC) {KEY} - Shorthand alias for CALCULATE command
+	Calculate (CALCULATE) {KEY} - Calculate and show value for an expression
+	Describe (DESCRIBE) {KEY} - Add a description of a function to symbol table
+	Docs (DOCS) {KEY} - Show the JavaDocs for this release
+	Help (HELP) {KEY} - Show the HELP table
+	PolyPrint (POLYPRINT) {KEY} - Format an array as a polynomial
+	PrettyPrint (PRETTYPRINT) {KEY} - Show the formatted value of a symbol
+	Radix (RADIX) {KEY} - Calculate and show value for an expression in specified radix
+	Recognize (RECOGNIZE) {KEY} - Read a symbol definition file
+	SetMode (SETMODE) {KEY} - Set value display mode and precision
+	Show (SHOW) {KEY} - Show symbol table contents Symbols|Functions|Parent|ALL parents
+	Verify (VERIFY) {KEY} - Verify symbol present in current symbol table
+
+
+commands_properties (5 symbols):
+	Pclr (PCLR) {KEY} - Clear all properties of a directory entry
+	Pdel (PDEL) {KEY} - Delete the value of a property
+	Pload (PLOAD) {KEY} - Load properties of a directory entry from jSON source
+	Psave (PSAVE) {KEY} - Save properties of a directory entry to jSON file
+	Pset (PSET) {KEY} - Set the value of a property
+
+
+commands_render (4 symbols):
+	Render (RENDER) {KEY} - Format and display (pretty print) an equation using MathML
+	RenderDiffEq (RENDERD) {KEY} - Format and display (pretty print) a Differential Equation using MathML
+	RenderFunction (RENDERF) {KEY} - Format and display (pretty print) a function using MathML
+	Select (SELECT) {KEY} - Select a render display to be shown and used for output of RENDER commands
+
+
+commands_script (5 symbols):
+	Iterate (ITERATE) {KEY} - Read a script file and iterate
+	ScriptPrint (SCRIPTPRINT) {KEY} - Display the contents of a script file
+	ActiveScripts (SHOWACTIVE) {KEY} - Display the contents of the active scripts list
+	ScriptCache (SHOWCACHE) {KEY} - Display the contents of the script cache
+	ScriptFiles (SHOWFILES) {KEY} - Display the contents of the script directory
+
+
+commands_spline (5 symbols):
+	Encode (ENCODE) {KEY} - Encode a segmented function as a Java class
+	Optimize (OPTIMIZE) {KEY} - Optimize polynomial function use by embedding constant coefficients
+	SetDomain (SETDOMAIN) {KEY} - Set domain constraints on a function
+	Spline (SPLINE) {KEY} - Open anti-derivative spline tool for function
+	StdDomain (STDDOMAIN) {KEY} - Standardize a function domain to [-1,1]
+
+
+commands_tree (5 symbols):
+	Apply (APPLY) {KEY} - Apply a spline fit to an Expression Tree
+	Express (EXPRESS) {KEY} - Enable Expression Tree generation for function
+	LoadJson (LOADJSON) {KEY} - Load Expression Tree(s) from JSON source(s)
+	LoadSpline (LOADSPLINE) {KEY} - Load spline description from JSON source(s)
+	SaveJson (SAVEJSON) {KEY} - Save Expression Tree as JSON file
+
+
+commands_workspace (2 symbols):
+	Read (READ) {KEY} - Read a workspace storage file
+	Save (SAVE) {KEY} - Save a workspace storage file
+
+
+matrix (6 symbols):
+	Adj (ADJ) {FUN} - Compute adjugate of matrix
+	Cofactor (COFACTOR) {FUN} - Compute cofactor matrix from source
+	Comatrix (COMATRIX) {FUN} - Compute comatrix matrix from source
+	Minor (MINOR) {FUN} - Compute minor of matrix
+	Trace (TR) {FUN} - Compute trace of matrix
+	Transpose (TRANSPOSE) {FUN} - Compute transpose of matrix
+
+
+matrix_access (11 symbols):
+	Tensor (*^*) {OP-10} - Compute tensor product of two matrices
+	Row (-#) {OP-10} - Matrix indexing operation selecting row vector
+	Augmented (AUGMENTED) {FUN} - Construct augmented matrix from source matrix and additional column
+	Column (COL) {FUN} - Read column vector from matrix
+	Det (DET) {FUN} - Compute determinant of matrix
+	Inv (INV) {FUN} - Compute inverse of matrix
+	Row (ROW) {FUN} - Read row vector from matrix
+	Tril (TRIL) {FUN} - Compute lower triangular matrix from source
+	Triu (TRIU) {FUN} - Compute upper triangular matrix from source
+	Diag (\#) {OP-10} - Matrix indexing operation selecting diag vector
+	Col (|#) {OP-10} - Matrix indexing operation selecting column vector
+
+
+matrix_arithmetic (5 symbols):
+	Characteristic (CHARACTERISTIC) {FUN} - Compute characteristic polynomial for matrix
+	Identity (IDENTITY) {FUN} - Compute identity matrix with specified size
+	MatAdd (MATADD) {FUN} - Compute sum of two matrices
+	MatMul (MATMUL) {FUN} - Compute product of two matrices
+	Matrix (MATRIX) {FUN} - Construct matrix from array with dimensions
+
+
+matrix_linalg (9 symbols):
+	Eig (EIG) {FUN} - Compute Von Mises dominant eigen-pair
+	Evalspline (EVALSPLINE) {FUN} - Evaluate a VC31 spline function at specified parameter
+	Gaussian (GAUSSIAN) {FUN} - Solve linear equations with Gaussian elimination
+	Genknot (GENKNOT) {FUN} - Construct a zero knot for odd or even functions
+	Luxb (LUXB) {FUN} - matrix,Solve LUx=b general case from assignment array=LUXB(L;U;b)
+	Pivot (PIVOT) {FUN} - Reorder a vector to a specified pattern
+	Solve (SOLVE) {FUN} - Solve linear equations with column substitution
+	Vanche (VANCHE) {FUN} - Construct Vandermonde matrix for a Chebyshev interpolation
+	Vc31 (VC31) {FUN} - Solve LUx=b using VC31LU to produce Chebyshev spline for function values
+
+
+mpmath (10 symbols):
+	SiegelTheta (THETA) {OP-10}  * - Siegel THETA
+	Corless (cp) {FUN} - Corless function
+	Digamma (digamma) {OP-10} - Digamma
+	Lambda (lambda) {OP-10}  * - Mangoldt Lambda
+	Loggamma (loggamma) {OP-10}  >clmath<  * - Loggamma
+	Psi (mangoldt) {OP-10}  * - Mangoldt Psi
+	LambertW (omega) {FUN} - Lambert Omega function
+	Polygamma (polygamma) {FUN} - Polygamma function
+	Polylog (polylog) {FUN} - Jonquiere Polylog function
+	Trigamma (trigamma) {OP-10} - Trigamma
+
+mpmathselected: Corless Omega Polylog Polygamma
+
+polynomial_computation (13 symbols):
+	ArrayDer (ARRAYDER) {FUN} - Compute derivative of function described by array
+	ArrayInt (ARRAYINT) {FUN} - Compute integral of function described by array
+	ChebDer (CHEBDER) {FUN} - Compute derivative of Chebyshev T polynomial
+	ChebInterp (CHEBINTERP) {FUN} - Generate Chebyshev interpolation polynomial for function described by array
+	ClenQuad (CLENQUAD) {FUN} - Compute integral of function described by Chebyshev polynomial
+	Conv (CONV) {FUN} - Compute product of polynomials
+	Deconv (DECONV) {FUN} - Compute quotient of polynomials
+	GaussQuad (GAUSSQUAD) {FUN} - Apply Gauss Quadrature to build an integral of an interpolated Lagrange polynomial
+	Interpolate (INTERPOLATE) {FUN} - Generate Lagrange interpolation polynomial for function described by array
+	PolyDer (POLYDER) {FUN} - Compute derivative of polynomial
+	PolyHg (POLYHG) {FUN} - Compute coefficients of hyper geometric polynomial
+	PolyInt (POLYINT) {FUN} - Compute integral of polynomial
+	Roots (ROOTS) {FUN} - Compute roots of polynomial
+
+
+polynomial_evaluation (9 symbols):
+	ExpEval (*^#) {OP-10} - Evaluate an exponential ( a * exp (b * x) ) defined by an array containing (a : b)
+	HarEval (+#*) {OP-10} - Evaluate a harmonic series defined by an array of coefficients ( c0 + c1*cos(x) + c2*cos(2x) + ... )
+	PolyEval (+*^) {OP-10} - Evaluate a polynomial defined by an array of coefficients ( c0 + c1*x + c2*x^2 + ... )
+	PolyPrime (+*^') {OP-10} - Evaluate a polynomial derivative defined by an array of coefficients ( c0 + c1*x + c2*x^2 + ... )
+	PolyDprime (+*^'') {OP-10} - Evaluate a polynomial second derivative defined by an array of coefficients ( c0 + c1*x + c2*x^2 + ... )
+	ArrayEval (@#) {OP-10} - Evaluate function defined by array at X
+	ClenshawEval (@*^) {OP-10} - Evaluate a Chebyshev polynomial using Clenshaw's special case defined by an array of coefficients ( c0 + c1*T[1](x) + c2*T[2](x) + ... )
+	ClenshawPrime (@*^') {OP-10} - Evaluate a Chebyshev polynomial derivative using Clenshaw's special case defined by an array of coefficients,ClenshawPrime
+	ClenshawDprime (@*^'') {OP-10} - Evaluate a Chebyshev polynomial second derivative using Clenshaw's special case defined by an array of coefficients
+
+
+power (19 symbols):
+	Factorial (!) {OP-10} - Unary conventional factorial operator
+	DFactorial (!!) {OP-10} - Unary parity factorial operator
+	BC (##) {OP-10} - Binomial coefficient operator (n ## k)
+	Ffal (#/) {OP-9} - Binary Factorial falling operator
+	Rem (%) {OP-8} - Binary conventional remainder operator n%m; integer only
+	Exponentiation (**) {OP-9} - Binary conventional exponentiation operator x**y
+	Radical (*\) {OP-9} - Binary root operator (left [times root of] right)
+	Fris (/#) {OP-9} - Binary Factorial rising  operator
+	Poch (/#+) {OP-9} - Pochhammer rising operator
+	Lsh (<<) {OP-8} - Left shift operator
+	Rsh (>>) {OP-8} - Right shift operator
+	Bernoulli (BERNOULLI) {OP-10} - Bernoulli function B(m) for second (n=1) Bernoulli numbers
+	Harmonic (HARMONIC) {OP-10} - Harmonic function
+	Hypot (HYPOT) {FUN} - Distance in multi-dimensional space; SQRT of sum of squares of array elements
+	Root (\) {OP-9} - Binary root operator (left [root of] right)
+	Pow (^) {OP-9} - Binary conventional exponentiation operator x^n; intended for small integer exponents
+	Exp (exp) {OP-10}  <clmath> - Exponentiation (anti-log) operator
+	Log (ln) {OP-10} - Natural log function of complex value
+	Sqrt (sqrt) {OP-9} - Unary square root operator
+
+
+statistics (6 symbols):
+	Cov (COV) {FUN} - Computed co-variance of an array of values
+	Mean (MEAN) {FUN} - Mean of an array of values
+	Median (MEDIAN) {FUN} - Median of an array of values
+	Mode (Mode) {FUN} - Mode of an array of values
+	StdDev (STDEV) {FUN} - Standard deviation of an array of values
+	Var (VAR) {FUN} - Computed variance of an array of values
+
+
+trigpow (38 symbols):
+	TrigPow (acos) {OP-10} - ARC Cosine Operator
+	TrigPow (acot) {OP-10} - ARC Cotangent Operator
+	TrigPow (acsc) {OP-10} - ARC Cosecant Operator
+	TrigPow (arcosh) {OP-10} - ARC Hyperbolic Cosine Operator
+	TrigPow (arcoth) {OP-10} - ARC Hyperbolic Cotangent Operator
+	TrigPow (arcsch) {OP-10} - ARC Hyperbolic Cosecant Operator
+	TrigPow (arsech) {OP-10} - ARC Hyperbolic Secant Operator
+	TrigPow (arsinh) {OP-10} - ARC Hyperbolic Sine Operator
+	TrigPow (artanh) {OP-10} - ARC Hyperbolic Tangent Operator
+	TrigPow (asec) {OP-10} - ARC Secant Operator
+	TrigPow (asin) {OP-10} - ARC Sine Operator
+	TrigPow (atan) {OP-10} - ARC Tangent Operator
+	TrigPow (cos) {OP-10} - Cosine Operator
+	TrigPow (cosCb) {OP-10} - Cosine Cubed Operator
+	TrigPow (cosSq) {OP-10} - Cosine Squared Operator
+	TrigPow (cosh) {OP-10} - Hyperbolic Cosine Operator
+	TrigPow (cot) {OP-10} - Cotangent Operator
+	TrigPow (cotCb) {OP-10} - Cotangent Cubed Operator
+	TrigPow (cotSq) {OP-10} - Cotangent Squared Operator
+	TrigPow (coth) {OP-10} - Hyperbolic Cotangent Operator
+	TrigPow (csc) {OP-10} - Cosecant Operator
+	TrigPow (cscCb) {OP-10} - Cosecant Cubed Operator
+	TrigPow (cscSq) {OP-10} - Cosecant Squared Operator
+	TrigPow (csch) {OP-10} - Hyperbolic Cosecant Operator
+	TrigPow (cschSq) {OP-10} - Hyperbolic Cosecant Squared Operator
+	TrigPow (sec) {OP-10} - Secant Operator
+	TrigPow (secCb) {OP-10} - Secant Cubed Operator
+	TrigPow (secSq) {OP-10} - Secant Squared Operator
+	TrigPow (sech) {OP-10} - Hyperbolic Secant Operator
+	TrigPow (sechSq) {OP-10} - Hyperbolic Secant Squared Operator
+	TrigPow (sin) {OP-10} - Sine Operator
+	TrigPow (sinCb) {OP-10} - Sine Cubed Operator
+	TrigPow (sinSq) {OP-10} - Sine Squared Operator
+	TrigPow (sinh) {OP-10} - Hyperbolic Sine Operator
+	TrigPow (tan) {OP-10} - Tangent Operator
+	TrigPow (tanCb) {OP-10} - Tangent Cubed Operator
+	TrigPow (tanSq) {OP-10} - Tangent Squared Operator
+	TrigPow (tanh) {OP-10} - Hyperbolic Tangent Operator
+
+
+vector (21 symbols):
+	Indexing (#) {OP-12} - Array indexing operation implemented as a binary operator
+	Dot (.) {OP-10} '·' - Dot product of two arrays; lengths of arrays must match
+	Range (..) {OP-12} - Array range operation implemented as a binary operator
+	Append (APPEND) {FUN} - Append a series of arrays into one long array
+	Chebyshev (CHEBYSHEV) {FUN} - Apply Vandermonde matrix to solve for Chebyshev interpolation polynomial as curve of best fit
+	Dot (DOT) {FUN} - Dot product of two arrays; lengths of arrays must match
+	Dyadic (DYADIC) {FUN} - Compute dyadic product of 2 arrays
+	Fitexp (FITEXP) {FUN} - Apply non-linear (logarithmic) regression to find curve of best fit
+	Fitharmonic (FITHARMONIC) {FUN} - Apply harmonic series regression to find curve of best fit
+	Fitline (FITLINE) {FUN} - Apply least squares regression to find line of best fit
+	Fitpoly (FITPOLY) {FUN} - Apply Vandermonde matrix to solve for polynomial coefficients to find curve of best fit
+	Integral (INTEGRAL) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional integral notation
+	Interval (INTERVAL) {FUN} - Select sub-list of elements for interval lo-hi
+	Lagrange (LAGRANGE) {FUN} - Apply Lagrange series to derive interpolation polynomial as curve of best fit
+	Length (LENGTH) {FUN} - Length of an array treated as a unary function
+	Max (MAX) {FUN} - Maximum value found in array
+	Min (MIN) {FUN} - Minimum value found in array
+	Pearson (PEARSON) {FUN} - Compute Pearson regression coefficient for X/Y data set pair
+	Pi (PI) {FUN} '?' - Product of items of an array; traditional capital PI notation
+	Summation (SIGMA) {FUN} '?' - Sum of items of an array; traditional capital SIGMA notation
+	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
+
+Lib SPLINE config {description=custom spline generator using Cubic algorithm}
+Lib SPLINE config {factory=net.myorb.spline.CubicSplineFactory, description=custom spline generator using Cubic algorithm}
+Lib SPLINE config {factory=net.myorb.spline.CubicSplineFactory, delta=0.001, description=custom spline generator using Cubic algorithm, every=0.25}
+Lib SPLINE config {factory=net.myorb.spline.CubicSplineFactory, delta=0.001, show=1, description=custom spline generator using Cubic algorithm, every=0.25}
+Lib SPLINE config {factory=net.myorb.spline.CubicSplineFactory, trace=0, delta=0.001, show=1, description=custom spline generator using Cubic algorithm, every=0.25}
+{
+   "Name": "FCcs",
+   "Parameter": "x",
+   "Description": "cos ( pi / 2 * x ^ 2 ) ",
+   "Interpreter": "net.myorb.math.computational.splines.CubicSplineInterpreter",
+   "NodeType": "Sectioned",
+   "Sections": 
+   [
+      {
+         "lo": 0.0,
+         "hi": 0.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": []
+      },
+      {
+         "lo": 0.0,
+         "hi": 0.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.0,
+               0.01914795519531805,
+               -1.233679824963474E-6,
+               -0.6145398413851902
+            ]
+         ]
+      },
+      {
+         "lo": 0.25,
+         "hi": 0.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.0088766564932672,
+               -0.15287493501524746,
+               0.8190963517451522,
+               -1.7066699552851596
+            ]
+         ]
+      },
+      {
+         "lo": 0.5,
+         "hi": 0.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.004298251278723,
+               -0.11324682702690936,
+               0.7276824590674025,
+               -1.64572736016666
+            ]
+         ]
+      },
+      {
+         "lo": 0.75,
+         "hi": 1.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -0.3960377024784343,
+               5.711934347627114,
+               -7.188450680221559,
+               1.8725540350728782
+            ]
+         ]
+      },
+      {
+         "lo": 1.0,
+         "hi": 1.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -7.039798026610325,
+               26.036408727069503,
+               -27.709521763187304,
+               8.712911062728127
+            ]
+         ]
+      },
+      {
+         "lo": 1.25,
+         "hi": 1.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -5.449649148471176,
+               22.100253711336343,
+               -24.51267866732109,
+               7.860419570497138
+            ]
+         ]
+      },
+      {
+         "lo": 1.5,
+         "hi": 1.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               68.60091145218573,
+               -127.30255546074446,
+               75.5230901043218,
+               -14.369751267645725
+            ]
+         ]
+      },
+      {
+         "lo": 1.75,
+         "hi": 2.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               132.81806026460754,
+               -237.85517775998676,
+               138.8291832690167,
+               -26.428054727587615
+            ]
+         ]
+      },
+      {
+         "lo": 2.0,
+         "hi": 2.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -295.6008251690519,
+               407.7749535533133,
+               -184.736333178336,
+               27.499531346971175
+            ]
+         ]
+      },
+      {
+         "lo": 2.25,
+         "hi": 2.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -410.8375633416339,
+               561.3964647317337,
+               -253.00645524614748,
+               37.613623505165464
+            ]
+         ]
+      },
+      {
+         "lo": 2.5,
+         "hi": 2.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1356.6803373064872,
+               -1564.904249568271,
+               598.5696771783066,
+               -75.92986081809508
+            ]
+         ]
+      },
+      {
+         "lo": 2.75,
+         "hi": 3.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -943.2262599845953,
+               949.8636852048412,
+               -316.9421026567303,
+               35.04126401039424
+            ]
+         ]
+      },
+      {
+         "lo": 3.0,
+         "hi": 3.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -1289.3979246545994,
+               1294.950800964107,
+               -431.7903830913625,
+               47.802184058686706
+            ]
+         ]
+      },
+      {
+         "lo": 3.25,
+         "hi": 3.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               4497.321890932097,
+               -4050.9942739500048,
+               1213.7861865489929,
+               -120.97490000699077
+            ]
+         ]
+      },
+      {
+         "lo": 3.5,
+         "hi": 3.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -7860.3110935444965,
+               6548.69701833179,
+               -1815.7591038807652,
+               167.55322289108142
+            ]
+         ]
+      },
+      {
+         "lo": 3.75,
+         "hi": 4.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               11379.228423330696,
+               -8850.673161449598,
+               2291.771419565103,
+               -197.56060141521795
+            ]
+         ]
+      }
+   ]
+}
+{
+   "Name": "FScs",
+   "Parameter": "x",
+   "Description": "sin ( pi / 2 * x ^ 2 ) ",
+   "Interpreter": "net.myorb.math.computational.splines.CubicSplineInterpreter",
+   "NodeType": "Sectioned",
+   "Sections": 
+   [
+      {
+         "lo": 0.0,
+         "hi": 0.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": []
+      },
+      {
+         "lo": 0.0,
+         "hi": 0.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.0,
+               0.0025190933826591913,
+               1.5707963267942504,
+               -0.05039382020767065
+            ]
+         ]
+      },
+      {
+         "lo": 0.25,
+         "hi": 0.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.0049759684988436486,
+               -0.10340110509850778,
+               2.0868942737090053,
+               -0.7385244160940108
+            ]
+         ]
+      },
+      {
+         "lo": 0.5,
+         "hi": 0.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.23523856329865644,
+               -1.6135643764690761,
+               5.235808519021834,
+               -2.8378005796358963
+            ]
+         ]
+      },
+      {
+         "lo": 0.75,
+         "hi": 1.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.1228880197633893,
+               -5.282906218543259,
+               10.207426985930912,
+               -5.047408787151042
+            ]
+         ]
+      },
+      {
+         "lo": 1.0,
+         "hi": 1.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -2.242324059944617,
+               5.054460403759671,
+               -0.2508048279614693,
+               -1.5613315158535812
+            ]
+         ]
+      },
+      {
+         "lo": 1.25,
+         "hi": 1.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -27.98767192625876,
+               67.62836221684148,
+               -50.62395305199807,
+               11.871508010556179
+            ]
+         ]
+      },
+      {
+         "lo": 1.5,
+         "hi": 1.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -43.59653040967558,
+               98.98939568509121,
+               -71.5790808646366,
+               16.528203080031407
+            ]
+         ]
+      },
+      {
+         "lo": 1.75,
+         "hi": 2.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               140.58001064726858,
+               -218.74588246677314,
+               110.55652519682548,
+               -18.164293312628033
+            ]
+         ]
+      },
+      {
+         "lo": 2.0,
+         "hi": 2.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               278.26797793519916,
+               -425.86765858502224,
+               214.26486955253839,
+               -35.44901737191353
+            ]
+         ]
+      },
+      {
+         "lo": 2.25,
+         "hi": 2.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -657.8341097202384,
+               826.5626232911975,
+               -343.3250701707378,
+               47.15689962412739
+            ]
+         ]
+      },
+      {
+         "lo": 2.5,
+         "hi": 2.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -226.53531722370548,
+               306.87479978256556,
+               -135.0240862647265,
+               19.383435103325887
+            ]
+         ]
+      },
+      {
+         "lo": 2.75,
+         "hi": 3.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               2092.5326252191617,
+               -2227.1903598056942,
+               787.2128551749124,
+               -92.40286082875156
+            ]
+         ]
+      },
+      {
+         "lo": 3.0,
+         "hi": 3.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -3403.3238758059424,
+               3277.0142317842533,
+               -1048.9133571158768,
+               111.61116275911394
+            ]
+         ]
+      },
+      {
+         "lo": 3.25,
+         "hi": 3.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               3205.6802993905203,
+               -2831.853528734423,
+               832.0072648707599,
+               -81.30377282925907
+            ]
+         ]
+      },
+      {
+         "lo": 3.5,
+         "hi": 3.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -1808.6065382240006,
+               1472.1652470600595,
+               -398.5779038230568,
+               35.89481466539013
+            ]
+         ]
+      },
+      {
+         "lo": 3.75,
+         "hi": 4.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               333.77936321791736,
+               -246.23265461117524,
+               60.260094024966016,
+               -4.89078514332301
+            ]
+         ]
+      }
+   ]
+}
+{
+   "Name": "J0udf",
+   "Parameter": "x",
+   "Description": "J0 ( x ) ",
+   "Interpreter": "net.myorb.math.computational.splines.CubicSplineInterpreter",
+   "NodeType": "Sectioned",
+   "Sections": 
+   [
+      {
+         "lo": 0.0,
+         "hi": 0.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": []
+      },
+      {
+         "lo": 0.0,
+         "hi": 0.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.00000000283141,
+               -2.4245267071935453E-4,
+               -0.24999999714836463,
+               0.00777865727386029
+            ]
+         ]
+      },
+      {
+         "lo": 0.25,
+         "hi": 0.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9998813047760612,
+               0.002126602630402985,
+               -0.26136557562672635,
+               0.022932761911675925
+            ]
+         ]
+      },
+      {
+         "lo": 0.5,
+         "hi": 0.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9983531652862396,
+               0.012166089806929865,
+               -0.28231520021737566,
+               0.03689917830544213
+            ]
+         ]
+      },
+      {
+         "lo": 0.75,
+         "hi": 1.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.993547744818132,
+               0.03213952333945021,
+               -0.30944761270079724,
+               0.04895802829807394
+            ]
+         ]
+      },
+      {
+         "lo": 1.0,
+         "hi": 1.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9843099189512069,
+               0.060447443154789816,
+               -0.338052753623419,
+               0.0584930752722812
+            ]
+         ]
+      },
+      {
+         "lo": 1.25,
+         "hi": 1.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9718068469848019,
+               0.09086206921116642,
+               -0.3625473558033221,
+               0.06502496918692202
+            ]
+         ]
+      },
+      {
+         "lo": 1.5,
+         "hi": 1.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9611169932879529,
+               0.11244208877889061,
+               -0.37700080623981336,
+               0.06823684706169786
+            ]
+         ]
+      },
+      {
+         "lo": 1.75,
+         "hi": 2.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9624219400906338,
+               0.11018981413902769,
+               -0.3757094427375707,
+               0.06799087306127068
+            ]
+         ]
+      },
+      {
+         "lo": 2.0,
+         "hi": 2.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               0.9914425566521282,
+               0.06643110563797894,
+               -0.3537731425723445,
+               0.06433482303373297
+            ]
+         ]
+      },
+      {
+         "lo": 2.25,
+         "hi": 2.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.0688346617734559,
+               -0.03718440040631521,
+               -0.3076271326528378,
+               0.057498377119732005
+            ]
+         ]
+      },
+      {
+         "lo": 2.5,
+         "hi": 2.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.21838238025122,
+               -0.21724115160432392,
+               -0.23548453436869612,
+               0.04787936401517978
+            ]
+         ]
+      },
+      {
+         "lo": 2.75,
+         "hi": 3.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.4639875921550236,
+               -0.4859132149991594,
+               -0.1376512195061519,
+               0.03602078039547744
+            ]
+         ]
+      },
+      {
+         "lo": 3.0,
+         "hi": 3.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               1.8256344825242672,
+               -0.8483978619426451,
+               -0.016683377762616303,
+               0.02257990909064015
+            ]
+         ]
+      },
+      {
+         "lo": 3.25,
+         "hi": 3.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               2.3146879579913997,
+               -1.30072246543345,
+               0.12263044271709767,
+               0.008291312118361796
+            ]
+         ]
+      },
+      {
+         "lo": 3.5,
+         "hi": 3.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               2.9290413863095517,
+               -1.8282065708265272,
+               0.27346810890782614,
+               -0.006074179899802819
+            ]
+         ]
+      },
+      {
+         "lo": 3.75,
+         "hi": 4.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               3.6487426896262045,
+               -2.404820248693513,
+               0.42734544103417704,
+               -0.019752164977700677
+            ]
+         ]
+      },
+      {
+         "lo": 4.0,
+         "hi": 4.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               4.432778252569457,
+               -2.9936121094301797,
+               0.5746390547844982,
+               -0.03202663279022744
+            ]
+         ]
+      },
+      {
+         "lo": 4.25,
+         "hi": 4.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               5.217669889569259,
+               -3.5482918150340037,
+               0.7052270502294622,
+               -0.04226882851140108
+            ]
+         ]
+      },
+      {
+         "lo": 4.5,
+         "hi": 4.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               5.91843860169188,
+               -4.015951208425459,
+               0.8092047212027165,
+               -0.049970878213123626
+            ]
+         ]
+      },
+      {
+         "lo": 4.75,
+         "hi": 5.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               6.432303686860754,
+               -4.340797057697277,
+               0.8776248452274649,
+               -0.05477229042538667
+            ]
+         ]
+      },
+      {
+         "lo": 5.0,
+         "hi": 5.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               6.645243868760106,
+               -4.468667705605441,
+               0.9032096286859526,
+               -0.05647794265595252
+            ]
+         ]
+      },
+      {
+         "lo": 5.25,
+         "hi": 5.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               6.441246404309084,
+               -4.352009991688287,
+               0.8809807561083183,
+               -0.05506658566689637
+            ]
+         ]
+      },
+      {
+         "lo": 5.5,
+         "hi": 5.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               5.713757962058112,
+               -3.9549255273487844,
+               0.8087588001604029,
+               -0.05068949742762877
+            ]
+         ]
+      },
+      {
+         "lo": 5.75,
+         "hi": 6.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               4.378540451938164,
+               -3.2578523505582258,
+               0.6874905994908032,
+               -0.04365945680910125
+            ]
+         ]
+      },
+      {
+         "lo": 6.0,
+         "hi": 6.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               2.3868626145281553,
+               -2.2614384154040836,
+               0.5213736922610179,
+               -0.03443073974077985
+            ]
+         ]
+      },
+      {
+         "lo": 6.25,
+         "hi": 6.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -0.26223520629477665,
+               -0.9891947794973392,
+               0.3177605759629998,
+               -0.023571373538218882
+            ]
+         ]
+      },
+      {
+         "lo": 6.5,
+         "hi": 6.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -3.511960366733863,
+               0.5114163397895238,
+               0.0868405600484845,
+               -0.011729321440038612
+            ]
+         ]
+      },
+      {
+         "lo": 6.75,
+         "hi": 7.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -7.241408310552085,
+               2.169705014302351,
+               -0.1588878550673467,
+               4.0541510889132343E-4
+            ]
+         ]
+      },
+      {
+         "lo": 7.0,
+         "hi": 7.25,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -11.263999749978966,
+               3.8944041690119136,
+               -0.4053256910940828,
+               0.012140550157783517
+            ]
+         ]
+      },
+      {
+         "lo": 7.25,
+         "hi": 7.5,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -15.331550637182996,
+               5.5781943605615085,
+               -0.6376185234802101,
+               0.022820680382433046
+            ]
+         ]
+      },
+      {
+         "lo": 7.5,
+         "hi": 7.75,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -19.144426490990675,
+               7.103908392093359,
+               -0.841084640351708,
+               0.03186361891005518
+            ]
+         ]
+      },
+      {
+         "lo": 7.75,
+         "hi": 8.0,
+         "delta": 0.01,
+         "error": 0.0,
+         "slope": 0.0,
+         "unit": 0.0,
+         "coefficients": 
+         [
+            [
+               -22.176430590484593,
+               8.277967904534766,
+               -0.9926007391303227,
+               0.03838044036289882
+            ]
+         ]
+      }
+   ]
+}

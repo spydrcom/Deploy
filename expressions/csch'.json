@@ -1,0 +1,51 @@
+{
+   "Name": "csch'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "First derivative of hyperbolic Cosecant function ",
+   "Imports": null,
+   "Expression": 
+   {
+      "OpName": "-",
+      "Left": 0,
+      "NodeType": "BinaryOP",
+      "Right": 
+      {
+         "OpName": "*",
+         "Left": 
+         {
+            "OpName": "coth",
+            "PostFix": false,
+            "NodeType": "UnaryOP",
+            "Parameter": 
+            {
+               "Operator": null,
+               "Symbol": null,
+               "NodeType": "Identifier",
+               "Kind": "Unknown",
+               "Name": "x"
+            }
+         },
+         "NodeType": "BinaryOP",
+         "Right": 
+         {
+            "OpName": "csch",
+            "PostFix": false,
+            "NodeType": "UnaryOP",
+            "Parameter": 
+            {
+               "Operator": null,
+               "Symbol": null,
+               "NodeType": "Identifier",
+               "Kind": "Unknown",
+               "Name": "x"
+            }
+         },
+         "OpType": "Binary"
+      },
+      "OpType": "Binary"
+   },
+   "NodeType": "Profile"
+}

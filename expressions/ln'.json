@@ -1,0 +1,25 @@
+{
+   "Name": "ln'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "First derivative of natural logarithm ",
+   "Imports": null,
+   "Expression": 
+   {
+      "OpName": "/",
+      "Left": 1.0,
+      "NodeType": "BinaryOP",
+      "Right": 
+      {
+         "Operator": null,
+         "Symbol": null,
+         "NodeType": "Identifier",
+         "Kind": "Unknown",
+         "Name": "x"
+      },
+      "OpType": "Binary"
+   },
+   "NodeType": "Profile"
+}

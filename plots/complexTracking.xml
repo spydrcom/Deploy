@@ -1,0 +1,14 @@
+<PLOTS>
+ <PLOT TransformIdentity='EQN' EdgeSize='5.8' Title='g' EquationProfile='g (x, y)' PlotNumber='1000' EquationBody='exp ( - f ( x , y ) ^ 2 ) ' PointsSize='3' PointsPerAxis='400' Multiplier='10.0' X='-2.9' Y='-2.9' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='5.8' Title='g' EquationProfile='g (x, y)' PlotNumber='1001' EquationBody='exp ( - f ( x , y ) ^ 2 ) ' PointsSize='3' PointsPerAxis='400' Multiplier='10.0' X='-2.9' Y='-2.9' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='5.8' Title='erf' EquationProfile='erf (x, y)' PlotNumber='1002' EquationBody='exp ( - ( x +!* y ) ^ 2 ) ' PointsSize='3' PointsPerAxis='400' Multiplier='10.0' X='-2.9' Y='-2.9' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='5.8' Title='erf' EquationProfile='erf (x, y)' PlotNumber='1003' EquationBody='exp ( - ( x +!* y ) ^ 2 ) ' PointsSize='3' PointsPerAxis='400' Multiplier='10.0' X='-2.9' Y='-2.9' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='20.0' Title='dg2' EquationProfile='dg2(x, y)' AltEdgeSize='20.0' EquationBody='digamma ( x + i * y ) ' PlotNumber='1004' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-10.0' Y='-10.0' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='20.0' Title='lg2' EquationProfile='lg2(x, y)' AltEdgeSize='20.0' EquationBody='loggamma ( x + y * i ) ' PlotNumber='1005' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-10.0' Y='-10.0' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='20.0' Title='tg2' EquationProfile='tg2(x, y)' AltEdgeSize='20.0' EquationBody='trigamma ( x + i * y ) ' PlotNumber='1006' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-10.0' Y='-10.0' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='20.0' Title='dg2' EquationProfile='dg2(x, y)' AltEdgeSize='20.0' EquationBody='digamma ( x + i * y ) ' PlotNumber='1007' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-10.0' Y='-10.0' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='20.0' Title='t2' EquationProfile='t2(x, y)' AltEdgeSize='20.0' EquationBody='THETA ( x + i * y ) ' PlotNumber='1008' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-10.0' Y='-10.0' PlotParent='-4'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='10.0' Title='lg2' EquationProfile='lg2(x, y)' AltEdgeSize='10.0' EquationBody='loggamma ( x + i * y ) ' PlotNumber='1009' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' X='-5.0' Y='-5.0' PlotParent='-4'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='2.897059' X='0.9264706373214722' Y='4.661764621734619' Title='EQN : (0.9264706373214722,4.661764621734619) - 2.897059' PlotParent='1000' PlotNumber='1010'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='20.0' X='-10.0' Multiplier='100.0' Y='-10.0' Title='psi0' PlotParent='-4' AltEdgeSize='20.0' PlotNumber='1011'/>
+</PLOTS>

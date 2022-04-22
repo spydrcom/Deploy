@@ -1,0 +1,23 @@
+
+
+//* CalcLib version of HGF render
+
+
+READ HGFdefinition.txt
+
+// render the chain of functions
+
+RENDERF F
+RENDER "The Hyper-Geometric Function as an infinite series" TOP
+
+RENDERF mu
+RENDER "For each term of the series the ratio of Pochammer raising products of the coefficients is computed" TOP
+
+RENDERF lambda
+RENDER "Pass the coefficient array and the length to the Pochammer product" TOP
+
+RENDERF rho
+RENDER "The product of the Pochammer of each of the coefficient array components" TOP
+
+// this logic will both render properly and execute properly if invoked
+

@@ -1,0 +1,115 @@
+
+
+//* In-line function configuration test for derivative render
+
+
+INFINITY = 20
+dx = 0.0001
+
+
+LIBRARY StruveLib net.myorb.math.expressions.algorithms.ClMathBessel
+
+configure StruveLib form "struve" kind "H" alpha "1" terms "20" description "Struve function H (1)"
+instance h1 StruveLib
+
+configure StruveLib form "struve" kind "H" alpha "2" terms "20" description "Struve function H (2)"
+instance h2 StruveLib
+
+configure StruveLib form "struve" kind "H" alpha "3" terms "20" description "Struve function H (3)"
+instance h3 StruveLib
+
+graph [-7 < x < 7 <> 0.1] ( h1(x), h2(x), h3(x) )
+
+
+!! Halpha(alpha,x) = SIGMA [0<=m<=INFINITY] ( (-1)^m * (x #/# 2)^(2*m+alpha+1) / (GAMMA (m+3/2) * GAMMA (m+alpha+3/2)) )
+!! Lalpha(alpha,x) = SIGMA [0<=m<=INFINITY] ( (x #/# 2)^(2*m+alpha+1) / (GAMMA (m+3/2) * GAMMA (m+alpha+3/2)) )
+
+!! H0(x) = Halpha (0, x)
+!! H1(x) = Halpha (1, x)
+!! H2(x) = Halpha (2, x)
+!! H3(x) = Halpha (3, x)
+!! H4(x) = Halpha (4, x)
+!! H5(x) = Halpha (5, x)
+
+
+graph [-7 < x < 7 <> 0.1] ( H0(x), H1(x), H2(x), H3(x), H4(x), H5(x) )
+!! f(x) = H2(x)
+
+
+// access to CalcLib Derivative formatting Solutions
+
+LIBRARY dfdx net.myorb.math.expressions.algorithms.ClMathDerivative
+
+
+// configuration and instance
+
+configure dfdx symbol "d" order "1" function "f" variable "x" run "dx" description "df/dx"
+instance dfdx1 dfdx
+
+configure dfdx symbol "d" order "2" function "f" variable "x" run "dx" description "d2f/dx2"
+instance dfdx2 dfdx
+
+
+// ordinary Bessel Differential Equation
+!! Bessel (x,alpha) = x^2 * dfdx2() + x * dfdx1() + (x^2 - alpha^2) * f(x)
+
+// Struve function use modified Bessel DifEQ with additional function term
+!! Struve (x,alpha) = ( 4 * (x #/# 2)^(alpha+1) ) / ( 2\pi * GAMMA (alpha+1/2) )
+
+
+!! StruveDE (x,alpha) = Bessel(x,alpha) - Struve(x,alpha)
+graph [-7 < x < 7 <> 0.1] (StruveDE(x,2))
+
+
+configure StruveLib form "struve" kind "L" alpha "1" terms "20" description "Struve function L (1)"
+instance l1 StruveLib
+
+configure StruveLib form "struve" kind "L" alpha "2" terms "20" description "Struve function L (2)"
+instance l2 StruveLib
+
+configure StruveLib form "struve" kind "L" alpha "3" terms "20" description "Struve function L (3)"
+instance l3 StruveLib
+
+graph [-7 < x < 7 <> 0.1] ( l1(x), l2(x), l3(x) )
+
+
+!! L0(x) = Lalpha (0, x)
+!! L1(x) = Lalpha (1, x)
+!! L2(x) = Lalpha (2, x)
+!! L3(x) = Lalpha (3, x)
+!! L4(x) = Lalpha (4, x)
+!! L5(x) = Lalpha (5, x)
+
+graph [-7 < x < 7 <> 0.1] ( L0(x), L1(x), L2(x), L3(x), L4(x), L5(x) )
+!! f(x) = L2(x)
+
+
+configure dfdx symbol "d" order "1" function "f" variable "x" run "dx" description "df/dx"
+instance dfdx1 dfdx
+
+configure dfdx symbol "d" order "2" function "f" variable "x" run "dx" description "d2f/dx2"
+instance dfdx2 dfdx
+
+
+// modified Bessel Differential Equation
+!! BesselM (x,alpha) = x^2 * dfdx2() + x * dfdx1() - (x^2 + alpha^2) * f(x)
+
+
+!! StruveMDE (x,alpha) = BesselM(x,alpha) - Struve(x,alpha)
+graph [-7 < x < 7 <> 0.1] (StruveMDE(x,2))
+
+
+RENDERF Halpha
+RENDERF Lalpha
+RENDERF Bessel
+RENDERF BesselM
+RENDERF Struve
+
+
+A197037 = 0.71024318593789088873852667781165
+A197037_error = A197037 - L0(1)
+prettyprint A197037_error
+
+
+
+

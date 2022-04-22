@@ -1,0 +1,117 @@
+
+
+//* zeta computed based on zeta(s) * GAMMA(s) (using quadrature)
+
+
+z1 = 0.5+14.0*i
+z1g = -4.0537030780372815e-10 -i*5.7732998345536051e-10
+z1z = 0.022241142609993589 -0.10325812326645006*i
+
+z2 = 0.5+18.0*i
+z2g = -1.1376125036610601e-12 + i*6.6427508748461917e-13
+z2z = 2.3291548730492018 -0.18886600580072346*i
+
+z3 = 1.5+18.0*i
+z3g = -1.2525757826553675e-11 -i*2.0144887522156771e-11
+
+z4 = 5.5+14.0*i
+z4g = 3.5028218796487307e-5 -i*0.00041847119186902003
+
+z5 = 5 + 5*i
+z5g = -0.97439524180523907 + i*2.0066898827226298
+
+z15=1+5*i
+z15g = -0.0016996644943606798 -0.0013585194175307527*i
+
+z65 = 6+5*i
+z65g = -14.905425622639346 + 5.1614732045869536*i
+
+configure QUAD method "GAUSS" type "LAGRANGE" description "custom quadrature using Gauss-Lagrange"
+//configure QUAD method "GAUSS" type "LAGUERRE" description "custom quadrature using Gauss-Laguerre"
+//configure QUAD order "25" hi "100" show "lists" using "L20"
+//configure QUAD using "L20"
+configure QUAD delta "0.1"
+instance GLQ QUAD
+
+
+INFINITY = 10
+!! G (x) = GLQ [ 0.01 < t < INFINITY ] ( t^(x-1) * <*> t ) ; express G
+RENDERF G
+
+
+Gz1 = G z1
+prettyprint Gz1
+
+calcErrZ1 = Gz1 - z1g
+prettyprint calcErrZ1
+
+
+// !! Z (x) = 1/G(x) * GLQ [ 0 < t < INFINITY ] ( t^(x-1) / (1-exp(-t)) * <*> t )
+// express Z
+// RENDERF Z
+
+// Zz1 = Z z1
+// prettyprint Zz1
+
+
+configure QUAD method "CCQ" description "custom quadrature using Clenshaw-Curtis"
+instance CCQ QUAD
+
+
+!! gi (x,t) = exp(-t) * t^(x-1)
+
+!! Gcc (x) = CCQ [ 0 < t < INFINITY ] ( exp(-t) * t^(x-1) * <*> t ) ; express Gcc
+RENDERF Gcc
+
+Gz1cc = Gcc z1
+calcErrZ1Gcc = Gz1cc - z1g
+prettyprint calcErrZ1Gcc
+
+Gz2cc = Gcc z2
+prettyprint Gz2cc
+calcErrZ2Gcc = Gz2cc - z2g
+prettyprint calcErrZ2Gcc
+
+
+configure QUAD method "TSQ" description "custom quadrature using Tanh-Sinh"
+instance TSQ QUAD
+
+
+!! Gts (x) = TSQ [ 0 < t < INFINITY ] ( exp(-t) * t^(x-1) * <*> t ) ; express Gts
+RENDERF Gts
+
+Gz1ts = Gts z1
+calcErrZ1Gts = Gz1ts - z1g
+prettyprint calcErrZ1Gts
+
+Gz2ts = Gts z2
+prettyprint Gz2ts
+calcErrZ2Gts = Gz2ts - z2g
+prettyprint calcErrZ2Gts
+
+
+!! giz2 (t) = gi(z2,t)
+plotri giz2 [0 < x < 3 <> 0.01]
+
+Gz5ts = Gts z5
+calcErrZ5Gts = Gz5ts - z5g
+prettyprint calcErrZ5Gts
+
+!! giz5 (t) = gi(z5,t)
+plotri giz5 [0 < x < 15 <> 0.05]
+
+
+!! GR (x) = Gts(x+5) / ( x * (x+1) * (x+2) * (x+3) * (x+4) )
+
+Gz1R = GR z1
+dif = Gz1R - z1g
+prettyprint Gz1R
+prettyprint dif
+
+
+!! giz1p5 (t) = gi(z1+5,t)
+plotri giz1p5 [0 < x < 15 <> 0.05]
+
+!! giz10p5 (t) = gi(z5+5,t)
+plotri giz10p5 [0 < x < 15 <> 0.05]
+

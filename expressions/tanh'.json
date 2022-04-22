@@ -1,0 +1,33 @@
+{
+   "Name": "tanh'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "First derivative of hyperbolic Tangent function ",
+   "Imports": 
+   {
+      "sech2": 
+      {
+         "OP": "sech",
+         "POW": "2",
+         "description": "sech squared",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathRealTrig"
+      }
+   },
+   "Expression": 
+   {
+      "OpName": "sech2",
+      "PostFix": false,
+      "NodeType": "UnaryOP",
+      "Parameter": 
+      {
+         "Operator": null,
+         "Symbol": null,
+         "NodeType": "Identifier",
+         "Kind": "Unknown",
+         "Name": "x"
+      }
+   },
+   "NodeType": "Profile"
+}

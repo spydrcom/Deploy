@@ -1,0 +1,127 @@
+
+
+//* test the ClMathQuad library
+
+
+configure QUAD method "CCQ" description "custom quadrature using Clenshaw-Curtis"
+instance CCQuad QUAD
+
+configure QUAD method "TSQ" description "custom quadrature using TANH-SINH"
+instance TSQuad QUAD
+
+
+// test TSQ
+
+dt = 1
+!! S(x) = TSQuad [0 <= t <= x <> dt] ( sin (pi / 2 * t^2 ) * <*> t ) ; express S
+!! C(x) = TSQuad [0 <= t <= x <> dt] ( cos (pi / 2 * t^2 ) * <*> t ) ; express C
+RENDERF  S ; RENDERF  C
+
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( C(x), S(x) )
+ENTITLED Fresnel Integrals C and S Functions using TSQ
+
+
+// test CCQ
+
+dt = 1
+!! S(x) = CCQuad [0 <= t <= x <> dt] ( sin (pi / 2 * t^2 ) * <*> t ) ; express S
+!! C(x) = CCQuad [0 <= t <= x <> dt] ( cos (pi / 2 * t^2 ) * <*> t ) ; express C
+
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( C(x), S(x) )
+ENTITLED Fresnel Integrals C and S Functions using CCQ
+
+// save to portable format
+DESCRIBE S Fresnel Integral S using quadrature
+DESCRIBE C Fresnel Integral C using quadrature
+SAVEJSON  S ; SAVEJSON  C
+
+
+// simple function evaluations
+
+// A099289		Decimal expansion of the Fresnel sine integral function at 1.
+A099289 = 0.438259147390354766 ; A099289_error_CCQ = A099289 - S(1)
+prettyprint A099289_error_CCQ
+
+// A099290		Decimal expansion of the Fresnel cosine integral function at 1.
+A099290 = 0.77989340037 ; A099290_error_CCQ = A099290 - C(1)
+prettyprint A099290_error_CCQ
+
+
+// test TSQ
+
+!! Stsq(x) = TSQuad [0 <= t <= x <> dt] ( sin (pi / 2 * t^2 ) * <*> t ) ; express Stsq
+!! Ctsq(x) = TSQuad [0 <= t <= x <> dt] ( cos (pi / 2 * t^2 ) * <*> t ) ; express Ctsq
+
+A099289_error_TSQ = A099289 - Stsq(1)
+prettyprint A099289_error_TSQ
+
+A099290_error_TSQ = A099290 - Ctsq(1)
+prettyprint A099290_error_TSQ
+
+
+// infinite integral evaluation
+
+INFINITY = 500
+// this test fails, expression diverges over range
+// A206160		Decimal expansion of the Fresnel Integral int_{x=0..infinity} x*sin(x^3) dx
+!! S3(x) = CCQuad [0 <= t <= INFINITY <> dt] ( t * sin ( t ^ 3 ) * <*> t ) ; express S3
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   (  x * sin ( x ^ 3 ) )
+A206160 = 0.39090017842 ; A206160_error = A206160 - S3(0)
+prettyprint A206160_error
+
+
+// new ASQ feature 
+configure QUAD method "ASQ" description "custom quadrature using ADP Spline Quad"
+configure QUAD factory "net.myorb.spline.ASQFactory" trace "0"
+instance ASQuad QUAD
+
+
+// test ASQ
+
+dt = 1
+!! Sasq(x) = ASQuad [0 <= t <= x <> dt] ( sin (pi / 2 * t^2 ) * <*> t ) ; express Sasq
+!! Casq(x) = ASQuad [0 <= t <= x <> dt] ( cos (pi / 2 * t^2 ) * <*> t ) ; express Casq
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( Casq(x), Sasq(x) )
+ENTITLED Fresnel Integrals C and S Functions using ASQ
+DESCRIBE Sasq Fresnel Integral S
+DESCRIBE Casq Fresnel Integral C
+
+A099289_error_ASQ = A099289 - Sasq(1)
+prettyprint A099289_error_ASQ
+
+A099290_error_ASQ = A099290 - Casq(1)
+prettyprint A099290_error_ASQ
+
+SAVEJSON  Sasq
+SAVEJSON  Casq
+
+
+// test quad of JSON spline
+
+LOADJSON FC.json
+
+// CCQ applied to a spline function
+!! ifc (x) = CCQuad [0 <= t <= x <> dt] ( FC (t) * <*> t ) ; express ifc
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( ifc(x) )
+ENTITLED Fresnel Integral C Function using CCQ on spline
+
+
+configure QUAD method "CPC" description "custom quadrature using CPC"
+instance CPQuad QUAD
+
+// CPC applied to a spline function
+!! cpc (x) = CPQuad [0 <= t <= x <> dt] ( FC (t) * <*> t ) ; express cpc
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( cpc(x) )
+ENTITLED Fresnel Integral C Function using CPC on spline
+
+
+// test generic spline quadrature
+configure SQUAD description "generic quadrature using CPC on splines"
+instance GenQuad SQUAD
+
+!! cpg (x) = GenQuad [0 <= t <= x <> dt] ( FC (t) * <*> t )
+express cpg
+
+GRAPH  [  0 <=    x    <= 4  <>  0.01  ]   ( cpg(x) )
+ENTITLED Fresnel Integral C Function using generic CPC on spline
+

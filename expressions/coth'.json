@@ -1,0 +1,40 @@
+{
+   "Name": "coth'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "First derivative of hyperbolic Cotangent function ",
+   "Imports": 
+   {
+      "csch2": 
+      {
+         "OP": "csch",
+         "POW": "2",
+         "description": "csch squared",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathRealTrig"
+      }
+   },
+   "Expression": 
+   {
+      "OpName": "-",
+      "Left": 0,
+      "NodeType": "BinaryOP",
+      "Right": 
+      {
+         "OpName": "csch2",
+         "PostFix": false,
+         "NodeType": "UnaryOP",
+         "Parameter": 
+         {
+            "Operator": null,
+            "Symbol": null,
+            "NodeType": "Identifier",
+            "Kind": "Unknown",
+            "Name": "x"
+         }
+      },
+      "OpType": "Binary"
+   },
+   "NodeType": "Profile"
+}

@@ -1,0 +1,120 @@
+{
+   "Name": "S",
+   "Parameter": "x",
+   "Description": "Fresnel Integral S using quadrature ",
+   "Imports": 
+   {
+      "CCQuad": 
+      {
+         "hi": "100",
+         "using": "L20",
+         "SYMBOL": "CCQuad",
+         "method": "CCQ",
+         "show": "lists",
+         "description": "custom quadrature using Clenshaw-Curtis",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathQuad",
+         "type": "LAGUERRE",
+         "order": "25"
+      }
+   },
+   "Expression": 
+   {
+      "Hi": 
+      {
+         "Operator": null,
+         "Symbol": "AssignedVariableStorage",
+         "NodeType": "Identifier",
+         "Kind": "Variable",
+         "Name": "x"
+      },
+      "Target": 
+      {
+         "OpName": "*",
+         "Left": 
+         {
+            "OpName": "sin",
+            "PostFix": false,
+            "NodeType": "UnaryOP",
+            "Parameter": 
+            {
+               "OpName": "*",
+               "Left": 
+               {
+                  "OpName": "/",
+                  "Left": 
+                  {
+                     "Operator": null,
+                     "Symbol": "AssignedVariableStorage",
+                     "NodeType": "Identifier",
+                     "Kind": "Variable",
+                     "Name": "pi"
+                  },
+                  "NodeType": "BinaryOP",
+                  "Right": 2.0,
+                  "OpType": "Binary"
+               },
+               "NodeType": "BinaryOP",
+               "Right": 
+               {
+                  "OpName": "^",
+                  "Left": 
+                  {
+                     "Operator": null,
+                     "Symbol": "LocalVariable",
+                     "NodeType": "Identifier",
+                     "Kind": "Local",
+                     "Name": "t"
+                  },
+                  "NodeType": "BinaryOP",
+                  "Right": 2.0,
+                  "OpType": "Binary"
+               },
+               "OpType": "Binary"
+            }
+         },
+         "NodeType": "BinaryOP",
+         "Right": 
+         {
+            "OpName": "<*>",
+            "PostFix": false,
+            "NodeType": "UnaryOP",
+            "Parameter": 
+            {
+               "Operator": null,
+               "Symbol": "LocalVariable",
+               "NodeType": "Identifier",
+               "Kind": "Local",
+               "Name": "t"
+            }
+         },
+         "OpType": "Binary"
+      },
+      "Hbnd": "<=",
+      "Variable": "t",
+      "Lo": 0.0,
+      "Consumer": "QuadratureConsumer",
+      "Delta": 
+      {
+         "Operator": null,
+         "Symbol": "AssignedVariableStorage",
+         "NodeType": "Identifier",
+         "Kind": "Variable",
+         "Name": "dt"
+      },
+      "Config": 
+      {
+         "hi": "100",
+         "using": "L20",
+         "SYMBOL": "CCQuad",
+         "method": "CCQ",
+         "show": "lists",
+         "description": "custom quadrature using Clenshaw-Curtis",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathQuad",
+         "type": "LAGUERRE",
+         "order": "25"
+      },
+      "NodeType": "Range",
+      "Lbnd": "<="
+   },
+   "NodeType": "Profile"
+}

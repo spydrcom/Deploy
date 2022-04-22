@@ -1,0 +1,76 @@
+{
+   "Name": "errB",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": null,
+   "Imports": 
+   {
+      "Bi2": 
+      {
+         "symbol": "d",
+         "function": "Bi",
+         "variable": "x",
+         "description": "d2f/dx2",
+         "run": "dx",
+         "FACTORY": "net.myorb.math.expressions.algorithms.ClMathDerivative",
+         "order": "2"
+      }
+   },
+   "Expression": 
+   {
+      "OpName": "abs",
+      "PostFix": false,
+      "NodeType": "UnaryOP",
+      "Parameter": 
+      {
+         "OpName": "-",
+         "Left": 
+         {
+            "OpName": "Bi2",
+            "PostFix": false,
+            "NodeType": "UnaryOP",
+            "Parameter": 
+            {
+               "Operator": null,
+               "Symbol": "AssignedVariableStorage",
+               "NodeType": "Identifier",
+               "Kind": "Variable",
+               "Name": "x"
+            }
+         },
+         "NodeType": "BinaryOP",
+         "Right": 
+         {
+            "OpName": "*",
+            "Left": 
+            {
+               "Operator": null,
+               "Symbol": "AssignedVariableStorage",
+               "NodeType": "Identifier",
+               "Kind": "Variable",
+               "Name": "x"
+            },
+            "NodeType": "BinaryOP",
+            "Right": 
+            {
+               "OpName": "Bi",
+               "PostFix": false,
+               "NodeType": "UnaryOP",
+               "Parameter": 
+               {
+                  "Operator": null,
+                  "Symbol": "AssignedVariableStorage",
+                  "NodeType": "Identifier",
+                  "Kind": "Variable",
+                  "Name": "x"
+               }
+            },
+            "OpType": "Binary"
+         },
+         "OpType": "Binary"
+      }
+   },
+   "NodeType": "Profile"
+}

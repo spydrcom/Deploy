@@ -1,0 +1,45 @@
+
+
+//* test the ClMathSpline library (Chebyshev-T version)
+
+
+// spline tools provided in ClMath algorithms library objects
+configure SPLINE description "custom spline generator using CPC"
+
+// specify the factory to use in generation of splines
+configure SPLINE factory "net.myorb.spline.ChebyshevSplineFactory"
+
+// enable the trace of the spline generation
+// configure SPLINE show "1"
+configure SPLINE trace "0"
+
+// name a new instance of the spline tool object
+instance CPC SPLINE
+
+// define a function to be fit in the modeling algorithm
+!! FC (x) = cos (pi / 2 * x^2 )  ; express FC
+!! FS (x) = sin (pi / 2 * x^2 )  ; express FS
+
+// apply the spline tool to the UDF and specify the domain
+apply CPC FC [ 0 <= x <= 10 ]
+apply CPC FS [ 0 <= x <= 10 ]
+
+savejson FC.json
+savejson FS.json
+
+// these should be computed by the spline
+GRAPH  [  0 <=    x    <= 3  <>  0.01  ]   ( FC(x), FS(x) )
+
+// apply to quadrature
+
+dt = 1
+// configure QUAD method "CPC" description "custom quadrature using CPC"
+configure SQUAD description "custom quadrature using CPC on splines"
+instance CPQuad SQUAD
+
+// CPC applied to a spline function
+!! cpc (x) = CPQuad [0 <= t <= x <> dt] ( FC (t) * <*> t ) ; express cpc
+!! cps (x) = CPQuad [0 <= t <= x <> dt] ( FS (t) * <*> t ) ; express cps
+GRAPH  [  0 <=    x    <= 3  <>  0.01  ]   ( cpc(x), cps(x) )
+ENTITLED Fresnel Integrals C and S Function using CPC on spline
+

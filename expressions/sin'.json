@@ -1,0 +1,24 @@
+{
+   "Name": "sin'",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": "First derivative of Sine function ",
+   "Imports": null,
+   "Expression": 
+   {
+      "OpName": "cos",
+      "PostFix": false,
+      "NodeType": "UnaryOP",
+      "Parameter": 
+      {
+         "Operator": null,
+         "Symbol": null,
+         "NodeType": "Identifier",
+         "Kind": "Unknown",
+         "Name": "x"
+      }
+   },
+   "NodeType": "Profile"
+}

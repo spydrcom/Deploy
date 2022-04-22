@@ -1,0 +1,32 @@
+{
+   "Name": "f",
+   "Parameters": 
+   [
+      "x"
+   ],
+   "Description": null,
+   "Imports": null,
+   "Expression": 
+   {
+      "OpName": "*",
+      "Left": 
+      {
+         "Operator": null,
+         "Symbol": "AssignedVariableStorage",
+         "NodeType": "Identifier",
+         "Kind": "Variable",
+         "Name": "x"
+      },
+      "NodeType": "BinaryOP",
+      "Right": 
+      {
+         "Operator": null,
+         "Symbol": "AssignedVariableStorage",
+         "NodeType": "Identifier",
+         "Kind": "Variable",
+         "Name": "x"
+      },
+      "OpType": "Binary"
+   },
+   "NodeType": "Profile"
+}

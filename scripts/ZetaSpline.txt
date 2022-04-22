@@ -1,0 +1,37 @@
+
+
+//* build a spline for ZETA (z)
+
+
+// Anaconda MPMATH supplies the model
+!! ANA(z) = zeta z
+
+// map as a UDF
+!! ZETA(z) = ANA (0.5+i*z) ; express ZETA
+DESCRIBE ZETA Complex ZETA function spline modeled on Anaconda MPMATH
+
+
+ubound = 40
+// verify source is good
+plotri ZETA  [0 <= x <= ubound <> 0.1 ]   
+
+
+// spline tools provided in ClMath algorithms library objects
+configure SPLINE description "custom spline generator using CPC"
+
+// specify the factory to use in generation of splines
+configure SPLINE factory "net.myorb.spline.ChebyshevSplineFactory"
+
+// enable the trace of the spline generation
+// configure SPLINE trace "1"
+configure SPLINE show "1"
+
+// name a new instance of the spline tool object
+instance CPC SPLINE
+
+// CPC applied to a spline function
+apply CPC ZETA [ 0 <= x <= ubound ]
+
+savejson ZETA
+
+
