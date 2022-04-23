@@ -1,3 +1,3 @@
 c:\
-cd \workspace\calclib33
+cd \workspace\deploy
 java -cp myorb.zip;external.zip;gralprop.zip;httpd.zip;splines.zip;sample.zip net.myorb.calctools.config.CalcTools >session.log
