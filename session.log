@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4d07bd5f
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@61094f08
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@18f7e3b1
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@6669863f
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0401
 
@@ -126,7 +126,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-18ms
+5ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -594,4 +594,13 @@ Lib QUAD config {method=CTA, description=custom quadrature using Trap Approx}
 Lib QUAD config {method=CTA, delta=0.005, description=custom quadrature using Trap Approx}
 Lib QUAD config {method=VCQ, delta=0.005, description=custom quadrature using VC Approx}
 Lib QUAD config {method=VCQ, delta=0.005, description=custom quadrature using VC Approx}
->>> Z ( x ) - z ( x ) 
+Lib DFDX config {syntax=Lagrange, run=0.001, order=1}
+Lib DFDX config {function=f, variable=x, syntax=Lagrange, description=df/dx, run=0.001, order=1}
+Lib BESSEL config {terms=20, kind=I, alpha=-1/3, description=Bessel function I (-1/3) in-line}
+Bessel: I(a = -0.3333333333333333)
+Lib BESSEL config {terms=20, kind=I, alpha=1/3, description=Bessel function I (+1/3) in-line}
+Bessel: I(a = 0.3333333333333333)
+Lib BESSEL config {terms=20, kind=K, alpha=1/3, description=Bessel function K (+1/3) in-line}
+Bessel: K(a = 0.3333333333333333)
+Lib DFDX config {symbol=d, function=Ai, variable=x, syntax=Lagrange, description=d2f/dx2, run=dx, order=2}
+Lib DFDX config {symbol=d, function=Bi, variable=x, syntax=Lagrange, description=d2f/dx2, run=dx, order=2}
