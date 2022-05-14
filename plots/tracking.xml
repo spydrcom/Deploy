@@ -131,4 +131,5 @@
  <PLOT PointsSize='5' TransformIdentity='Dragon' MaxResult='1000' PointsPerAxis='700' EdgeSize='1.4264706' X='-0.4411764442920685' Y='-0.8529411554336548' Title='Julia Dragon : c=(-0.8 + 0.156*i)' PlotParent='-1' AltEdgeSize='1.4264706' PlotNumber='1129'/>
  <PLOT PointsSize='5' TransformIdentity='Dragon' PointsPerAxis='700' EdgeSize='0.19299307' X='0.4335857331752777' Y='-0.18585632741451263' Title='Dragon : (0.4335857331752777,-0.18585632741451263) - 0.19299307' PlotParent='1129' PlotNumber='1130'/>
  <PLOT PointsSize='5' TransformIdentity='Dragon' MaxResult='1000' PointsPerAxis='200' EdgeSize='1.4264706' X='-0.4411764442920685' Y='-0.8529411554336548' Title='Julia Dragon : c=(-0.8 + 0.156*i)' PlotParent='-1' AltEdgeSize='1.4264706' PlotNumber='1131'/>
+ <PLOT PointsSize='5' TransformIdentity='Zsquared' MaxResult='100' PointsPerAxis='200' EdgeSize='10.0' X='-5.0' Y='-5.0' Title='Newton : P=z^2-1, a=1+i' PlotParent='-1' AltEdgeSize='10.0' PlotNumber='1132'/>
 </PLOTS>
