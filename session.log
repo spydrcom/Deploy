@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4b15d8b3
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@4dad9038
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@6fdf4d17
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@53b1e17a
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0515
 
@@ -537,12 +537,42 @@ vector (21 symbols):
 	Summation (SIGMA) {FUN} '?' - Sum of items of an array; traditional capital SIGMA notation
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-Lib QUAD config {method=CCQ, description=custom quadrature using Clenshaw-Curtis}
-Lib QUAD config {method=TSQ, description=custom quadrature using TANH-SINH}
-Lib QUAD config {method=ASQ, description=custom quadrature using ADP Spline Quad}
-Lib QUAD config {factory=net.myorb.spline.ASQFactory, trace=0, method=ASQ, description=custom quadrature using ADP Spline Quad}
-Lib QUAD config {factory=net.myorb.spline.ASQFactory, trace=0, method=CPC, description=custom quadrature using CPC}
-Lib SQUAD config {description=generic quadrature using CPC on splines}
+BruteForcePlotComputer invoked
+Progress: 0%
+Progress: 10%
+Progress: 20%
+Progress: 30%
+Progress: 40%
+Progress: 50%
+Progress: 60%
+Progress: 70%
+Progress: 80%
+Progress: 90%
+Progress: 100%
+BruteForcePlotComputer invoked
+Progress: 0%
+Progress: 10%
+Progress: 20%
+Progress: 30%
+Progress: 40%
+Progress: 50%
+Progress: 60%
+Progress: 70%
+Progress: 80%
+Progress: 90%
+Progress: 100%
+BruteForcePlotComputer invoked
+Progress: 0%
+Progress: 10%
+Progress: 20%
+Progress: 30%
+Progress: 40%
+Progress: 50%
+Progress: 60%
+Progress: 70%
+Progress: 80%
+Progress: 90%
+Progress: 100%
 BruteForcePlotComputer invoked
 Progress: 0%
 Progress: 10%
