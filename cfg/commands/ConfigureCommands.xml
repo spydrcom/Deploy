@@ -2,7 +2,7 @@
 
 
 	<!-- instance of ConfiguredEvaluationControl -->
-	<class called='EvalControl' classpath='net.myorb.math.expressions.algorithms.ConfiguredEvaluationControl' />
+	<class called='EvalControl' classpath='net.myorb.math.expressions.algorithms.ConfiguredScriptedEvaluationControl' />
 	<saveas toBeCalled='evalCtrl'>  <new class='EvalControl' using='environment' />  </saveas>
 
 
@@ -16,9 +16,6 @@
 	<!-- construct keyword map -->
 	<class called='KeywordMap' classpath='net.myorb.math.expressions.KeywordMap' />
 	<saveas toBeCalled='keywordMap'>  <new class='KeywordMap' using='engine F' />  </saveas>
-<!--
-	<call object='keywordMap' method='constructKeywordMap' />
-  -->
 	<call object='keywordMap' method='constructCoreKeywordMap' />
 
 	<!-- cross-link keyword map -->
@@ -27,13 +24,32 @@
 	</call>
 
 
-	<!-- connect GUI -->
-	
-	<call object='evalCtrl' method='connectGui'>
-		<referto objectCalled='environment'/>
+	<!-- connect menu bar to MDI -->
+
+	<SaveAs toBeCalled='cmdCtrl'>
+		<evaluate object='evalCtrl' method='getCommandControl' />
+	</SaveAs>
+
+	<SaveAs toBeCalled='actionManager'>
+		<evaluate object='evalCtrl' method='getActionManager' using='cmdCtrl' />
+	</SaveAs>
+
+	<SaveAs toBeCalled='menuScriptPath'>
+		<evaluate object='evalCtrl' method='getMenuBarScript' />
+	</SaveAs>
+
+	<!-- read identified script and build menu bar -->
+	<READ indirect='menuScriptPath' using='actionManager' />
+
+	<call object='evalCtrl' method='mapConsole'>
+		<referto objectCalled='cmdCtrl'/>
 	</call>
 	
-	
+	<call object='evalCtrl' method='setMenuBar'>
+		<evaluate object='menus' method='getMenuBar' />
+	</call>
+
+
 	<!-- get command map -->
 
 	<bean references='keywordMap'>
