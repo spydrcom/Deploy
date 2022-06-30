@@ -6,6 +6,8 @@
    {
       "CCQuad": 
       {
+         "factory": "net.myorb.spline.ASQFactory",
+         "trace": "0",
          "SYMBOL": "CCQuad",
          "method": "CCQ",
          "description": "custom quadrature using Clenshaw-Curtis",
@@ -98,6 +100,8 @@
       },
       "Config": 
       {
+         "factory": "net.myorb.spline.ASQFactory",
+         "trace": "0",
          "SYMBOL": "CCQuad",
          "method": "CCQ",
          "description": "custom quadrature using Clenshaw-Curtis",
