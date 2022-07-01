@@ -5,4 +5,5 @@
  <PLOT PointsSize='5' TransformIdentity='Mandelbrot' MaxResult='3000' PointsPerAxis='700' EdgeSize='5.0' X='-2.5' Y='-2.5' Title='Mandelbrot : (-2.5,-2.5) - 5.0' PlotParent='-1' AltEdgeSize='5.0' PlotNumber='1003'/>
  <PLOT PointsSize='5' TransformIdentity='Mandelbrot' PointsPerAxis='700' EdgeSize='0.35294127' X='-1.9191176891326904' Y='-0.09558822959661484' Title='Mandelbrot : (-1.9191176891326904,-0.09558822959661484) - 0.35294127' PlotParent='1003' PlotNumber='1004'/>
  <PLOT PointsSize='5' TransformIdentity='Mandelbrot' PointsPerAxis='700' EdgeSize='0.01920414' X='-1.6829584836959839' Y='-0.009948063641786575' Title='Mandelbrot : (-1.6829584836959839,-0.009948063641786575) - 0.01920414' PlotParent='1004' PlotNumber='1005'/>
+ <PLOT PointsSize='5' TransformIdentity='Dragon' MaxResult='1000' PointsPerAxis='700' EdgeSize='1.4264706' X='-0.4411764442920685' Y='-0.8529411554336548' Title='Julia Dragon : c=(-0.8 + 0.156*i)' PlotParent='-1' AltEdgeSize='1.4264706' PlotNumber='1006'/>
 </PLOTS>
