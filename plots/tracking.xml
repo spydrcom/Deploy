@@ -14,4 +14,7 @@
  <PLOT PointsSize='5' TransformIdentity='HalfZcubed' MaxResult='40' PointsPerAxis='200' EdgeSize='10.0' X='-5.0' Y='-5.0' Title='Newton : P=z^3-1, a=0.5' PlotParent='-1' AltEdgeSize='10.0' PlotNumber='1012'/>
  <PLOT PointsSize='5' TransformIdentity='HalfZcubed' PointsPerAxis='200' EdgeSize='1.6911764' X='-0.75' Y='-0.5735294222831726' Title='HalfZcubed : (-0.75,-0.5735294222831726) - 1.6911764' PlotParent='1012' PlotNumber='1013'/>
  <PLOT PointsSize='5' TransformIdentity='HalfZcubed' MaxResult='40' PointsPerAxis='500' EdgeSize='1.6911764' X='-0.75' Y='-0.5735294222831726' Title='Newton : P=z^3-1, a=0.5' PlotParent='-1' AltEdgeSize='1.6911764' PlotNumber='1014'/>
+ <PLOT PointsSize='5' TransformIdentity='Mandelbrot' MaxResult='3000' PointsPerAxis='700' EdgeSize='5.0' X='-2.5' Y='-2.5' Title='Mandelbrot : (-2.5,-2.5) - 5.0' PlotParent='-1' AltEdgeSize='5.0' PlotNumber='1015'/>
+ <PLOT PointsSize='5' TransformIdentity='Mandelbrot' PointsPerAxis='700' EdgeSize='0.066176474' X='-0.7941176295280457' Y='0.14705882966518402' Title='Mandelbrot : (-0.7941176295280457,0.14705882966518402) - 0.066176474' PlotParent='1015' PlotNumber='1016'/>
+ <PLOT PointsSize='5' TransformIdentity='Mandelbrot' PointsPerAxis='700' EdgeSize='0.012262106' X='-0.7475994825363159' Y='0.17878460884094238' Title='Mandelbrot : (-0.7475994825363159,0.17878460884094238) - 0.012262106' PlotParent='1016' PlotNumber='1017'/>
 </PLOTS>
