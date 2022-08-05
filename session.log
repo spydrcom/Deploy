@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@3d6eb750
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@6bf47e27
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@2cb875ef
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@2e52e5ef
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2022.0722
+2022.0801
 
 Menu Script Path: cfg/gui/RealMenuBar.xml
 
@@ -95,7 +95,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-7ms
+8ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -123,7 +123,7 @@ Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
 Command: net.myorb.calctools.symbols.Command
 ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2022.0722
+CurrentVersion: 2022.0801
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 Function: net.myorb.calctools.symbols.Function
@@ -150,7 +150,7 @@ algebraic (9 symbols):
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2022.0722' * - software development version
+	Status (VERSION) {CON} '2022.0801' * - software development version
 
 
 arithmetic (7 symbols):
