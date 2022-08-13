@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@7a6fbdb8
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@7e328da2
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@70f8cef6
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@189c6e08
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0801
 
@@ -95,7 +95,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-8ms
+7ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -542,4 +542,3 @@ vector (21 symbols):
 	Summation (SIGMA) {FUN} '?' - Sum of items of an array; traditional capital SIGMA notation
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-lambda a,b : func(a,b)
