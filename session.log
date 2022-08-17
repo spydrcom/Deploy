@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@3b56292b
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@58483bbb
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@48ad3565
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@3a9da1fe
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0801
 
@@ -153,13 +153,14 @@ application (1 symbol):
 	Status (VERSION) {CON} '2022.0801' * - software development version
 
 
-arithmetic (8 symbols):
+arithmetic (9 symbols):
 	Fraction (#/#) {OP-8} - Arithmetic division operator (expressed as fraction)
 	Multiplication (*) {OP-8} '·' - Arithmetic multiplication operator
 	Addition (+) {OP-7} - Arithmetic addition operator
 	Subtraction (-) {OP-7} - Arithmetic (binary) subtraction or (unary) negate operator
 	Lambda (->) {OP-9} - Lambda anonymous function declarative expression
 	Division (/) {OP-8} '÷' - Arithmetic division operator
+	Deref (@|) {OP-9} - Pointer dereference
 	Subtraction (MINUS) {OP-7} '-' - Arithmetic binary subtraction operator
 	Negate (NEGATE) {OP-8} '-' - Arithmetic unary negation operator
 
@@ -282,7 +283,7 @@ commands_matrix (2 symbols):
 	Import (IMPORT) {KEY} - Import data from a file into specified matrix
 
 
-commands_plotting (13 symbols):
+commands_plotting (14 symbols):
 	Chart (CHART) {KEY} - Display a chart for a set of symbols
 	Derive (DERIVE) {KEY} - Plot derivatives of a polynomial
 	Entitled (ENTITLED) {KEY} - Change the title of the last frame displayed
@@ -291,6 +292,7 @@ commands_plotting (13 symbols):
 	Plot3d (PLOT3D) {KEY} - Plot a specified 2D domain of a 3D user defined function
 	Plotc (PLOTC) {KEY} - Plot a specified 2D domain with contours of a 3D user defined function
 	Plotf (PLOTF) {KEY} - Plot a specified range of a user defined function
+	Plotl (PLOTL) {KEY} - Plot a specified range of lambda declared function(s)
 	Plotm (PLOTM) {KEY} - Display tabular plot with data taken from a matrix
 	Plott (PLOTT) {KEY} - Tabular plot with data taken from file
 	Scatter (SCATTER) {KEY} - Produce an X/Y scatter plot
