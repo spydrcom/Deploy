@@ -95,7 +95,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-7ms
+0ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -158,7 +158,7 @@ arithmetic (9 symbols):
 	Multiplication (*) {OP-8} '·' - Arithmetic multiplication operator
 	Addition (+) {OP-7} - Arithmetic addition operator
 	Subtraction (-) {OP-7} - Arithmetic (binary) subtraction or (unary) negate operator
-	Lambda (->) {OP-9} - Lambda anonymous function declarative expression
+	Lambda (->) {OP-7} - Lambda anonymous function declarative expression
 	Division (/) {OP-8} '÷' - Arithmetic division operator
 	Deref (@|) {OP-9} - Pointer dereference
 	Subtraction (MINUS) {OP-7} '-' - Arithmetic binary subtraction operator
