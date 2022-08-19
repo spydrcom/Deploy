@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@70ea0145
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@6034c12f
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4c82d51f
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@2e23a087
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0801
 
@@ -128,7 +128,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-0ms
+8ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -596,11 +596,3 @@ vector (21 symbols):
 	Summation (SIGMA) {FUN} '?' - Sum of items of an array; traditional capital SIGMA notation
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-Lib BESSEL config {terms=20, kind=I, alpha=-1/3, description=Bessel function I (-1/3) in-line}
-Bessel: I(a = -0.3333333333333333)
-Lib BESSEL config {terms=20, kind=I, alpha=1/3, description=Bessel function I (+1/3) in-line}
-Bessel: I(a = 0.3333333333333333)
-Lib BESSEL config {terms=20, kind=K, alpha=1/3, description=Bessel function K (+1/3) in-line}
-Bessel: K(a = 0.3333333333333333)
-Lib DFDX config {symbol=d, function=Ai, variable=x, description=d2f/dx2, run=dx, order=2}
-Lib DFDX config {symbol=d, function=Bi, variable=x, description=d2f/dx2, run=dx, order=2}
