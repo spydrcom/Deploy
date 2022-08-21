@@ -21,7 +21,7 @@ calc lambda#2
 
 // indexed element read into variable
 
-xyz = lambda #1
+xyz = lambda #0
 
 calc xyz
 
@@ -56,5 +56,5 @@ calc pp (d)
 calc pp ( {x} -> { x^3 / 3 } )
 
 
-PLOTL  [ 0 < x < 20 <> 0.1 ]
+PLOTL  [ 0 < tau < 20 <> 0.1 ]
 
