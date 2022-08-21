@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@3a3a9119
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@3c23b61b
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@48ad3565
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@3a9da1fe
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0801
 
@@ -96,7 +96,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-5ms
+7ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
