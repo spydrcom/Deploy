@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@323e56a6
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@79aeffbc
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@126db071
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@580442a3
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.0901
 
@@ -96,7 +96,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-0ms
+5ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -558,3 +558,5 @@ Lib FRACULUS config {quad=TSQuad, method=Caputo, delta=0.001, description=fracti
 Lib FRACULUS config {quad=TSQuad, method=Caputo, delta=0.001, description=fractional calculus using Caputo algorithm, order=1/2}
 Lib FRACULUS config {quad=TSQuad, method=Hadamard, delta=0.001, description=fractional calculus using Hadamard algorithm, order=1/2}
 Lib FRACULUS config {quad=TSQuad, method=Hadamard, delta=0.001, description=fractional calculus using Hadamard algorithm, order=1/2}
+>>> GAMMA z 
+*** Gamma asymptotic for Integer <= 0
