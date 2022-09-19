@@ -90,11 +90,16 @@ ENTITLED Liouville test - back2back 1/2 integrals
 // Caputo test
 configure FRACULUS method "Caputo" description "fractional calculus using Caputo algorithm"
 configure FRACULUS order "1/2" delta "0.001"
+instance HALFC2 FRACULUS
 instance HALFC FRACULUS
 
-!! FC(x) = HALFC [-50 <= t <= x] ( F4 ( t ) ) ; express FC
-!! FC2(x) = HALFC [-50 <= t <= x] ( FC ( t ) ) ; express FC2
-// graph [0 < t < 5 <> 0.05] ( F3(t), F4(t), FC(t), FC2(t) )
+!! FC(x)  = HALFC [ -5 <= t <= x ] ( F3 ( t ) ) ; express FC
+!! FC2(x) = HALFC2 [ -5 <= t <= x ] ( FC ( t ) ) ; express FC2
+
+//graph [-5 < t < 5 <> 0.05] ( F3(t), F2(t), FC(t) )
+graph [-5 < t < 5 <> 0.05] ( F3(t), F2(t), FC(t), FC2(t) )
+ENTITLED Caputo test - 1/2 derivative of X^3
+
 
 
 // Hadamard test
@@ -108,7 +113,8 @@ instance HALFH FRACULUS
 !! FH2(zv) = HALFH2 [2*pi <= tv <= zv] ( FH ( tv ) ) ; express FH2
 
 !! difH(v) = FH2(v) - cos(v)
-// graph [2*pi < t < 3*pi <> 0.05] ( sin(t), cos(t), FH(t), FH2(t), difH(t) )
+graph [2*pi < t < 3*pi <> 0.05] ( sin(t), cos(t), FH(t), FH2(t), difH(t) )
+ENTITLED Hadamard test - 1/2 integral of SIN
 
 
 // declare a derivative using HALFD
@@ -119,11 +125,23 @@ calc FDV (2) ; calc FDV2 (2) ; // FDV2 gives NaN
 
 // mixed mode
 !! F5(x) = x^5 / 20
-graph [0 < t < 5 <> 0.05] ( FDV t ) ; // FDV does plot
 !! FI33(y) = HALFI3 [0 <= u <= y] ( FDV ( u ) ) ; express FI33
+graph [0 < t < 5 <> 0.05] ( FDV t ) ; // FDV does plot
 
 // produces NaN ???
 !! D5(o) = F5(o) - FI33(o)
 // graph [0 < t < 5 <> 0.05] ( F5(t),  FI33(t), D5(t) )
 
+
+// Grunwald test
+configure FRACULUS method "Grunwald" description "fractional calculus using Grunwald-Letnikov algorithm"
+configure FRACULUS delta "0.001" order "1/2"
+instance GRUN FRACULUS
+
+!! HC(w) = cos w ; express HC
+!! FG(zu) = GRUN [ 0 <= tu <= 20 <> zu ] ( HC ( tu ) ) ; express FG
+
+graph [pi < t < 3*pi <> 0.1] ( FG t, HC t )
+
+calc FG (pi/2)
 

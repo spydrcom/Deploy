@@ -1,3 +1,3 @@
 c:\
 cd \workspace\deploy
-java -cp myorb.zip net.myorb.sitstat.Server
+java -cp SS.zip;IO.zip net.myorb.sitstat.Server
