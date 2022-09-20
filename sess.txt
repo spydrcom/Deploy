@@ -1,6 +1,0 @@
-
-C:\Users\Michael\workspace\Deploy>c:\
-
-C:\Users\Michael\workspace\Deploy>cd \workspace\deploy 
-
-C:\Users\Michael\workspace\Deploy>java -cp GUI.zip;CLIB.zip;IO.zip;myorb.zip net.myorb.calctools.config.CalcTools  1>session.log 
