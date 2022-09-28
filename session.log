@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@5bb09c75
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@7904ec79
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@217938a5
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@3400143d
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1001
 
