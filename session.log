@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@126db071
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@580442a3
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@69cad37
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@7e00a6ad
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2022.0921
+2022.1001
 
 Menu Script Path: cfg/gui/RealMenuBar.xml
 
@@ -35,13 +35,14 @@ Library: keywords-features
 Library: algebraic
 Symbol Override Detected for 'e' from library 'algebraic' by instance in 'algebraic'
 Symbol Override Detected for 'pi' from library 'algebraic' by instance in 'algebraic'
+floor  (Floor)  to render as ?
+ceil  (Ceil)  to render as ?
 
 Library: arithmetic
 NEGATE  (Negate)  to render as -
 MINUS  (Subtraction)  to render as -
 *  (Multiplication)  to render as ·
 /  (Division)  to render as ÷
-->  (Lambda)  to render as ?
 
 Library: boolean-logical
 
@@ -72,6 +73,9 @@ SIGMA  (Summation)  to render as ?
 INTEGRAL  (Integral)  to render as ?
 SUMMATION  (Summation)  to render as ?
 PI  (Pi)  to render as ?
+
+Library: pointer
+->  (Lambda)  to render as ?
 
 Library: statistics
 
@@ -124,7 +128,7 @@ Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
 Command: net.myorb.calctools.symbols.Command
 ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2022.0921
+CurrentVersion: 2022.1001
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 FraculusModules: net.myorb.fraculus.modules.Selection
@@ -141,30 +145,31 @@ Renderer: net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLi
 TrigPow: net.myorb.math.expressions.algorithms.TrigPowPrimitives
 Value: net.myorb.calctools.symbols.Value
 
-algebraic (9 symbols):
+algebraic (12 symbols):
 	PlusMinus (+|-) {OP-7} - Plus or Minus operator
 	MinusPlus (-|+) {OP-7} - Minus or Plus operator
 	INF (INFINITY) {CON} '10000' * - Approximation to use for infinity
 	Abs (abs) {OP-11} - ABS function value of parameter
+	Ceil (ceil) {OP-11} '?' - Ceiling function
 	E (e) {VAL}  <algebraic> - Symbol for the irrational value of e; Epsilon base of natural log
 	e (e) {CON} '2.718281828459' >algebraic<  * - Epsilon base of natural log
+	Floor (floor) {OP-11} '?' - Floor function
+	FloorDiv (floordiv) {OP-11} - Floor function for quotient
 	Pi (pi) {VAL}  <algebraic> - Symbol for the irrational value of pi; Trigonometric ratio of circle diameter to perimeter
 	pi (pi) {CON} '3.141592653589793' >algebraic<  * - Symbol for the irrational value of pi
 	Sgn (sgn) {OP-7} - Sign SGN function value of parameter
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2022.0921' * - software development version
+	Status (VERSION) {CON} '2022.1001' * - software development version
 
 
-arithmetic (9 symbols):
+arithmetic (7 symbols):
 	Fraction (#/#) {OP-8} - Arithmetic division operator (expressed as fraction)
 	Multiplication (*) {OP-8} '·' - Arithmetic multiplication operator
 	Addition (+) {OP-7} - Arithmetic addition operator
 	Subtraction (-) {OP-7} - Arithmetic (binary) subtraction or (unary) negate operator
-	Lambda (->) {OP-7} '?' - Lambda anonymous function declarative expression
 	Division (/) {OP-8} '÷' - Arithmetic division operator
-	Deref (@|) {OP-9} - Pointer dereference
 	Subtraction (MINUS) {OP-7} '-' - Arithmetic binary subtraction operator
 	Negate (NEGATE) {OP-8} '-' - Arithmetic unary negation operator
 
@@ -304,9 +309,11 @@ commands_plotting (14 symbols):
 	Comparison (SIDEBYSIDE) {KEY} - Produce a side-by-side plot comparison
 
 
-commands_primitive (17 symbols):
+commands_primitive (23 symbols):
+	StartLoop (*{) {KEY} - Start a block of a counted loop
 	Comment (//) {KEY} - Add a comment to the output stream
 	Comment (//*) {KEY} - Associate a defining comment with a script
+	StartConditional (?{) {KEY} - Start a conditional block
 	Assert (ASSERT) {KEY} - Make a conditional assertion
 	Background (BACKGROUND) {KEY} - Read a script file and execute as a background task
 	Calculate (CALC) {KEY} - Shorthand alias for CALCULATE command
@@ -321,7 +328,11 @@ commands_primitive (17 symbols):
 	Recognize (RECOGNIZE) {KEY} - Read a symbol definition file
 	SetMode (SETMODE) {KEY} - Set value display mode and precision
 	Show (SHOW) {KEY} - Show symbol table contents Symbols|Functions|Parent|ALL parents
+	Tic (TIC) {KEY} - Show time and start a stop-watch
+	Toc (TOC) {KEY} - Show elapsed time since last TIC
 	Verify (VERIFY) {KEY} - Verify symbol present in current symbol table
+	EndLoop (}*) {KEY} - Terminate a block of a counted loop
+	EndConditional (}?) {KEY} - Terminate a conditional block
 
 
 commands_properties (5 symbols):
@@ -425,6 +436,11 @@ mpmath (10 symbols):
 
 mpmathselected: Corless Omega Polylog Polygamma
 
+pointer (2 symbols):
+	Lambda (->) {OP-7} '?' - Lambda anonymous function declarative expression
+	Deref (@|) {OP-9} - Pointer dereference
+
+
 polynomial_computation (13 symbols):
 	ArrayDer (ARRAYDER) {FUN} - Compute derivative of function described by array
 	ArrayInt (ARRAYINT) {FUN} - Compute integral of function described by array
@@ -525,12 +541,14 @@ trigpow (38 symbols):
 	TrigPow (tanh) {OP-10} - Hyperbolic Tangent Operator
 
 
-vector (21 symbols):
+vector (24 symbols):
 	Indexing (#) {OP-12} - Array indexing operation implemented as a binary operator
 	Dot (.) {OP-10} '·' - Dot product of two arrays; lengths of arrays must match
 	Range (..) {OP-12} - Array range operation implemented as a binary operator
 	Append (APPEND) {FUN} - Append a series of arrays into one long array
+	Array (ARRAY) {FUN} - Collect values into array
 	Chebyshev (CHEBYSHEV) {FUN} - Apply Vandermonde matrix to solve for Chebyshev interpolation polynomial as curve of best fit
+	Concat (CONCAT) {FUN} - Append a series of arrays into one long array
 	Dot (DOT) {FUN} - Dot product of two arrays; lengths of arrays must match
 	Dyadic (DYADIC) {FUN} - Compute dyadic product of 2 arrays
 	Fitexp (FITEXP) {FUN} - Apply non-linear (logarithmic) regression to find curve of best fit
@@ -546,5 +564,7 @@ vector (21 symbols):
 	Pearson (PEARSON) {FUN} - Compute Pearson regression coefficient for X/Y data set pair
 	Pi (PI) {FUN} '?' - Product of items of an array; traditional capital PI notation
 	Summation (SIGMA) {FUN} '?' - Sum of items of an array; traditional capital SIGMA notation
+	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
+Lib TRIG config {OP=cos, POW=2, description=cos squared}
