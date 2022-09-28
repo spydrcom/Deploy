@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@69cad37
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@7e00a6ad
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@5bb09c75
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@7904ec79
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1001
 
@@ -100,7 +100,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-0ms
+5ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -568,3 +568,4 @@ vector (24 symbols):
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
 Lib TRIG config {OP=cos, POW=2, description=cos squared}
+Lib QUAD config {method=TSQ, description=custom quadrature using TANH-SINH}
