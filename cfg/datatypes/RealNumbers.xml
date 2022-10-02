@@ -2,7 +2,7 @@
 
 
 	<SaveAs toBeCalled='CurrentVersion'>
-	<string>2022.1001</string>
+	<string>2022.1015</string>
 	</SaveAs>
 
 
@@ -154,6 +154,34 @@
 		<new class='FraculusModules' />
 	</call>
 
+
+	<!--
+			symbols holding constants used by libraries
+	  -->
+
+	<call	object='symbolTable'
+			method='addConstant'>
+		<string>ASQ_FACTORY</string>
+		<string>net.myorb.spline.ASQFactory</string>
+	</call>
+
+	<call	object='symbolTable' 
+			method='addConstant'>
+		<string>CUBIC_SPLINE_FACTORY</string>
+		<string>net.myorb.spline.CubicSplineFactory</string>
+	</call>
+
+	<call	object='symbolTable'
+			method='addConstant'>
+		<string>CHEBYSHEV_SPLINE_FACTORY</string>
+		<string>net.myorb.spline.ChebyshevSplineFactory</string>
+	</call>
+
+	<call	object='symbolTable'
+			method='addConstant'>
+		<string>CHEBYSHEV_NODES_FACTORY</string>
+		<string>net.myorb.spline.ChebyshevNodesFactory</string>
+	</call>
 
 
 	<!--
