@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@2b71f44a
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@30c8bd39
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@55eb478e
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@682e67c5
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1015
 
@@ -107,7 +107,7 @@ Library: power
 
 Library: anaconda
 Anaconda services expected on LOCALHOST:8080
-[[-0.045366852011856466, 0.07919098032184874]]
+Anaconda services are not currently available
 omega0  (Omega)  to render as ?
 psi0  (Polygamma)  to render as ?
 psi1  (Polygamma)  to render as ?
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-6ms
+0ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -165,8 +165,10 @@ LegendBuilder: net.myorb.charting.PlotLegend
 MasterCfg: net.myorb.math.libraries.CmplxLibrary
 Operator: net.myorb.calctools.symbols.Operator
 PrettyPrinter: net.myorb.math.expressions.PrettyPrinter
+QuadMaster: net.myorb.math.computational.integration.Quadrature
 Renderer: net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib
 Value: net.myorb.calctools.symbols.Value
+WattenModules: net.myorb.watten.modules.Selection
 
 algebraic (12 symbols):
 	PlusMinus (+|-) {OP-7} - Plus or Minus operator
@@ -186,7 +188,7 @@ algebraic (12 symbols):
 anaconda (8 symbols):
 	Gamma (Gamma) {FUN} - Gamma function
 	Polylog (Li1) {FUN} - Jonquiere polylog function
-	Eta (eta) {FUN} '?' - Dirichlet Eta function
+	Eta (eta) {FUN} '?' - Dedekind Eta modular form
 	Omega (omega0) {FUN} '?' - Lambert W (omega) function
 	Polylog (polylog) {FUN}  <mpmath> - Jonquiere polylog function
 	Polygamma (psi0) {FUN} '?' - Digamma (psi0) function
@@ -471,7 +473,7 @@ matrix_linalg (9 symbols):
 	Vc31 (VC31) {FUN} - Solve LUx=b using VC31LU to produce Chebyshev spline for function values
 
 
-mpmath (10 symbols):
+mpmath (11 symbols):
 	SiegelTheta (THETA) {OP-10}  * - Siegel THETA
 	Corless (cp) {FUN}  * - Corless function
 	Digamma (digamma) {OP-10} - Digamma
@@ -482,6 +484,7 @@ mpmath (10 symbols):
 	Polygamma (polygamma) {FUN} - Polygamma function
 	Polylog (polylog) {FUN}  >anaconda<  * - Jonquiere Polylog function
 	Trigamma (trigamma) {OP-10} - Trigamma
+	Zeta (watten) {OP-0} - Watten Zeta function
 
 mpmathselected: Omega Polygamma
 
@@ -619,5 +622,5 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-Lib SPLINE config {description=custom spline generator using CPC}
-Lib SPLINE config {factory=net.myorb.spline.ChebyshevNodesFactory, description=custom spline generator using CPC}
+Lib QUAD config {method=WATTEN, description=custom quadrature using Watten}
+Lib QUAD config {sigma=5, hi=1, lo=1.0E-10, method=WATTEN, multiple=8, description=custom quadrature using Watten}
