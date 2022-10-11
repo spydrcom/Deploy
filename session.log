@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@55eb478e
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@682e67c5
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@5fa1824c
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@7cfe1ff2
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1015
 
@@ -107,7 +107,7 @@ Library: power
 
 Library: anaconda
 Anaconda services expected on LOCALHOST:8080
-Anaconda services are not currently available
+[[-0.045366852011856466, 0.07919098032184874]]
 omega0  (Omega)  to render as ?
 psi0  (Polygamma)  to render as ?
 psi1  (Polygamma)  to render as ?
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-0ms
+10ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
