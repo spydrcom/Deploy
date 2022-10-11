@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@5fa1824c
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@7cfe1ff2
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@7cfe1ff2
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@72838dd2
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1015
 
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-10ms
+9ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -624,3 +624,5 @@ vector (24 symbols):
 
 Lib QUAD config {method=WATTEN, description=custom quadrature using Watten}
 Lib QUAD config {sigma=5, hi=1, lo=1.0E-10, method=WATTEN, multiple=8, description=custom quadrature using Watten}
+Lib QUAD config {sigma=5, hi=1, lo=1.0E-10, method=WATTEN, multiple=8, description=custom quadrature using Watten}
+Lib QUAD config {sigma=5, hi=1, lo=1.0E-10, method=WATTEN, multiple=14.1, description=custom quadrature using Watten}
