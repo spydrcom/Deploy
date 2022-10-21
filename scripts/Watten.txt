@@ -1,5 +1,4 @@
 
-
 //* Watten test
 
 
@@ -16,13 +15,15 @@ instance WQuad QUAD
 !! I(z) = fc(z) + i * fs(z)
 
 !! mu(s) = 2 ^ (1 - s)
-!! mus(z) = mu(z) * (1 - mu(z)) * Gamma(z+1)
+!! mus(z) = mu(z) * (1 - mu(z)) * GAMMA(z+1)
 !! Z(z) = I(z) / mus(z)
 
 
 !! ZZ (x) = Z (0.5 + i*x)
-plotri  ZZ  [ 2 < x < 6 <> 0.1 ]
 
+plotri  ZZ  [ 10 < x < 15 <> 0.2 ]
+
+calc ZZ 5
 
 !! ZT (x) = zeta  (0.5 + i*x)
 plotri  ZT  [ 2 < x < 6 <> 0.1 ]
