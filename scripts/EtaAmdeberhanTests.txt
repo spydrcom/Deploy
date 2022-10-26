@@ -10,7 +10,8 @@ LIBRARY WATTEN net.myorb.mpmath.functions.zeta.Watten
 
 calc WZ( 0.5 + 14.137*i )
 
-plotri WZC [ 10 < x < 15 <> 0.1 ] 
+// plot useful range
+plotri WZC [ 2 < x < 16 <> 0.1 ] 
 
 
 
@@ -23,6 +24,20 @@ calc I ( 0.5 + i*5 )
 calc IC 5
 
 plotri IC [ 5 < x < 8 <> 0.1 ] 
+
+
+// spline class also exports zeta
+!+ Z (x) = SPLINE.zeta
+
+// zeta on critical path
+!! ZC(x) = Z ( 0.5 + i*x )
+
+// test function
+calc ZC 5
+
+// plot useful range
+plotri ZC [ 2 < x < 16 <> 0.1 ] 
+
 
 
 

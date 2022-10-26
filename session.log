@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@8b2d80
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@31f2c870
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@79a20b25
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@56ed72a4
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2022.1015
+2022.1101
 
 Menu Script Path: cfg/gui/ComplexMenuBar.xml
 
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-4ms
+5ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -156,7 +156,7 @@ Command: net.myorb.calctools.symbols.Command
 ComplexClmath: net.myorb.math.expressions.algorithms.CLmathComplexImplementations
 ComplexLibrary: net.myorb.math.complexnumbers.ComplexLibrary
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2022.1015
+CurrentVersion: 2022.1101
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 Function: net.myorb.calctools.symbols.Function
@@ -197,7 +197,7 @@ anaconda (8 symbols):
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2022.1015' * - software development version
+	Status (VERSION) {CON} '2022.1101' * - software development version
 
 
 arithmetic (7 symbols):
