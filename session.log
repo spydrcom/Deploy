@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@409a0400
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@726dddc
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@79a20b25
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@56ed72a4
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1101
 
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-28ms
+6ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -164,9 +164,11 @@ LIBRARIAN: net.myorb.math.expressions.symbols.LibraryManager
 LegendBuilder: net.myorb.charting.PlotLegend
 MasterCfg: net.myorb.math.libraries.CmplxLibrary
 Operator: net.myorb.calctools.symbols.Operator
+PolylogMaster: net.myorb.math.computational.PolylogQuadrature
 PrettyPrinter: net.myorb.math.expressions.PrettyPrinter
 QuadMaster: net.myorb.math.computational.integration.Quadrature
 Renderer: net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib
+VCNAlgorithms: net.myorb.spline.algorithms.SplineQuadratureFunctionality
 Value: net.myorb.calctools.symbols.Value
 WattenModules: net.myorb.watten.modules.Selection
 
@@ -622,3 +624,4 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
+Init net.myorb.math.specialfunctions.polylog.Pi config {named=PZ}
