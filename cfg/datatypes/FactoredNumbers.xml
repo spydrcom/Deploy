@@ -2,7 +2,7 @@
 
 
 	<SaveAs toBeCalled='CurrentVersion'>
-	<string>2022.1101</string>
+	<string>2022.1115</string>
 	</SaveAs>
 
 
@@ -123,6 +123,14 @@
 	<SaveAs toBeCalled='power' > <new package='CalctoolsLibs' name='RealOps' /> </SaveAs>
 	<call object='power' method='setName'>  <string>power</string>  </call>
 	<READ path='cfg/PowerLib.xml' using='algorithms power symbolTable' />
+
+
+	<!-- Factorization specific operations (many as overrides of real operators) -->
+
+	<!-- read script to generate symbols for factored operators -->
+	<SaveAs toBeCalled='factored' > <new package='CalctoolsLibs' name='FactoredOps' /> </SaveAs>
+	<call object='factored' method='setName'>  <string>factored</string>  </call>
+	<READ path='cfg/FactoredLib.xml' using='environment factored symbolTable' />
 
 
 	<ExportAll />		<!-- export for display-->
