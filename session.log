@@ -5,13 +5,13 @@ Sieve Of Eratosthenes used for prime generation
 Algorithm BINARY SQRT will be used for prime range selection
 Total primes recognized 348513
 ---
-1500ms
+967ms
 ---
 
 Library: application
-net.myorb.math.libraries.FactorizationLibrary@34bfd655
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@336e6266
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@387f1e71
+net.myorb.math.libraries.FactorizationLibrary@24fa03a
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@52acd371
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@668d6498
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1115
 
@@ -496,4 +496,5 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-Init net.myorb.math.primenumbers.PowerLibrary config {op=LN, named=ln}
+MAT(2,1)
+MAT(2,2)
