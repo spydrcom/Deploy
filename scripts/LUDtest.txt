@@ -1,0 +1,56 @@
+
+
+//* test the in-line LUD function
+
+
+N = 10 ; ORDER = N + 1
+// Chebyshev points (forced symmetric) as prescribed in Approximation Theory
+symmetricPoints = CHEBPTS N
+
+
+// get T polynomials for N=10 (0..10 is 11 polynomials)
+FAMILY Chebyshev #10 First
+CALC T
+
+
+// build row vector arrays for given Tn
+!! eval ( Tn ) = ARRAY [ 0 <= i <= N ]   ( @|Tn (   symmetricPoints # i   )  )
+!! evalTn ( n ) = eval ( T#n ) 
+
+
+// construct matrix data as stacked vectors
+!! buildM (n) = STACK [ 0 <= j <= n ]  (  evalTn ( j )  )  ;  express buildM
+MT = buildM (N) ; M = TRANSPOSE (MT)
+PRETTYPRINT  M
+
+// LUD function sets output parameters
+L = MATRIX (ORDER, ORDER)
+U = MATRIX (ORDER, ORDER)
+
+// decompose M
+Pivot = LUD ( M, L, U )
+// vector returned is pivot sequence
+CALC Pivot
+
+// LU decomposition represented in upper and lower triangles
+PRETTYPRINT L
+PRETTYPRINT U
+
+
+// simple polynomial test
+!! f(x) = 2*x^3 - 3*x^2
+
+// get the solution vector
+b = ARRAY  [ 0 <= i < ORDER ]  (  f ( symmetricPoints # i )  )
+CALC b
+
+// LUXB solution
+CALC LUXB ( L, U, b, Pivot )
+
+// determinant
+CALC LUDDET M
+
+// inverse
+minv = LUDINV M
+PRETTYPRINT minv
+

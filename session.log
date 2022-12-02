@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4d2336a8
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@4c3e63af
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@37d643cf
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@34621729
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2022.1201
 
@@ -100,7 +100,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-12ms
+7ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -410,11 +410,14 @@ matrix_arithmetic (5 symbols):
 	Matrix (MATRIX) {FUN} - Construct matrix from array with dimensions
 
 
-matrix_linalg (11 symbols):
+matrix_linalg (14 symbols):
 	Eig (EIG) {FUN} - Compute Von Mises dominant eigen-pair
 	Evalspline (EVALSPLINE) {FUN} - Evaluate a VC31 spline function at specified parameter
 	Gaussian (GAUSSIAN) {FUN} - Solve linear equations with Gaussian elimination
 	Genknot (GENKNOT) {FUN} - Construct a zero knot for odd or even functions
+	LUD (LUD) {FUN} - Decompose specified matrix using LU algorithm
+	DET (LUDDET) {FUN} - Compute matrix determinant using LUD
+	INV (LUDINV) {FUN} - Compute matrix inverse using LUD
 	Luxb (LUXB) {FUN} - matrix,Solve LUx=b general case from assignment array=LUXB(L;U;b)
 	Pivot (PIVOT) {FUN} - Reorder a vector to a specified pattern
 	QRD (QRD) {FUN} - Decompose specified matrix using QR algorithm
@@ -444,11 +447,13 @@ pointer (2 symbols):
 	Deref (@|) {OP-9} - Pointer dereference
 
 
-polynomial_computation (13 symbols):
+polynomial_computation (15 symbols):
 	ArrayDer (ARRAYDER) {FUN} - Compute derivative of function described by array
 	ArrayInt (ARRAYINT) {FUN} - Compute integral of function described by array
 	ChebDer (CHEBDER) {FUN} - Compute derivative of Chebyshev T polynomial
+	ChebDomain (CHEBDOM) {FUN} - Compute domain across given number of Chebyshev points
 	ChebInterp (CHEBINTERP) {FUN} - Generate Chebyshev interpolation polynomial for function described by array
+	ChebPoints (CHEBPTS) {FUN} - Compute given number of Chebyshev points
 	ClenQuad (CLENQUAD) {FUN} - Compute integral of function described by Chebyshev polynomial
 	Conv (CONV) {FUN} - Compute product of polynomials
 	Deconv (DECONV) {FUN} - Compute quotient of polynomials
