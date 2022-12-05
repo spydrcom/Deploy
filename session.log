@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@2a2be219
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@3600e576
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@7e298e1
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@66420bad
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2022.1201
+2023.0101
 
 Menu Script Path: cfg/gui/RealMenuBar.xml
 
@@ -128,7 +128,7 @@ Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
 Command: net.myorb.calctools.symbols.Command
 ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2022.1201
+CurrentVersion: 2023.0101
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 FraculusModules: net.myorb.fraculus.modules.Selection
@@ -161,7 +161,7 @@ algebraic (12 symbols):
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2022.1201' * - software development version
+	Status (VERSION) {CON} '2023.0101' * - software development version
 
 
 arithmetic (7 symbols):
@@ -219,14 +219,15 @@ calculus (12 symbols):
 
 chartoptions: MeshPlotEdgeSize=50;ContourPlotEdgeSize=400
 
-clmath (5 symbols):
+clmath (6 symbols):
 	Gamma (GAMMA) {FUN} '?' - Lanczos Gamma function approximation
+	Field (GET) {FUN} - Get a component of a structure
 	EulerProduct (ep) {OP-10} - Euler Product function
 	Exp (exp) {FUN}  >power< - Euler exponential function
 	IncompleteGamma (gammainc) {FUN} - Incomplete Gamma function
 	Loggamma (loggamma) {FUN}  <mpmath> - Loggamma function
 
-clmathselected: Exp Loggamma Incgamma Gamma
+clmathselected: Exp Loggamma Incgamma Gamma Get
 
 clreal (8 symbols):
 	AiryAi (Ai) {FUN} - Airy Ai function
@@ -410,7 +411,8 @@ matrix_arithmetic (5 symbols):
 	Matrix (MATRIX) {FUN} - Construct matrix from array with dimensions
 
 
-matrix_linalg (14 symbols):
+matrix_linalg (16 symbols):
+	Decompose (DECOMPOSE) {FUN} - Decompose a matrix using a linear algebra library instance
 	Eig (EIG) {FUN} - Compute Von Mises dominant eigen-pair
 	Evalspline (EVALSPLINE) {FUN} - Evaluate a VC31 spline function at specified parameter
 	Gaussian (GAUSSIAN) {FUN} - Solve linear equations with Gaussian elimination
@@ -422,6 +424,7 @@ matrix_linalg (14 symbols):
 	Pivot (PIVOT) {FUN} - Reorder a vector to a specified pattern
 	QRD (QRD) {FUN} - Decompose specified matrix using QR algorithm
 	QRSolve (QRS) {FUN} - Compute solution to system given requested vector and QR decomposed matrix
+	SOE (SOE) {FUN} - Solve a system of equations using a linear algebra library instance
 	Solve (SOLVE) {FUN} - Solve linear equations with column substitution
 	Vanche (VANCHE) {FUN} - Construct Vandermonde matrix for a Chebyshev interpolation
 	Vc31 (VC31) {FUN} - Solve LUx=b using VC31LU to produce Chebyshev spline for function values
@@ -580,3 +583,10 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
+Lib LINALG config {description=Selected solution for systems of equations}
+Lib LINALG config {solution=net.myorb.math.linalg.CholeskySolution, description=Selected solution for systems of equations}
+Solution built: net.myorb.math.linalg.CholeskySolution
+Lib LINALG config {solution=net.myorb.math.linalg.CholeskySolution, description=Selected solution for systems of equations}
+Lib LINALG config {solution=net.myorb.math.linalg.CholeskySolution, description=Selected solution for systems of equations}
+Lib LINALG config {trace=0, solution=net.myorb.math.linalg.CholeskySolution, description=Selected solution for systems of equations}
+Solution built: net.myorb.math.linalg.CholeskySolution
