@@ -2,7 +2,7 @@
 
 
 	<SaveAs toBeCalled='CurrentVersion'>
-	<string>2022.1201</string>
+	<string>2023.0101</string>
 	</SaveAs>
 
 
@@ -126,6 +126,12 @@
 	<SaveAs toBeCalled='power' > <new package='CalctoolsLibs' name='RealOps' /> </SaveAs>
 	<call object='power' method='setName'>  <string>power</string>  </call>
 	<READ path='cfg/PowerLib.xml' using='algorithms power symbolTable' />
+
+
+	<!-- configure operators and functions from CalcLib Math Library-->
+	<SaveAs toBeCalled='clmathselected' > <string>Get Store Load</string> </SaveAs>
+	<SaveAs toBeCalled='algorithms' > <new package='Algorithms' name='CLmathFactoredImplementations' using='environment' /> </SaveAs>
+	<READ path='cfg/libraries/ClMathLib.xml' using='environment algorithms symbolTable clmathselected' />
 
 
 	<!-- Factorization specific operations (many as overrides of real operators) -->
