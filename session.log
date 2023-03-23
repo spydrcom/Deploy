@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@647aedb3
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@6a344fc6
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@6d2e56f9
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@18c3c9e4
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0201
 
@@ -100,7 +100,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-12ms
+10ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -585,7 +585,3 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-Lib SPLINE config {description=custom spline generator using CPC}
-Lib SPLINE config {factory=net.myorb.spline.ChebyshevSplineFactory, description=custom spline generator using CPC}
-Lib SPLINE config {factory=net.myorb.spline.ChebyshevSplineFactory, trace=0, description=custom spline generator using CPC}
-Lib QUAD config {method=TSQ, description=custom quadrature using TANH-SINH}
