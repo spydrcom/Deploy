@@ -3,15 +3,11 @@
 //* polylog function Li study
 
 
-!! Li (s, z) = 1/GAMMA(s) * INTEGRAL [ 0 <= t <= INFINITY ] ( t^(s-1) / ( exp(t)/z - 1 ) * <*> t )
+Catalan = 0.9159635942012183
+
+// !! Li (s, z) = 1/GAMMA(s) * INTEGRAL [ 0 <= t <= INFINITY ] ( t^(s-1) / ( exp(t)/z - 1 ) * <*> t )
+!! Li (s, z) = 1/GAMMA(s) * INTEGRAL [ 0 <= t <= INFINITY ] ( z * t^(s-1) / ( exp(t) - z ) * <*> t )
 RENDERF Li
-
-!! I (s, z, t) = t^(s-1) / ( exp(t)/z - 1 )
-
-order = 2
-parameter = 0.5 + 5*i
-!! It (t) = I ( order, parameter, t )
-plotri It [ 0 <= x <= 50 ]
 
 
 // imported from SpecialFunctions package
@@ -22,27 +18,22 @@ init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li_2" s "-2"
 init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li_3" s "-3"
 init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li_4" s "-4"
 
+
+// demonstrate most simple precision sample
 calc Li1 0.5 - ln 2
 
+// plot of negative orders
 graph LIM 5  [ -8 <= x < 1 <> 0.05 ] ( Li0 x, Li1 x, Li_1 x, Li_2 x, Li_3 x, Li_4 x )
 
-!! LiCrit (x) = Li_4 ( 0.5 + i*x )
-plotri  LiCrit [ 0 <= x <= 2 <> 0.01]
-
-
 // positive orders
-init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li2" s "2" terms "500"
+init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li2" s "2" terms "50"
 init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li3" s "3" terms "50"
 
+!! chi2(z) = ( Li2(z) - Li2(-z) ) / 2
 
 graph LIM 5  [ -1 <= x <= 1 <> 0.01 ] ( Li2 x, Li3 x )
 // plot of the negative analytic continuation present in Li2
 graph LIM 5  [ -3 <= x < 1 <> 0.01 ] ( Li2 x )
-
-// Re/Im plot
-!! Li2z (z) = Li2 (z)
-// plot of the complex positive continuation
-plotri Li2z [ 1 < x < 5 <> 0.01 ]
 
 
 // verify calculation of known values
@@ -57,7 +48,9 @@ calc pi^2/12 - (ln 2)^2 / 2
 // 0.5822405264650125 0590265632015968
 // 0.5822405264650125
 
-calc Li2 0.99
+init "net.myorb.math.specialfunctions.polylog.Jonquiere" named "Li2HP" s "2" terms "5000" enforced "TRUE"
+
+calc Li2HP 0.99
 //      1.58862 35252038527		;	 500 iterations
 //      1.5886254480763 697		;	5000 iterations
 // mpf('1.5886254480763 753')	;	calculated with Anaconda
@@ -67,30 +60,11 @@ calc pi^2/6
 // 1.644934066848226 2
 // 1.644934066848226 4
 
-calc Li2 1.1
-//          (1.961999101305568 2         -0.299425760685589 46*i)			;	500 iterations
-// mpc(real='1.961999101305568 9', imag='-0.299425760685589 51')		;	calculated with Anaconda
-
-calc Li2 2
-calc pi^2 / 4 - i*pi*ln 2
-// (2.4674011002723395 - 2.177586090303602*i)
-// (2.4674011002723395 - 2.177586090303602*i)
-
 
 // phi as parameter
 phi = ( sqrt 5 + 1 ) / 2
 calc phi
 
-
-calc Li2 phi
-calc 11/15 * pi^2 +  (ln (-1/phi))^2 / 2
-// (2.4186901038761 137 - 1.511771534427787*i)
-// (2.4186901038761 35  - 1.511771534427787*i)
-
-calc Li2 (phi^2)
-calc -11/15*pi^2 - (ln (-phi))^2
-// (2.400329686379968 - 3.023543068855574*i)
-// (2.400329686379968 - 3.023543068855574*i)
 
 calc Li2 (1/phi)
 calc pi^2/10 - (ln phi)^2
@@ -119,4 +93,105 @@ calc - pi^2 / 10 - (ln phi)^2
 calc Li2 (-phi^2)
 // mpf('-1.7574528644562959')	; verified with Anaconda
 // -1.75745286445629 68
+
+
+calc Li2HP 1.1
+// parameter > 1 fails to converge, analytic continuation works
+//          (1.961999101305568 2         -0.299425760685589 46*i)			;	500 iterations
+// mpc(real='1.961999101305568 9', imag='-0.299425760685589 51')		;	calculated with Anaconda
+
+
+requires complex
+
+
+!! I (s, z, t) = z * t^(s-1) / ( exp(t) - z )
+
+order = 2
+parameter = 0.5 + 5*i
+// sample of Li integrand
+!! It (t) = I ( order, parameter, t )
+plotri It [ 0 <= x <= 50 ]
+
+// RI plot of crit section
+!! LiCrit (x) = Li_4 ( 0.5 + i*x )
+plotri  LiCrit [ 0 <= x <= 2 <> 0.01]
+
+
+// !! chi[v](z) = ( Li[v](z) - Li[v](-z) ) / 2
+//              =   Li[v](z) - 2^(-v) * Li[v](z^2)
+
+!! Ti2(z) = ( Li2(i*z) - Li2(-i*z) ) / (2*i)
+
+// !! Ti2(z) = -i * chi2(i*z)
+// !! Li2(i*z) = Li2(-z^2)/4 + i*Ti2(z)
+// !! Li2(i*z) = Li2(-z^2)/4 + chi2(i*z)
+
+
+calc chi2(phi-1)
+calc pi^2/12 - 3*(ln(phi)^2)/4
+// 0.64879341799 1217
+// 0.64879341799 4566
+
+calc -i * chi2 (i)
+// 0.9159635942012183
+// Catalan's constant
+// chi2(i) = i*K
+
+
+calc Li2 2
+calc pi^2 / 4 - i*pi*ln 2
+// (2.4674011002723395 - 2.177586090303602*i)
+// (2.4674011002723395 - 2.177586090303602*i)
+
+calc Li2 phi
+calc 11/15 * pi^2 +  (ln (-1/phi))^2 / 2
+// (2.4186901038761 137 - 1.511771534427787*i)
+// (2.4186901038761 35  - 1.511771534427787*i)
+
+calc Li2 (phi^2)
+calc -11/15*pi^2 - (ln (-phi))^2
+// (2.400329686379968 - 3.023543068855574*i)
+// (2.400329686379968 - 3.023543068855574*i)
+
+
+// Re/Im plot
+!! Li2z (z) = Li2 (z)
+// plot of the complex positive continuation
+plotri Li2z [ 1 < x < 5 <> 0.01 ]
+
+
+
+// beta based on Anaconda polylog
+
+
+calc Li2(i)
+calc polylog(2,0+!*1)
+// (-0.20561 47663559003 + 0.91596 35942012183*i)
+// (-0.20561 67583560283 + 0.91596 5594177219*i)
+
+calc Li2(-i)
+// (-0.20561476635590037 - 0.9159635942012183*i)
+calc (Li2(i) - Li2(-i)) / (2*i)
+// 0.9159635942012183
+calc Ti2(1)
+
+calc ( polylog(2,0+!*1) - polylog(2,0-!*1) ) / 0+!*2
+// 0.915965594177219
+
+
+// simple polylog computations
+!! beta(s) = i/2 * (polylog(s,-i) - polylog(s,i))
+// full study found in CatalanBeta.txt
+
+beta_1 = beta(1)
+beta_2 = beta(2)
+beta_3 = beta(3)
+
+beta_1_error = beta_1 - pi/4
+beta_2_error = beta_2 - Catalan
+beta_3_error = beta_3 - pi^3/32
+
+prettyprint beta_1_error
+prettyprint beta_2_error
+prettyprint beta_3_error
 

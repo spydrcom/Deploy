@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@6d2e56f9
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@18c3c9e4
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4502f7e2
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@17621b69
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2023.0201
+2023.0401
 
 Menu Script Path: cfg/gui/RealMenuBar.xml
 
@@ -100,7 +100,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-10ms
+14ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -128,7 +128,7 @@ Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
 Command: net.myorb.calctools.symbols.Command
 ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2023.0201
+CurrentVersion: 2023.0401
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 FraculusModules: net.myorb.fraculus.modules.Selection
@@ -161,7 +161,7 @@ algebraic (12 symbols):
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2023.0201' * - software development version
+	Status (VERSION) {CON} '2023.0401' * - software development version
 
 
 arithmetic (7 symbols):
@@ -279,8 +279,9 @@ commands_diffeq (4 symbols):
 	Tdes (TDES) {KEY} - Run error test of differential equation solution
 
 
-commands_features (8 symbols):
+commands_features (9 symbols):
 	Dct (DCT) {KEY} - Apply Discrete Cosine Tranform to function
+	Expand (EXPAND) {KEY} - Polynomial algebriac series expansion
 	Mandelbrot (MANDELBROT) {KEY} - Display a plot of the Mandelbrot set
 	MaxMin (MAXMINOF) {KEY} - Find Max/Min of function near specified approximation
 	Polynomial (POLYNOMIAL) {KEY} - Analyze a polynomial and tabulate key points
@@ -295,7 +296,7 @@ commands_matrix (2 symbols):
 	Import (IMPORT) {KEY} - Import data from a file into specified matrix
 
 
-commands_plotting (14 symbols):
+commands_plotting (15 symbols):
 	Chart (CHART) {KEY} - Display a chart for a set of symbols
 	Derive (DERIVE) {KEY} - Plot derivatives of a polynomial
 	Entitled (ENTITLED) {KEY} - Change the title of the last frame displayed
@@ -310,6 +311,7 @@ commands_plotting (14 symbols):
 	Scatter (SCATTER) {KEY} - Produce an X/Y scatter plot
 	SetContour (SETCONTOUR) {KEY} - Set color scheme manager for contour plots
 	Comparison (SIDEBYSIDE) {KEY} - Produce a side-by-side plot comparison
+	Tabulate (TABULATE) {KEY} - Display a table of arrays of data points
 
 
 commands_primitive (23 symbols):

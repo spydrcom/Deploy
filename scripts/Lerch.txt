@@ -1,0 +1,98 @@
+
+
+//* Lerch transcendent tests
+
+
+INFINITY = 500
+
+RENDER "Identities of the Lerch transcendent PHI function" CENTER red
+
+!! PHI (z,s,alpha) = 1/GAMMA (s) * INTEGRAL [0 <= t <= INFINITY] ( t^(s-1) / ( exp(alpha*t) * (1 - z*exp(-t)) ) * <*> t ) ; RENDERF PHI
+RENDER "The PHI function as an integral" TOP 
+
+!! PHI (z,s,a) = SIGMA [0 <= k <= INFINITY] (z^k/(k+a)^s) ; RENDERF PHI
+RENDER "The PHI function as an infinite series" TOP 
+
+!! zeta (lambda,s,a) = PHI ( exp (2*i*pi*lambda), s, alpha)  ; RENDERF zeta
+RENDER "The Lerch zeta function" TOP 
+
+!! zeta (s,alpha) = PHI (1,s,alpha) ; RENDERF zeta
+RENDER "The Hurwitz zeta function" TOP 
+
+!! zeta (s) = PHI (1,s,1) ; RENDERF zeta
+RENDER "The Riemann zeta function" TOP 
+
+!! PSI (n,alpha) = (-1)^(n+1) * PHI (1,n+1,alpha) * n! ; RENDERF PSI
+RENDER "The Polygamma function" TOP 
+
+!! chi(s,z) = 2^(-s) * PHI (z^2,s,1/2) * z ; RENDERF chi
+RENDER "The Legendre chi function" TOP 
+
+!! eta(s) = PHI (-1,s,1) ; RENDERF eta
+RENDER "The Dirichlet eta function" TOP 
+
+!! beta(s) = 2^(-s) * PHI (-1,s,1/2) ; RENDERF beta
+RENDER "The Dirichlet beta function" TOP 
+
+!! Li(s,z) = z * PHI (z,s,1) ; RENDERF Li
+RENDER "The polylogarithm Li function" TOP 
+
+!! Ti(s,z) = z / 4 * PHI (-z^2,s,1/2)  ; RENDERF Ti
+RENDER "The inverse tangent integral function" TOP 
+
+// simple RI plot
+!! Ltest (s) = Li (2, 0.5+i*s)
+plotri  Ltest  [ -0.9 < x < 0.9 <> 0.01 ] 
+
+
+
+// transcendent function test
+init "net.myorb.math.specialfunctions.Lerch" named "Li2" target "Li" order "2" enforced "TRUE" series "TRUE" terms "500"
+init "net.myorb.math.specialfunctions.Lerch" named "Ti2" target "Ti" order "2" enforced "TRUE" series "TRUE" terms "500"
+
+calc Ti2 1
+Catalan = 0.9159635942012183
+calc Catalan - Ti2 1
+
+calc Li2 0.5
+expected = pi^2/12 - (ln 2)^2 / 2
+calc expected - Li2 0.5
+// 0.5822405264650125
+calc expected
+
+
+// use MAPZ to show Li1 transforms
+init "net.myorb.math.specialfunctions.Lerch" named "Li1" target "Li" order "1" enforced "TRUE" series "TRUE" terms "100"
+init "net.myorb.math.expressions.charting.multidimensional.Zplot" named "HIDEF" filter "TRUE" slices "24" segments "70" portions "50" 
+MAPZ Li1 HIDEF
+
+
+// examine the shape of integrand functions
+LIBRARY LT  net.myorb.math.specialfunctions.Lerch
+
+!+ PHIINT (z,s,a,t) = LT.integrand (z,s,a,t)
+!! phitest(z,s,a,t) = PHIINT (z,s,a,t)
+
+// verify call works
+calc phitest ( 0.5, 2, 1, 2 )
+
+// plot showing integrand shape - real version
+graph [ 0 < x < 10 <> 0.01 ] ( phitest ( -0.1, 2, 1, x ))
+
+// plot showing integrand shape - complex version
+!! phicomplex (t) = phitest ( -0.1-!*2, 2, 1, t )
+plotri  phicomplex  [ 0 < x < 10 <> 0.01 ] 
+
+// plot showing integrand shape - complex version of PSI
+!! PSIid (n, alpha, t) = (-1)^(n+1) * phitest (1, n+1, alpha, t) * n!
+!! PSItest (t) = PSIid (0, 0.5, t)
+
+plotri  PSItest  [ 0.2 < x < 10 <> 0.01 ] 
+
+
+// plot showing integrand shape - complex version of beta
+!! betaid (s, t) = 2^(-s) * phitest (-1, s, 1/2, t) * n!
+!! betatest (t) = betaid (0.5, t)
+
+plotri  betatest  [ 0.1 < x < 10 <> 0.01 ] 
+
