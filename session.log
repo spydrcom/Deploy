@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@26a084b7
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@5d21d428
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@2d4501c7
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@356607a4
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -100,7 +100,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-10ms
+0ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -457,7 +457,7 @@ pointer (2 symbols):
 	Deref (@|) {OP-9} - Pointer dereference
 
 
-polynomial_computation (15 symbols):
+polynomial_computation (17 symbols):
 	ArrayDer (ARRAYDER) {FUN} - Compute derivative of function described by array
 	ArrayInt (ARRAYINT) {FUN} - Compute integral of function described by array
 	ChebDer (CHEBDER) {FUN} - Compute derivative of Chebyshev T polynomial
@@ -469,9 +469,11 @@ polynomial_computation (15 symbols):
 	Deconv (DECONV) {FUN} - Compute quotient of polynomials
 	GaussQuad (GAUSSQUAD) {FUN} - Apply Gauss Quadrature to build an integral of an interpolated Lagrange polynomial
 	Interpolate (INTERPOLATE) {FUN} - Generate Lagrange interpolation polynomial for function described by array
+	PolyAdd (POLYADD) {FUN} - Compute sum of two polynomials
 	PolyDer (POLYDER) {FUN} - Compute derivative of polynomial
 	PolyHg (POLYHG) {FUN} - Compute coefficients of hyper geometric polynomial
 	PolyInt (POLYINT) {FUN} - Compute integral of polynomial
+	PolyMul (POLYMUL) {FUN} - Compute product of two polynomials
 	Roots (ROOTS) {FUN} - Compute roots of polynomial
 
 
