@@ -7,7 +7,7 @@
 // POLYGEN FUNCTION_NAME PARAMETER_NAME COEFFICIENT_NAME POLYNOMIAL_DEGREE
 POLYGEN f x c 7
 
-// Chebyshev equation
+// Chebyshev differential equation
 !! Chebyshev(z) = (1-z^2) * f''(z) - z * f'(z) + n^2 * f(z)
 
 RENDERF Chebyshev
@@ -25,10 +25,16 @@ SOLVE Chebyshev f T_5 n 5 c_0   0  c_1   5
 SOLVE Chebyshev f T_6 n 6 c_0 "-1" c_1   0
 
 SHOSOL Chebyshev
+SHOSOL Chebyshev T_5
 
 
-POLYGEN P x p 9
-// Legendre equation
+// Legendre and Laguerre unit tests demonstrating use of NamingConventions
+//  and Initial Conditions algorithm implementations configured in code base
+// the # Legendre redirection causes processor lookup and use
+
+
+POLYGEN # Legendre 9
+// Legendre differential equation
 !! Legendre(x) = ( 1 - x ^ 2 ) * P'' ( x ) - 2 * x * P' ( x ) + n * ( n + 1 ) * P ( x ) 
 RENDERF Legendre  ;  EXPAND Legendre
 
@@ -39,27 +45,35 @@ RENDERF Legendre  ;  EXPAND Legendre
 SOLVE Legendre P P_4 n 4 p_1 0 p_0 "0.375"  
 SOLVE Legendre P P_6 n 6 p_1 0 p_0 "-0.3125"
 SOLVE Legendre P P_8 n 8 p_1 0 p_0 "0.2734375"
+SOLVE Legendre P P_50 n 5 mu 0 # "Legendre"
 
 SHOSOL Legendre
+SHOSOL Legendre P_50
 
 
-POLYGEN L x l 7
-// Laguerre equation
+POLYGEN # Laguerre 7
+// Laguerre differential equation
 !! Laguerre(x) = x * L'' ( x ) + (alpha + 1 - x) * L' ( x ) + n * L ( x ) 
 // l_0 = L_n(alpha)(0) = (n+alpha) ## n
 RENDERF Laguerre  ;  EXPAND Laguerre
 
-SOLVE Laguerre L L_4 n 4 l_0 1 alpha 0
-SOLVE Laguerre L L_5 n 5 l_0 1 alpha 0
-SOLVE Laguerre L L_6 n 6 l_0 1 alpha 0
-// NOTE: l_1 is not set !!!
+SOLVE Laguerre L L_4 n 4 alpha 0 # "Laguerre"
+SOLVE Laguerre L L_5 n 5 alpha 0 # "Laguerre"
+SOLVE Laguerre L L_6 n 6 alpha 0 # "Laguerre"
 
+// NOTE: l_1 is not set !!!
 // Laguerre is required to NOT SET l_1 to avoid solution degeneration
 SOLVE Laguerre L L_52 n 5 alpha 2 # "Laguerre"
 
+// polynomial terms have n! in denominator
+
 CALC L_4 * 4!
 CALC L_5 * 5!
+CALC L_52 * 5!
 CALC L_6 * 6!
 
+// all solutions will be displayed
+
 SHOSOL Laguerre
+SHOSOL Laguerre L_52
 
