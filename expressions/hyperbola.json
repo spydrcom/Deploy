@@ -1,11 +1,7 @@
 {
    "Name": "hyperbola",
-   "Parameters": 
-   [
-      "x"
-   ],
+   "Parameter": "x",
    "Description": "First quadrant hyperbola function ",
-   "Imports": null,
    "Expression": 
    {
       "OpName": "sqrt",

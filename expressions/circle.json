@@ -1,11 +1,7 @@
 {
    "Name": "circle",
-   "Parameters": 
-   [
-      "x"
-   ],
+   "Parameter": "x",
    "Description": "First quadrant circle function ",
-   "Imports": null,
    "Expression": 
    {
       "OpName": "sqrt",
