@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@2d1c543b
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@53588650
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@77c7f3be
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@29d43e9b
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-25ms
+20ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
