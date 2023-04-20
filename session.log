@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@77c7f3be
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@29d43e9b
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@f2f8b1b
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@19a310d2
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -134,7 +134,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-20ms
+7ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -384,10 +384,11 @@ commands_properties (5 symbols):
 	Pset (PSET) {KEY} - Set the value of a property
 
 
-commands_render (4 symbols):
+commands_render (5 symbols):
 	Render (RENDER) {KEY} - Format and display (pretty print) an equation using MathML
 	RenderDiffEq (RENDERD) {KEY} - Format and display (pretty print) a Differential Equation using MathML
 	RenderFunction (RENDERF) {KEY} - Format and display (pretty print) a function using MathML
+	RenderSeries (RENDERS) {KEY} - Format and display (pretty print) an expanded series using MathML
 	Select (SELECT) {KEY} - Select a render display to be shown and used for output of RENDER commands
 
 
