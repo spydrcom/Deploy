@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@f2f8b1b
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@19a310d2
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@360f6012
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@32341ade
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -53,6 +53,9 @@ Library: boolean-relational
 Library: calculus
 '  (Prime)  to render as ?
 ''  (DPrime)  to render as ?
+grad  (Grad)  to render as ?
+div  (Div)  to render as ?
+curl  (Curl)  to render as ?
 INTEGRALC  (Contour)  to render as ?
 INTEGRALS  (Integral)  to render as ?
 INTEGRALV  (Integral)  to render as ?
@@ -134,7 +137,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-7ms
+13ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -241,7 +244,7 @@ boolean_relational (8 symbols):
 	Ne (~=) {OP-9} - Not equal to
 
 
-calculus (12 symbols):
+calculus (15 symbols):
 	TrapQuad ($#) {OP-11} - Mark function call for Trapezoidal integral approximation
 	TrapAdjust ($%) {OP-11} - Mark function call for adjustment for brute force approximation
 	DCTQuad ($@) {OP-11} - Mark function call for Clenshaw-Curtis integral approximation
@@ -253,6 +256,9 @@ calculus (12 symbols):
 	Contour (INTEGRALC) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional contour integral notation
 	Integral (INTEGRALS) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional surface integral notation
 	Integral (INTEGRALV) {FUN} '?' - Sum of items of an array constructed based on delta terms; using traditional volume integral notation
+	Curl (curl) {OP-9} '?' - Curl operator
+	Div (div) {OP-9} '?' - Divergence  operator
+	Grad (grad) {OP-9} '?' - Gradient operator
 	Interval (||) {OP-11} - Mark function call for interval evaluation
 
 chartoptions: MeshPlotEdgeSize=50;ContourPlotEdgeSize=400
@@ -651,3 +657,21 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
+POINT [2.0, 2.0, 3.0]
+VEC OP grad
+TARGET F
+TYPE net.myorb.math.expressions.symbols.DefinedFunction
+BODY ( x ^ 2 + y - z , x - y , z - x ^ 2 ) 
+Parameter Point (2, 2, 3)
+POINT [2.0, 2.0, 3.0]
+VEC OP grad
+TARGET H
+TYPE net.myorb.math.expressions.symbols.DefinedFunction
+BODY ( V # 0 ^ 2 + V # 1 - V # 2 , V # 0 - V # 1 , V # 2 - V # 0 ^ 2 ) 
+Parameter Point [(2, 2, 3)]
+POINT [3.0, 4.0]
+VEC OP grad
+TARGET K
+TYPE net.myorb.math.expressions.symbols.DefinedFunction
+BODY 1 - c ^ 2 
+Parameter Point ((3 + 4*i))
