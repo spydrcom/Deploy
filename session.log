@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@360f6012
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@32341ade
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@4d1488d5
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@22aca1c1
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -137,7 +137,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-13ms
+20ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -657,21 +657,3 @@ vector (24 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-POINT [2.0, 2.0, 3.0]
-VEC OP grad
-TARGET F
-TYPE net.myorb.math.expressions.symbols.DefinedFunction
-BODY ( x ^ 2 + y - z , x - y , z - x ^ 2 ) 
-Parameter Point (2, 2, 3)
-POINT [2.0, 2.0, 3.0]
-VEC OP grad
-TARGET H
-TYPE net.myorb.math.expressions.symbols.DefinedFunction
-BODY ( V # 0 ^ 2 + V # 1 - V # 2 , V # 0 - V # 1 , V # 2 - V # 0 ^ 2 ) 
-Parameter Point [(2, 2, 3)]
-POINT [3.0, 4.0]
-VEC OP grad
-TARGET K
-TYPE net.myorb.math.expressions.symbols.DefinedFunction
-BODY 1 - c ^ 2 
-Parameter Point ((3 + 4*i))
