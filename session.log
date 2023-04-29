@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@1c51523b
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@7e70965f
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@191d009c
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@387a5a4b
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -72,10 +72,8 @@ Library: polynomial-evaluation
 
 Library: vector
 .  (Dot)  to render as ·
-Symbol Override Detected for '.' from library 'vector' by instance in 'vector'
-.  (Dot)  to render as *@*
-Symbol Override Detected for '.' from library 'vector' by instance in 'vector'
-.  (Dot)  to render as *%*
+*@*  (Dot)  to render as ·
+*%*  (Cross)  to render as ×
 SIGMA  (Summation)  to render as ?
 INTEGRAL  (Integral)  to render as ?
 SUMMATION  (Summation)  to render as ?
@@ -107,7 +105,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-8ms
+6ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -309,7 +307,7 @@ commands_matrix (2 symbols):
 	Import (IMPORT) {KEY} - Import data from a file into specified matrix
 
 
-commands_plotting (15 symbols):
+commands_plotting (16 symbols):
 	Chart (CHART) {KEY} - Display a chart for a set of symbols
 	Derive (DERIVE) {KEY} - Plot derivatives of a polynomial
 	Entitled (ENTITLED) {KEY} - Change the title of the last frame displayed
@@ -321,6 +319,7 @@ commands_plotting (15 symbols):
 	Plotl (PLOTL) {KEY} - Plot a specified range of lambda declared function(s)
 	Plotm (PLOTM) {KEY} - Display tabular plot with data taken from a matrix
 	Plott (PLOTT) {KEY} - Tabular plot with data taken from file
+	Plotv (PLOTV) {KEY} - Plot a specified 2D domain showing a projected vector field
 	Scatter (SCATTER) {KEY} - Produce an X/Y scatter plot
 	SetContour (SETCONTOUR) {KEY} - Set color scheme manager for contour plots
 	Comparison (SIDEBYSIDE) {KEY} - Produce a side-by-side plot comparison
@@ -579,9 +578,9 @@ trigpow (38 symbols):
 
 vector (26 symbols):
 	Indexing (#) {OP-12} - Array indexing operation implemented as a binary operator
-	Dot (.) {OP-10} '·'  <vector> - Dot product of two arrays; lengths of arrays must match
-	Dot (.) {OP-10} '*@*'  <vector>  >vector< - Dot product of two arrays; lengths of arrays must match
-	Dot (.) {OP-10} '*%*'  >vector< - Cross product of two arrays; lengths of arrays must match
+	Cross (*%*) {OP-10} '×' - Cross product of two arrays; lengths of arrays must match
+	Dot (*@*) {OP-10} '·' - Dot product of two arrays; lengths of arrays must match
+	Dot (.) {OP-10} '·' - Dot product of two arrays; lengths of arrays must match
 	Range (..) {OP-12} - Array range operation implemented as a binary operator
 	Append (APPEND) {FUN} - Append a series of arrays into one long array
 	Array (ARRAY) {FUN} - Collect values into array
@@ -607,3 +606,16 @@ vector (26 symbols):
 
 Lib DFDX config {symbol=P, function=B, variable=t, description=df/dx, run=dt, order=1}
 Lib DFDX config {symbol=P, function=E, variable=t, description=df/dx, run=dt, order=1}
+{ "op": "POST", "task": { "name": "@1010bc42", "started": 1682807683346 } }
+{ "op": "UPDATE", "task": { "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 29850, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 11520, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 8416, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 6160, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 4632, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 3540, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 2672, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 1884, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1208, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 584, "name": "@1010bc42", "started": 1682807683346, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 584, "name": "@1010bc42", "started": 1682807683346, "completed": 1682807689035, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }

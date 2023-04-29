@@ -1,4 +1,5 @@
 <PLOTS>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='QD' EquationProfile='QD(x, y)' AltEdgeSize='4.0' Yaxis='-2.0' EquationBody='div Q ( x , y ) ' PlotNumber='1000' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='-2.0'/>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='FD' EquationProfile='FD(x, y)' AltEdgeSize='4.0' Yaxis='0.0' EquationBody='div f ( x , y ) ' PlotNumber='1001' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='0.0'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='FD' EquationProfile='FD(x, y)' AltEdgeSize='4.0' Yaxis='0.0' EquationBody='div f ( x , y ) ' PlotNumber='1002' PointsSize='5' PointsPerAxis='200' Multiplier='100.0' PlotParent='-4' Xaxis='0.0'/>
 </PLOTS>
