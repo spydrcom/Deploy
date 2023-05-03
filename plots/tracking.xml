@@ -6,4 +6,7 @@
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='FM' EquationProfile='FM(x, y)' AltEdgeSize='4.0' Yaxis='1.0' EquationBody='grad f ( x , y ) ' PlotNumber='1004' PointsSize='5' PointsPerAxis='200' Multiplier='100.0' PlotParent='-4' Xaxis='1.0'/>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='FD' EquationProfile='FD(x, y)' AltEdgeSize='4.0' Yaxis='0.0' EquationBody='div f ( x , y ) ' PlotNumber='1005' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='0.0'/>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='f' EquationProfile='f(x, y)' AltEdgeSize='4.0' Yaxis='0.0' EquationBody='- ( cos ( x ) ^ 2 + cos ( y ) ^ 2 ) ^ 2 ' PlotNumber='1006' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='0.0'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='3.0' Title='FM' EquationProfile='FM(x, y)' AltEdgeSize='3.0' Yaxis='1.6' EquationBody='grad f ( x , y ) ' PlotNumber='1007' PointsSize='5' PointsPerAxis='200' Multiplier='100.0' PlotParent='-4' Xaxis='1.6'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='3.0' Title='FD' EquationProfile='FD(x, y)' AltEdgeSize='3.0' Yaxis='1.6' EquationBody='div f ( x , y ) ' PlotNumber='1008' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='1.6'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='3.0' Title='f' EquationProfile='f(x, y)' AltEdgeSize='3.0' Yaxis='1.6' EquationBody='- ( cos ( x ) ^ 2 + cos ( y ) ^ 2 ) ^ 2 ' PlotNumber='1009' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='1.6'/>
 </PLOTS>
