@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Imaginary Numbers domain - net.myorb.math.libraries.CmplxLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@107014f
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@6debd6cf
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@752d932d
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@73be6240
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0401
 
@@ -139,7 +139,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-0ms
+8ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -669,81 +669,120 @@ Lib BESSEL config {terms=20, kind=I, alpha=1/3, description=Bessel function I (+
 Bessel: I(a = 0.3333333333333333)
 Lib BESSEL config {terms=20, kind=K, alpha=1/3, description=Bessel function K (+1/3) in-line}
 Bessel: K(a = 0.3333333333333333)
-{ "op": "POST", "task": { "name": "@628d5534", "started": 1683157750627 } }
-{ "op": "UPDATE", "task": { "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 2 } }
-{ "op": "UPDATE", "task": { "estimate": 1470, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 1080, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 640, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 465, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 360, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 270, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 200, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 136, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 87, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 42, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 42, "name": "@628d5534", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157750627, "completed": 1683157751047, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@438edf54", "started": 1683157764884 } }
-{ "op": "UPDATE", "task": { "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 2 } }
-{ "op": "UPDATE", "task": { "estimate": 7350, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 1692, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 1092, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 742, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 555, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 405, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 293, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 204, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 128, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 61, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 61, "name": "@438edf54", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157764884, "completed": 1683157765481, "title": "T", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@55efb018", "started": 1683157778771 } }
-{ "op": "UPDATE", "task": { "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 2 } }
-{ "op": "UPDATE", "task": { "estimate": 441, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 387, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 272, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 217, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 180, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 246, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 180, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 123, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 77, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 36, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 36, "name": "@55efb018", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683157778771, "completed": 1683157779115, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@4c7428a8", "started": 1683157839195 } }
-{ "op": "UPDATE", "task": { "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 113629, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 28944, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 17920, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 12964, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 9912, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 7660, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 5808, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 4188, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 2696, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 1320, "name": "@4c7428a8", "started": 1683157839195, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 1320, "name": "@4c7428a8", "started": 1683157839195, "completed": 1683157852127, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@1ae67897", "started": 1683157880024 } }
-{ "op": "UPDATE", "task": { "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 42294, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 22464, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 18688, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 15792, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 13344, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 11040, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 8832, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 6720, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 4448, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 2224, "name": "@1ae67897", "started": 1683157880024, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 2224, "name": "@1ae67897", "started": 1683157880024, "completed": 1683157902229, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@1ae390bd", "started": 1683157923522 } }
-{ "op": "UPDATE", "task": { "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 8778, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 8208, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 6656, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 5600, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 4704, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 3680, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 2816, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 2064, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 1344, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 672, "name": "@1ae390bd", "started": 1683157923522, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 672, "name": "@1ae390bd", "started": 1683157923522, "completed": 1683157930152, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@50d8ee01", "started": 1683326101338 } }
+{ "op": "UPDATE", "task": { "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 2 } }
+{ "op": "UPDATE", "task": { "estimate": 3087, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 1062, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 696, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 512, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 394, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 305, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 227, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 159, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 101, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 48, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 48, "name": "@50d8ee01", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326101338, "completed": 1683326101805, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@558f7123", "started": 1683326109219 } }
+{ "op": "UPDATE", "task": { "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 29253, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 11772, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 8544, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 6860, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 5472, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 4420, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 3440, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 2508, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1640, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 808, "name": "@558f7123", "started": 1683326109219, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 808, "name": "@558f7123", "started": 1683326109219, "completed": 1683326117191, "title": "FM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@57848b55", "started": 1683326175356 } }
+{ "op": "UPDATE", "task": { "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 10693, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 7632, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 6400, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 5376, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 4512, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 3760, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 3008, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 2256, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1504, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 752, "name": "@57848b55", "started": 1683326175356, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 752, "name": "@57848b55", "started": 1683326175356, "completed": 1683326182840, "title": "f", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@21147cd7", "started": 1683326203169 } }
+{ "op": "UPDATE", "task": { "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 28728, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 25920, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 23040, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 20048, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 17088, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 14160, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 11264, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 8400, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 5600, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 2784, "name": "@21147cd7", "started": 1683326203169, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 2784, "name": "@21147cd7", "started": 1683326203169, "completed": 1683326231061, "title": "FD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@46ff91dd", "started": 1683326272271 } }
+{ "op": "UPDATE", "task": { "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 2 } }
+{ "op": "UPDATE", "task": { "estimate": 441, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 252, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 184, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 136, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 109, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 85, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 64, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 45, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 30, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 14, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 14, "name": "@46ff91dd", "description": "Serial 3D Plot", "producer": "SerialCalculationComputer", "started": 1683326272271, "completed": 1683326272414, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@2d090a7", "started": 1683326283121 } }
+{ "op": "UPDATE", "task": { "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 8358, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 6192, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 5440, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 4676, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 3936, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 3240, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 2608, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 1956, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1304, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 652, "name": "@2d090a7", "started": 1683326283121, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 652, "name": "@2d090a7", "started": 1683326283121, "completed": 1683326289645, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@5fbd9ae", "started": 1683326314485 } }
+{ "op": "UPDATE", "task": { "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 4577, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 4536, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 4576, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 4284, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 3624, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 2920, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 2256, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 1716, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1120, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 560, "name": "@5fbd9ae", "started": 1683326314485, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 560, "name": "@5fbd9ae", "started": 1683326314485, "completed": 1683326320085, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@32a85dd4", "started": 1683326352112 } }
+{ "op": "UPDATE", "task": { "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 18354, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 17280, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 15616, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 13440, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 11616, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 9760, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 7744, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 5856, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 3904, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 1968, "name": "@32a85dd4", "started": 1683326352112, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 1968, "name": "@32a85dd4", "started": 1683326352112, "completed": 1683326372009, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "POST", "task": { "name": "@1bffb309", "started": 1683326381335 } }
+{ "op": "UPDATE", "task": { "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 11970, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 7776, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 7040, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 6384, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 5088, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 3920, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 3008, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 2160, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 1408, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 672, "name": "@1bffb309", "started": 1683326381335, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 672, "name": "@1bffb309", "started": 1683326381335, "completed": 1683326387968, "title": "Q", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
