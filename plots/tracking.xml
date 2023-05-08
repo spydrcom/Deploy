@@ -16,4 +16,5 @@
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='QM' EquationProfile='QM(x, y)' AltEdgeSize='4.0' Yaxis='-2.0' EquationBody='grad Q ( x , y ) ' PlotNumber='1014' PointsSize='5' PointsPerAxis='200' Multiplier='100.0' PlotParent='-4' Xaxis='-2.0'/>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='QD' EquationProfile='QD(x, y)' AltEdgeSize='4.0' Yaxis='-2.0' EquationBody='div Q ( x , y ) ' PlotNumber='1015' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='-2.0'/>
  <PLOT TransformIdentity='EQN' EdgeSize='4.0' Title='Q' EquationProfile='Q(x, y)' AltEdgeSize='4.0' Yaxis='-2.0' EquationBody='x * exp ( - ( x ^ 2 + y ^ 2 ) ) ' PlotNumber='1016' PointsSize='3' PointsPerAxis='400' Multiplier='100.0' PlotParent='-4' Xaxis='-2.0'/>
+ <PLOT TransformIdentity='EQN' EdgeSize='3.0' Title='FL' EquationProfile='FL(x, y)' AltEdgeSize='3.0' Yaxis='1.6' EquationBody='laplace f ( x , y ) ' PlotNumber='1017' PointsSize='3' PointsPerAxis='400' Multiplier='20.0' PlotParent='-4' Xaxis='1.6'/>
 </PLOTS>

@@ -1,8 +1,8 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@3c87ea46
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@48d27d11
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@44262744
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@4905d564
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
 2023.0505
 
@@ -106,7 +106,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-8ms
+12ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -606,3 +606,16 @@ vector (26 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
+{ "op": "POST", "task": { "name": "@1ad89a30", "started": 1683586226419 } }
+{ "op": "UPDATE", "task": { "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
+{ "op": "UPDATE", "task": { "estimate": 459169, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
+{ "op": "UPDATE", "task": { "estimate": 63504, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
+{ "op": "UPDATE", "task": { "estimate": 45824, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
+{ "op": "UPDATE", "task": { "estimate": 36512, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
+{ "op": "UPDATE", "task": { "estimate": 29568, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
+{ "op": "UPDATE", "task": { "estimate": 23600, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
+{ "op": "UPDATE", "task": { "estimate": 18432, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
+{ "op": "UPDATE", "task": { "estimate": 13584, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
+{ "op": "UPDATE", "task": { "estimate": 8928, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
+{ "op": "UPDATE", "task": { "estimate": 4384, "name": "@1ad89a30", "started": 1683586226419, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
+{ "op": "CONCLUDE", "task": { "estimate": 4384, "name": "@1ad89a30", "started": 1683586226419, "completed": 1683586269995, "title": "FL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
