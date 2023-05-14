@@ -29,4 +29,7 @@
  <PLOT TransformIdentity='EQN' EdgeSize='3.0' Title='AiM' EquationProfile='AiM(x, y)' AltEdgeSize='3.0' Yaxis='-4.0' EquationBody='grad Ai ( x +!* y ) ' PlotNumber='1027' PointsSize='5' PointsPerAxis='200' Multiplier='1000.0' PlotParent='-4' Xaxis='-4.0'/>
  <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='0.0' Multiplier='1000.0' Title='EQN : (0.4117647409439087,3.7294118404388428) - 0.0' PlotParent='1000' Xaxis='0.4117647409439087' Yaxis='3.7294118404388428' PlotNumber='1028'/>
  <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='0.0' Multiplier='1000.0' Title='EQN : (0.4117647409439087,3.7294118404388428) - 0.0' PlotParent='1000' Xaxis='0.4117647409439087' Yaxis='3.7294118404388428' PlotNumber='1029'/>
+ <PLOT PointsSize='5' TransformIdentity='EQN' PointsPerAxis='200' EdgeSize='4.0' Multiplier='1000.0' Title='QM' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1030'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QD' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1031'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QL' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1032'/>
 </PLOTS>
