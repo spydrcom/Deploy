@@ -1,10 +1,10 @@
 
 Library: application
 Implementation of Real Numbers domain - net.myorb.math.libraries.DefaultLibrary
-net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@7dec4844
-net.myorb.math.expressions.charting.implementations.JfreeChartLib@4f4e40d7
+net.myorb.math.expressions.gui.rendering.implementations.JmtexRenderLib@73040c95
+net.myorb.math.expressions.charting.implementations.JfreeChartLib@7cb209b9
 Graphics parameter processing: MeshPlotEdgeSize=50; ContourPlotEdgeSize=400; 
-2023.0505
+2023.0601
 
 Menu Script Path: cfg/gui/RealMenuBar.xml
 
@@ -106,7 +106,7 @@ Sieve Of Eratosthenes (DEFAULT) used for prime generation
 Algorithm TABLE SCAN will be used for prime range selection
 Total primes recognized 1229
 ---
-11ms
+13ms
 ---
 Euler Product initialized, 1229 primes prepared as factors
 
@@ -134,7 +134,7 @@ Charting: net.myorb.math.expressions.charting.implementations.JfreeChartLib
 Command: net.myorb.calctools.symbols.Command
 ConfigMgrClass: net.myorb.math.expressions.algorithms.ConfigurationManager
 Constant: net.myorb.calctools.symbols.Constant
-CurrentVersion: 2023.0505
+CurrentVersion: 2023.0601
 DisplayGraphAtomic: net.myorb.math.expressions.charting.DisplayGraphAtomic
 DisplayIO: net.myorb.math.expressions.gui.DisplayIO
 FraculusModules: net.myorb.fraculus.modules.Selection
@@ -167,7 +167,7 @@ algebraic (12 symbols):
 
 
 application (1 symbol):
-	Status (VERSION) {CON} '2023.0505' * - software development version
+	Status (VERSION) {CON} '2023.0601' * - software development version
 
 
 arithmetic (8 symbols):
@@ -607,107 +607,3 @@ vector (26 symbols):
 	Stack (STACK) {FUN} - Append a series of arrays as rows into a matrix
 	Summation (SUMMATION) {FUN} '?' - Sum of items of an array; summation functionality using SIGMA notation
 
-{ "op": "POST", "task": { "name": "@49ffa20a", "started": 1684529814929 } }
-{ "op": "UPDATE", "task": { "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 65868, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 3825, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 3000, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 2450, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 2100, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 1750, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 1300, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 825, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 500, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 225, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 225, "name": "@49ffa20a", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529814929, "completed": 1684529817053, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@4d098b92", "started": 1684529824828 } }
-{ "op": "UPDATE", "task": { "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 29940, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 8775, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 5000, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 3150, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 2400, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 2250, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 2200, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 1950, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 1400, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 750, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 750, "name": "@4d098b92", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529824828, "completed": 1684529832438, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@d10b5b7", "started": 1684529837899 } }
-{ "op": "UPDATE", "task": { "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 4990, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 3375, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 2200, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 1750, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 1650, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 1375, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 1000, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 750, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 500, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 250, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 250, "name": "@d10b5b7", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529837899, "completed": 1684529840441, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@1d906566", "started": 1684529846200 } }
-{ "op": "UPDATE", "task": { "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 0, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 3375, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 2400, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 2275, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 1800, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 1500, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 1100, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 825, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 500, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 250, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 250, "name": "@1d906566", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529846200, "completed": 1684529848816, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@232a4217", "started": 1684529862117 } }
-{ "op": "UPDATE", "task": { "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 4990, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 3600, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 2600, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 2100, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 1800, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 1375, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 1000, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 825, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 500, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 250, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 250, "name": "@232a4217", "description": "Fractal Contour Plot", "producer": "Fractal.Plot", "started": 1684529862117, "completed": 1684529864693, "title": "Mandelbrot", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@1be7fb09", "started": 1684529915633 } }
-{ "op": "UPDATE", "task": { "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 44775, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 12888, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 9216, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 6496, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 4776, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 3700, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 2752, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 1980, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 1256, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 612, "name": "@1be7fb09", "started": 1684529915633, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 612, "name": "@1be7fb09", "started": 1684529915633, "completed": 1684529921603, "title": "QM", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@d2a1f3a", "started": 1684529921885 } }
-{ "op": "UPDATE", "task": { "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 37027, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 17280, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 14720, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 12768, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 10752, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 8880, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 7040, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 5280, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 3488, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 1728, "name": "@d2a1f3a", "started": 1684529921885, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 1728, "name": "@d2a1f3a", "started": 1684529921885, "completed": 1684529939100, "title": "QD", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "POST", "task": { "name": "@39cf670c", "started": 1684529939692 } }
-{ "op": "UPDATE", "task": { "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 0 } }
-{ "op": "UPDATE", "task": { "estimate": 35910, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 10 } }
-{ "op": "UPDATE", "task": { "estimate": 33840, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 20 } }
-{ "op": "UPDATE", "task": { "estimate": 30592, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 30 } }
-{ "op": "UPDATE", "task": { "estimate": 26880, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 40 } }
-{ "op": "UPDATE", "task": { "estimate": 22944, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 50 } }
-{ "op": "UPDATE", "task": { "estimate": 18880, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 60 } }
-{ "op": "UPDATE", "task": { "estimate": 14976, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 70 } }
-{ "op": "UPDATE", "task": { "estimate": 11232, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 80 } }
-{ "op": "UPDATE", "task": { "estimate": 7424, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 90 } }
-{ "op": "UPDATE", "task": { "estimate": 3712, "name": "@39cf670c", "started": 1684529939692, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
-{ "op": "CONCLUDE", "task": { "estimate": 3712, "name": "@39cf670c", "started": 1684529939692, "completed": 1684529976905, "title": "QL", "mechanism": "PlotMatrixTraversal.traverseMatrix", "percent": 100 } }
