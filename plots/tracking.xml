@@ -61,4 +61,7 @@
  <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QD' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1059'/>
  <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QL' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1060'/>
  <PLOT PointsSize='5' TransformIdentity='EQN' PointsPerAxis='200' EdgeSize='3.0' Multiplier='1000.0' Title='BiX' PlotParent='-4' Xaxis='-4.0' AltEdgeSize='3.0' Yaxis='-1.5' PlotNumber='1061'/>
+ <PLOT PointsSize='5' TransformIdentity='EQN' PointsPerAxis='200' EdgeSize='4.0' Multiplier='1000.0' Title='QM' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1062'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QD' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1063'/>
+ <PLOT PointsSize='3' TransformIdentity='EQN' PointsPerAxis='400' EdgeSize='4.0' Multiplier='1000.0' Title='QL' PlotParent='-4' Xaxis='-2.0' AltEdgeSize='4.0' Yaxis='-2.0' PlotNumber='1064'/>
 </PLOTS>
