@@ -1,0 +1,97 @@
+
+	2023-07-25	X_BTCUSD		29176.98
+	28850.00	 - 	30125.00
+
+	41936.02	MA2DA (M)
+	34766.69	MA1DA (M)
+	32186.55	MA2DA (W)
+	30678.26	MA2DA (D)
+	30415.55	MA1DA (W)
+	30343.57	MA1DA (D)
+	30125.00	Last Session High
+	30008.87	MA (D)
+	29674.18	MA1DB (D)
+	29339.49	MA2DB (D)
+	29176.98	Last Session Close
+	28850.00	Last Session Low
+	28644.56	MA (W)
+	27597.35	MA (M)
+	26873.56	MA1DB (W)
+	25102.57	MA2DB (W)
+	20428.02	MA1DB (M)
+	13258.68	MA2DB (M)
+
+
+
+	2023-07-25	QQQ		  378.78
+	  376.93	 - 	  380.47
+
+	  402.18	MA2DA (W)
+	  385.81	MA2DA (D)
+	  385.10	MA2DA (M)
+	  381.07	MA1DA (D)
+	  380.47	Last Session High
+	  379.65	MA1DA (W)
+	  378.78	Last Session Close
+	  376.93	Last Session Low
+	  376.33	MA (D)
+	  371.58	MA1DB (D)
+	  366.84	MA2DB (D)
+	  357.13	MA (W)
+	  355.82	MA1DA (M)
+	  334.60	MA1DB (W)
+	  326.55	MA (M)
+	  312.07	MA2DB (W)
+	  297.28	MA1DB (M)
+	  268.01	MA2DB (M)
+
+
+
+	2023-07-25	SPY		  455.44
+	  453.87	 - 	  456.74
+
+	  465.65	MA2DA (W)
+	  461.19	MA2DA (D)
+	  456.74	Last Session High
+	  455.51	MA1DA (D)
+	  455.44	Last Session Close
+	  453.87	Last Session Low
+	  450.81	MA2DA (M)
+	  450.22	MA1DA (W)
+	  449.82	MA (D)
+	  444.13	MA1DB (D)
+	  438.44	MA2DB (D)
+	  434.80	MA (W)
+	  432.96	MA1DA (M)
+	  419.38	MA1DB (W)
+	  415.12	MA (M)
+	  403.96	MA2DB (W)
+	  397.28	MA1DB (M)
+	  379.43	MA2DB (M)
+
+
+
+	2023-07-25	MDY		  495.44
+	  492.96	 - 	  497.79
+
+	  505.95	MA2DA (D)
+	  501.00	MA2DA (W)
+	  497.91	MA1DA (D)
+	  497.79	Last Session High
+	  495.44	Last Session Close
+	  492.96	Last Session Low
+	  491.99	MA2DA (M)
+	  489.88	MA (D)
+	  486.74	MA1DA (W)
+	  481.85	MA1DB (D)
+	  476.81	MA1DA (M)
+	  473.82	MA2DB (D)
+	  472.48	MA (W)
+	  461.63	MA (M)
+	  458.22	MA1DB (W)
+	  446.45	MA1DB (M)
+	  443.95	MA2DB (W)
+	  431.26	MA2DB (M)
+
+
+

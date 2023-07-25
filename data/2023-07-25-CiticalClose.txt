@@ -1,0 +1,287 @@
+
+Citical Close
+
+***BEST***	AAPL, AMGN, CRM, MSFT, NVDA
+
+
+	2023-07-25	AAPL		  193.62
+	  192.92	 - 	  194.44
+
+	  206.32	MA2DA (W)
+	  196.80	MA2DA (M)
+	  196.53	MA2DA (D)
+	  194.83	MA1DA (W)
+	  194.44	Last Session High
+	  194.35	MA1DA (D)
+	  193.62	Last Session Close
+	  192.92	Last Session Low
+	  192.18	MA (D)
+	  190.01	MA1DB (D)
+	  187.83	MA2DB (D)
+	  183.35	MA (W)
+	  180.97	MA1DA (M)
+	  171.87	MA1DB (W)
+	  165.13	MA (M)
+	  160.39	MA2DB (W)
+	  149.30	MA1DB (M)
+	  133.46	MA2DB (M)
+
+looking for 193 -> 205, 12 of 193 = 6.22%
+
+
+	2023-07-25	AMGN		  235.31
+	  234.28	 - 	  236.57
+
+	  263.76	MA2DA (M)
+	  251.20	MA1DA (M)
+	  243.79	MA2DA (W)
+	  239.07	MA2DA (D)
+	  238.65	MA (M)
+	  236.64	MA1DA (W)
+	  236.57	Last Session High
+	  235.31	Last Session Close
+	  234.83	MA1DA (D)
+	  234.28	Last Session Low
+	  230.59	MA (D)
+	  229.48	MA (W)
+	  226.36	MA1DB (D)
+	  226.09	MA1DB (M)
+	  222.32	MA1DB (W)
+	  222.12	MA2DB (D)
+	  215.17	MA2DB (W)
+	  213.53	MA2DB (M)
+
+looking for 235 -> 243, 7 of 235 = 2.9%
+
+
+
+	2023-07-25	AVGO		  917.99
+	  900.62	 - 	  923.18
+
+	  994.66	MA2DA (W)
+	  929.65	MA2DA (D)
+	  923.18	Last Session High
+	  917.99	Last Session Close
+	  910.46	MA1DA (D)
+	  904.35	MA1DA (W)
+	  900.62	Last Session Low
+	  897.62	MA2DA (M)
+	  891.26	MA (D)
+	  872.07	MA1DB (D)
+	  852.87	MA2DB (D)
+	  814.03	MA (W)
+	  786.20	MA1DA (M)
+	  723.72	MA1DB (W)
+	  674.77	MA (M)
+	  633.40	MA2DB (W)
+	  563.35	MA1DB (M)
+	  451.92	MA2DB (M)
+
+looking for 917 -> 975, 58 of 917 = 6.3%
+
+
+	2023-07-25	BABA		   94.98
+	   94.61	 - 	   98.49
+
+	  124.24	MA2DA (M)
+	  109.51	MA1DA (M)
+	   98.49	Last Session High
+	   98.22	MA2DA (W)
+	   97.87	MA2DA (D)
+	   95.13	MA1DA (D)
+	   94.98	Last Session Close
+	   94.79	MA (M)
+	   94.61	Last Session Low
+	   94.01	MA1DA (W)
+	   92.39	MA (D)
+	   89.81	MA (W)
+	   89.64	MA1DB (D)
+	   86.90	MA2DB (D)
+	   85.60	MA1DB (W)
+	   81.39	MA2DB (W)
+	   80.06	MA1DB (M)
+	   65.33	MA2DB (M)
+
+should look to buy closer to 93 than 97
+looking for 93 -> 97, 4 of 97 = 4.1%
+
+
+	2023-07-25	BUD		   58.56
+	   58.26	 - 	   58.69
+
+	   65.12	MA2DA (M)
+	   62.18	MA2DA (W)
+	   61.72	MA1DA (M)
+	   60.23	MA1DA (W)
+	   59.49	MA2DA (D)
+	   58.69	Last Session High
+	   58.65	MA1DA (D)
+	   58.56	Last Session Close
+	   58.32	MA (M)
+	   58.28	MA (W)
+	   58.26	Last Session Low
+	   57.81	MA (D)
+	   56.98	MA1DB (D)
+	   56.34	MA1DB (W)
+	   56.14	MA2DB (D)
+	   54.91	MA1DB (M)
+	   54.39	MA2DB (W)
+	   51.51	MA2DB (M)
+
+looking for 58 -> 62, 4 of 58 = 6.9%
+
+
+	2023-07-25	CRM		  226.03
+	  225.19	 - 	  227.52
+
+	  244.60	MA2DA (M)
+	  240.45	MA2DA (W)
+	  235.00	MA2DA (D)
+	  229.96	MA1DA (D)
+	  227.52	Last Session High
+	  226.58	MA1DA (W)
+	  226.03	Last Session Close
+	  225.19	Last Session Low
+	  224.93	MA (D)
+	  219.89	MA1DB (D)
+	  218.79	MA1DA (M)
+	  214.86	MA2DB (D)
+	  212.72	MA (W)
+	  198.85	MA1DB (W)
+	  192.98	MA (M)
+	  184.99	MA2DB (W)
+	  167.16	MA1DB (M)
+	  141.35	MA2DB (M)
+
+looking for 226 -> 238, 12 of 226 = 5.3%
+
+
+
+	2023-07-25	GOOG		  122.79
+	  121.53	 - 	  123.69
+
+	  133.24	MA2DA (M)
+	  131.52	MA2DA (W)
+	  125.37	MA1DA (W)
+	  125.19	MA2DA (D)
+	  123.69	Last Session High
+	  123.65	MA1DA (D)
+	  122.79	Last Session Close
+	  122.26	MA1DA (M)
+	  122.12	MA (D)
+	  121.53	Last Session Low
+	  120.59	MA1DB (D)
+	  119.21	MA (W)
+	  119.06	MA2DB (D)
+	  113.05	MA1DB (W)
+	  111.28	MA (M)
+	  106.89	MA2DB (W)
+	  100.31	MA1DB (M)
+	   89.33	MA2DB (M)
+
+should look to buy closer to 118 than 122
+looking for 118 -> 131, 14 of 118 = 11.9%
+
+
+	2023-07-25	JPM		  156.82
+	  155.96	 - 	  157.72
+
+	  161.37	MA2DA (D)
+	  157.72	Last Session High
+	  157.25	MA2DA (W)
+	  156.82	Last Session Close
+	  156.74	MA1DA (D)
+	  155.96	Last Session Low
+	  155.59	MA2DA (M)
+	  152.12	MA (D)
+	  151.00	MA1DA (W)
+	  147.50	MA1DB (D)
+	  146.51	MA1DA (M)
+	  144.75	MA (W)
+	  142.88	MA2DB (D)
+	  138.50	MA1DB (W)
+	  137.44	MA (M)
+	  132.26	MA2DB (W)
+	  128.36	MA1DB (M)
+	  119.29	MA2DB (M)
+
+looking for 156 -> 160, 4 of 156 = 2.6%
+
+
+
+	2023-07-25	MSFT		  350.98
+	  345.07	 - 	  351.89
+
+	  374.51	MA2DA (W)
+	  358.91	MA2DA (M)
+	  355.01	MA2DA (D)
+	  351.98	MA1DA (W)
+	  351.89	Last Session High
+	  350.98	Last Session Close
+	  350.15	MA1DA (D)
+	  345.30	MA (D)
+	  345.07	Last Session Low
+	  340.45	MA1DB (D)
+	  335.60	MA2DB (D)
+	  329.44	MA (W)
+	  326.49	MA1DA (M)
+	  306.91	MA1DB (W)
+	  294.07	MA (M)
+	  284.37	MA2DB (W)
+	  261.65	MA1DB (M)
+	  229.23	MA2DB (M)
+
+looking for 350 -> 372, 22 of 350 = 6.3%
+
+
+
+	2023-07-25	NVDA		  456.79
+	  449.23	 - 	  461.83
+
+	  525.96	MA2DA (W)
+	  474.02	MA2DA (D)
+	  461.83	Last Session High
+	  461.15	MA1DA (D)
+	  460.06	MA1DA (W)
+	  456.79	Last Session Close
+	  456.76	MA2DA (M)
+	  449.23	Last Session Low
+	  448.28	MA (D)
+	  435.41	MA1DB (D)
+	  422.53	MA2DB (D)
+	  394.16	MA (W)
+	  371.70	MA1DA (M)
+	  328.27	MA1DB (W)
+	  286.64	MA (M)
+	  262.37	MA2DB (W)
+	  201.58	MA1DB (M)
+	  116.52	MA2DB (M)
+
+looking for 456 -> 518, 62 of 456 = 11.9%
+
+
+	2023-07-25	V		  238.69
+	  238.56	 - 	  240.80
+
+	  244.80	MA2DA (M)
+	  244.77	MA2DA (W)
+	  244.35	MA2DA (D)
+	  241.91	MA1DA (D)
+	  240.80	Last Session High
+	  239.48	MA (D)
+	  239.03	MA1DA (W)
+	  238.69	Last Session Close
+	  238.56	Last Session Low
+	  237.04	MA1DB (D)
+	  234.60	MA2DB (D)
+	  233.72	MA1DA (M)
+	  233.30	MA (W)
+	  227.57	MA1DB (W)
+	  222.64	MA (M)
+	  221.83	MA2DB (W)
+	  211.56	MA1DB (M)
+	  200.49	MA2DB (M)
+
+looking for 238 -> 243, 7 of 238 = 2.9%
+
+

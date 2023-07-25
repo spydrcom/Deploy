@@ -1,32 +1,5 @@
 {
-   "ticker": "AMD",
-   "resultsCount": 0,
-   "adjusted": true,
-   "queryCount": 0,
-   "request_id": "a5054b4f69590ebe793a4bdd63f0df59",
-   "status": "DELAYED"
-}
-{
-   "ticker": "AMZN",
-   "resultsCount": 0,
-   "adjusted": true,
-   "queryCount": 0,
-   "request_id": "dd365bc1c0dfb054e3e5ead6aa754785",
-   "status": "DELAYED"
-}
-{
-   "ticker": "AVGO",
-   "resultsCount": 0,
-   "adjusted": true,
-   "queryCount": 0,
-   "request_id": "1aebe2839cc68f4fd2f903b7ca052950",
-   "status": "DELAYED"
-}
-{
-   "ticker": "BUD",
-   "resultsCount": 0,
-   "adjusted": true,
-   "queryCount": 0,
-   "request_id": "7b3f14cca335ad6a9a2e0df4b273cf9c",
-   "status": "DELAYED"
+   "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
+   "request_id": "56755a19973386c6b264e8c35dbc1927",
+   "status": "ERROR"
 }
