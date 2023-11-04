@@ -1,15 +1,18 @@
 {
    "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
-   "request_id": "4513e692eec1b15b425b3d0c00ddcd62",
+   "request_id": "ca8c3381c8b7af0b9e4ea39da4e94a49",
    "status": "ERROR"
 }
 {
    "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
-   "request_id": "88ec88b5895597144c6a5ddbfeb8383e",
+   "request_id": "f69fa16c0d7fe25bfe245b1dcbb384ec",
    "status": "ERROR"
 }
 {
-   "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
-   "request_id": "169f1d4225bca25a3d4dc62a3011c448",
-   "status": "ERROR"
+   "ticker": "T",
+   "resultsCount": 0,
+   "adjusted": true,
+   "queryCount": 0,
+   "request_id": "eaa6f813b17d7da28580cc5f324aee52",
+   "status": "DELAYED"
 }
