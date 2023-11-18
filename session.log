@@ -1,18 +1,23 @@
 {
    "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
-   "request_id": "ca8c3381c8b7af0b9e4ea39da4e94a49",
+   "request_id": "732eeac813ed843ab72e9d0dc6d7a278",
    "status": "ERROR"
 }
 {
    "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
-   "request_id": "f69fa16c0d7fe25bfe245b1dcbb384ec",
+   "request_id": "84ada352de2660824e73ea6c9c2656c5",
    "status": "ERROR"
 }
 {
-   "ticker": "T",
+   "error": "You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing",
+   "request_id": "087cfd2bcb5b423d5ddabc3dc1f564ea",
+   "status": "ERROR"
+}
+{
+   "ticker": "ATVI",
    "resultsCount": 0,
    "adjusted": true,
    "queryCount": 0,
-   "request_id": "eaa6f813b17d7da28580cc5f324aee52",
+   "request_id": "eb9e4db024770683c39be2c948d6df07",
    "status": "DELAYED"
 }

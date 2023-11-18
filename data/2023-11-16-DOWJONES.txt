@@ -1,0 +1,721 @@
+
+	2023-11-16	AAPL		  189.71
+	  188.65	 - 	  190.96
+
+	  197.45	MA2DA (M)
+	  194.15	MA2DA (D)
+	  190.96	Last Session High
+	  189.71	Last Session Close
+	  189.64	MA2DA (W)
+	  189.11	MA1DA (D)
+	  188.65	Last Session Low
+	  184.82	MA1DA (M)
+	  184.41	MA1DA (W)
+	  184.07	MA (D)
+	  179.19	MA (W)
+	  179.03	MA1DB (D)
+	  173.99	MA2DB (D)
+	  173.96	MA1DB (W)
+	  172.19	MA (M)
+	  168.74	MA2DB (W)
+	  159.56	MA1DB (M)
+	  146.93	MA2DB (M)
+
+
+
+	2023-11-16	AMGN		  269.00
+	  267.87	 - 	  274.44
+
+	  280.42	MA2DA (W)
+	  278.85	MA2DA (M)
+	  275.14	MA2DA (D)
+	  274.44	Last Session High
+	  273.42	MA1DA (W)
+	  272.28	MA1DA (D)
+	  269.42	MA (D)
+	  269.00	Last Session Close
+	  267.87	Last Session Low
+	  266.55	MA1DB (D)
+	  266.42	MA (W)
+	  264.50	MA1DA (M)
+	  263.69	MA2DB (D)
+	  259.43	MA1DB (W)
+	  252.43	MA2DB (W)
+	  250.15	MA (M)
+	  235.80	MA1DB (M)
+	  221.45	MA2DB (M)
+
+
+
+	2023-11-16	AXP		  159.05
+	  157.97	 - 	  160.11
+
+	  172.94	MA2DA (M)
+	  165.63	MA1DA (M)
+	  163.35	MA2DA (W)
+	  162.10	MA2DA (D)
+	  160.11	Last Session High
+	  159.05	Last Session Close
+	  158.39	MA1DA (D)
+	  158.32	MA (M)
+	  158.16	MA1DA (W)
+	  157.97	Last Session Low
+	  154.67	MA (D)
+	  152.98	MA (W)
+	  151.01	MA1DB (M)
+	  150.95	MA1DB (D)
+	  147.79	MA1DB (W)
+	  147.23	MA2DB (D)
+	  143.70	MA2DB (M)
+	  142.60	MA2DB (W)
+
+
+
+	2023-11-16	BA		  206.60
+	  204.81	 - 	  207.89
+
+	  232.37	MA2DA (M)
+	  217.66	MA2DA (W)
+	  216.51	MA1DA (M)
+	  213.92	MA2DA (D)
+	  207.89	Last Session High
+	  207.62	MA1DA (W)
+	  206.97	MA1DA (D)
+	  206.60	Last Session Close
+	  204.81	Last Session Low
+	  200.66	MA (M)
+	  200.02	MA (D)
+	  197.57	MA (W)
+	  193.06	MA1DB (D)
+	  187.53	MA1DB (W)
+	  186.11	MA2DB (D)
+	  184.80	MA1DB (M)
+	  177.48	MA2DB (W)
+	  168.95	MA2DB (M)
+
+
+
+	2023-11-16	CAT		  248.21
+	  246.60	 - 	  252.92
+
+	  278.51	MA2DA (W)
+	  276.45	MA2DA (M)
+	  266.06	MA1DA (W)
+	  258.97	MA1DA (M)
+	  254.44	MA2DA (D)
+	  253.61	MA (W)
+	  252.92	Last Session High
+	  249.05	MA1DA (D)
+	  248.21	Last Session Close
+	  246.60	Last Session Low
+	  243.67	MA (D)
+	  241.49	MA (M)
+	  241.16	MA1DB (W)
+	  238.28	MA1DB (D)
+	  232.90	MA2DB (D)
+	  228.71	MA2DB (W)
+	  224.01	MA1DB (M)
+	  206.53	MA2DB (M)
+
+
+
+	2023-11-16	CRM		  221.45
+	  218.94	 - 	  222.77
+
+	  239.09	MA2DA (M)
+	  225.39	MA2DA (D)
+	  222.77	Last Session High
+	  221.45	Last Session Close
+	  221.35	MA2DA (W)
+	  220.34	MA1DA (M)
+	  219.83	MA1DA (D)
+	  218.94	Last Session Low
+	  215.51	MA1DA (W)
+	  214.28	MA (D)
+	  209.67	MA (W)
+	  208.72	MA1DB (D)
+	  203.82	MA1DB (W)
+	  203.16	MA2DB (D)
+	  201.58	MA (M)
+	  197.98	MA2DB (W)
+	  182.83	MA1DB (M)
+	  164.07	MA2DB (M)
+
+
+
+	2023-11-16	CSCO		   48.04
+	   46.20	 - 	   48.06
+
+	   55.79	MA2DA (M)
+	   55.50	MA2DA (W)
+	   54.05	MA2DA (D)
+	   54.02	MA1DA (W)
+	   53.37	MA1DA (M)
+	   52.91	MA1DA (D)
+	   52.55	MA (W)
+	   51.78	MA (D)
+	   51.07	MA1DB (W)
+	   50.95	MA (M)
+	   50.65	MA1DB (D)
+	   49.59	MA2DB (W)
+	   49.52	MA2DB (D)
+	   48.53	MA1DB (M)
+	   48.06	Last Session High
+	   48.04	Last Session Close
+	   46.20	Last Session Low
+	   46.11	MA2DB (M)
+
+
+
+	2023-11-16	CVX		  141.77
+	  140.74	 - 	  143.51
+
+	  174.64	MA2DA (M)
+	  169.17	MA2DA (W)
+	  166.13	MA1DA (M)
+	  161.64	MA1DA (W)
+	  157.61	MA (M)
+	  154.11	MA (W)
+	  150.98	MA2DA (D)
+	  149.10	MA1DB (M)
+	  147.97	MA1DA (D)
+	  146.58	MA1DB (W)
+	  144.95	MA (D)
+	  143.51	Last Session High
+	  141.94	MA1DB (D)
+	  141.77	Last Session Close
+	  140.74	Last Session Low
+	  140.59	MA2DB (M)
+	  139.05	MA2DB (W)
+	  138.93	MA2DB (D)
+
+
+
+	2023-11-16	DIS		   94.51
+	   93.63	 - 	   94.61
+
+	  117.34	MA2DA (M)
+	  105.28	MA1DA (M)
+	   96.41	MA2DA (D)
+	   94.61	Last Session High
+	   94.51	Last Session Close
+	   93.63	Last Session Low
+	   93.21	MA (M)
+	   92.79	MA1DA (D)
+	   91.32	MA2DA (W)
+	   89.17	MA (D)
+	   88.47	MA1DA (W)
+	   85.63	MA (W)
+	   85.56	MA1DB (D)
+	   82.78	MA1DB (W)
+	   81.94	MA2DB (D)
+	   81.14	MA1DB (M)
+	   79.94	MA2DB (W)
+	   69.08	MA2DB (M)
+
+
+
+	2023-11-16	DOW		   51.44
+	   50.87	 - 	   51.65
+
+	   57.68	MA2DA (M)
+	   55.15	MA1DA (M)
+	   53.35	MA2DA (W)
+	   52.61	MA (M)
+	   51.94	MA1DA (W)
+	   51.87	MA2DA (D)
+	   51.65	Last Session High
+	   51.44	Last Session Close
+	   50.91	MA1DA (D)
+	   50.87	Last Session Low
+	   50.52	MA (W)
+	   50.08	MA1DB (M)
+	   49.94	MA (D)
+	   49.11	MA1DB (W)
+	   48.98	MA1DB (D)
+	   48.02	MA2DB (D)
+	   47.69	MA2DB (W)
+	   47.54	MA2DB (M)
+
+
+
+	2023-11-16	GS		  336.67
+	  335.01	 - 	  339.75
+
+	  356.73	MA2DA (M)
+	  347.15	MA2DA (D)
+	  343.96	MA1DA (M)
+	  341.63	MA2DA (W)
+	  339.75	Last Session High
+	  337.42	MA1DA (D)
+	  336.67	Last Session Close
+	  335.01	Last Session Low
+	  331.23	MA1DA (W)
+	  331.19	MA (M)
+	  327.68	MA (D)
+	  320.83	MA (W)
+	  318.41	MA1DB (M)
+	  317.95	MA1DB (D)
+	  310.43	MA1DB (W)
+	  308.21	MA2DB (D)
+	  305.64	MA2DB (M)
+	  300.03	MA2DB (W)
+
+
+
+	2023-11-16	HD		  306.44
+	  304.33	 - 	  307.95
+
+	  330.87	MA2DA (M)
+	  319.07	MA2DA (W)
+	  318.14	MA1DA (M)
+	  310.54	MA2DA (D)
+	  308.79	MA1DA (W)
+	  307.95	Last Session High
+	  306.44	Last Session Close
+	  305.41	MA (M)
+	  304.33	Last Session Low
+	  303.94	MA1DA (D)
+	  298.52	MA (W)
+	  297.33	MA (D)
+	  292.68	MA1DB (M)
+	  290.73	MA1DB (D)
+	  288.24	MA1DB (W)
+	  284.13	MA2DB (D)
+	  279.95	MA2DB (M)
+	  277.97	MA2DB (W)
+
+
+
+	2023-11-16	HON		  190.71
+	  190.41	 - 	  192.36
+
+	  206.60	MA2DA (M)
+	  199.67	MA1DA (M)
+	  193.47	MA2DA (W)
+	  192.77	MA2DA (D)
+	  192.75	MA (M)
+	  192.36	Last Session High
+	  190.71	Last Session Close
+	  190.41	Last Session Low
+	  190.15	MA1DA (D)
+	  190.04	MA1DA (W)
+	  187.53	MA (D)
+	  186.60	MA (W)
+	  185.83	MA1DB (M)
+	  184.91	MA1DB (D)
+	  183.17	MA1DB (W)
+	  182.29	MA2DB (D)
+	  179.73	MA2DB (W)
+	  178.90	MA2DB (M)
+
+
+
+	2023-11-16	IBM		  153.06
+	  152.13	 - 	  153.35
+
+	  154.70	MA2DA (D)
+	  153.35	Last Session High
+	  153.06	Last Session Close
+	  152.72	MA2DA (W)
+	  152.25	MA2DA (M)
+	  152.13	Last Session Low
+	  151.87	MA1DA (D)
+	  149.03	MA (D)
+	  148.82	MA1DA (W)
+	  146.20	MA1DB (D)
+	  145.77	MA1DA (M)
+	  144.91	MA (W)
+	  143.36	MA2DB (D)
+	  141.01	MA1DB (W)
+	  139.30	MA (M)
+	  137.11	MA2DB (W)
+	  132.82	MA1DB (M)
+	  126.34	MA2DB (M)
+
+
+
+	2023-11-16	INTC		   43.35
+	   40.82	 - 	   43.40
+
+	   43.40	Last Session High
+	   43.35	Last Session Close
+	   42.66	MA2DA (M)
+	   42.40	MA2DA (D)
+	   40.82	Last Session Low
+	   40.76	MA1DA (D)
+	   40.76	MA2DA (W)
+	   39.12	MA (D)
+	   38.99	MA1DA (W)
+	   38.86	MA1DA (M)
+	   37.49	MA1DB (D)
+	   37.21	MA (W)
+	   35.85	MA2DB (D)
+	   35.43	MA1DB (W)
+	   35.07	MA (M)
+	   33.66	MA2DB (W)
+	   31.27	MA1DB (M)
+	   27.47	MA2DB (M)
+
+
+
+	2023-11-16	JNJ		  150.10
+	  148.64	 - 	  150.17
+
+	  172.88	MA2DA (M)
+	  166.40	MA1DA (M)
+	  164.66	MA2DA (W)
+	  159.93	MA (M)
+	  159.17	MA1DA (W)
+	  153.68	MA (W)
+	  153.45	MA1DB (M)
+	  151.54	MA2DA (D)
+	  150.28	MA1DA (D)
+	  150.17	Last Session High
+	  150.10	Last Session Close
+	  149.03	MA (D)
+	  148.64	Last Session Low
+	  148.18	MA1DB (W)
+	  147.77	MA1DB (D)
+	  146.98	MA2DB (M)
+	  146.51	MA2DB (D)
+	  142.69	MA2DB (W)
+
+
+
+	2023-11-16	JPM		  151.45
+	  150.09	 - 	  151.53
+
+	  156.40	MA2DA (M)
+	  152.48	MA2DA (D)
+	  151.53	Last Session High
+	  151.45	Last Session Close
+	  151.33	MA2DA (W)
+	  150.09	Last Session Low
+	  149.44	MA1DA (D)
+	  149.07	MA1DA (M)
+	  148.37	MA1DA (W)
+	  146.41	MA (D)
+	  145.41	MA (W)
+	  143.38	MA1DB (D)
+	  142.45	MA1DB (W)
+	  141.73	MA (M)
+	  140.35	MA2DB (D)
+	  139.49	MA2DB (W)
+	  134.40	MA1DB (M)
+	  127.07	MA2DB (M)
+
+
+
+	2023-11-16	KO		   57.15
+	   56.81	 - 	   57.53
+
+	   63.21	MA2DA (M)
+	   61.21	MA1DA (M)
+	   59.27	MA2DA (W)
+	   59.20	MA (M)
+	   57.93	MA1DA (W)
+	   57.69	MA2DA (D)
+	   57.53	Last Session High
+	   57.27	MA1DA (D)
+	   57.20	MA1DB (M)
+	   57.15	Last Session Close
+	   56.84	MA (D)
+	   56.81	Last Session Low
+	   56.59	MA (W)
+	   56.42	MA1DB (D)
+	   56.00	MA2DB (D)
+	   55.25	MA1DB (W)
+	   55.19	MA2DB (M)
+	   53.91	MA2DB (W)
+
+
+
+	2023-11-16	MCD		  276.12
+	  271.03	 - 	  276.16
+
+	  296.32	MA2DA (M)
+	  284.47	MA1DA (M)
+	  282.70	MA2DA (W)
+	  276.57	MA2DA (D)
+	  276.16	Last Session High
+	  276.12	Last Session Close
+	  274.88	MA1DA (W)
+	  272.69	MA1DA (D)
+	  272.61	MA (M)
+	  271.03	Last Session Low
+	  268.80	MA (D)
+	  267.07	MA (W)
+	  264.92	MA1DB (D)
+	  261.03	MA2DB (D)
+	  260.76	MA1DB (M)
+	  259.26	MA1DB (W)
+	  251.45	MA2DB (W)
+	  248.90	MA2DB (M)
+
+
+
+	2023-11-16	MRK		  101.99
+	  101.03	 - 	  102.06
+
+	  115.24	MA2DA (M)
+	  109.95	MA1DA (M)
+	  108.20	MA2DA (W)
+	  106.10	MA1DA (W)
+	  104.66	MA (M)
+	  104.08	MA2DA (D)
+	  104.00	MA (W)
+	  103.27	MA1DA (D)
+	  102.45	MA (D)
+	  102.06	Last Session High
+	  101.99	Last Session Close
+	  101.90	MA1DB (W)
+	  101.64	MA1DB (D)
+	  101.03	Last Session Low
+	  100.82	MA2DB (D)
+	   99.80	MA2DB (W)
+	   99.37	MA1DB (M)
+	   94.08	MA2DB (M)
+
+
+
+	2023-11-16	MMM		   95.71
+	   94.91	 - 	   96.45
+
+	  136.69	MA2DA (M)
+	  121.28	MA1DA (M)
+	  105.86	MA (M)
+	  101.27	MA2DA (W)
+	   97.56	MA1DA (W)
+	   97.17	MA2DA (D)
+	   96.45	Last Session High
+	   95.71	Last Session Close
+	   95.42	MA1DA (D)
+	   94.91	Last Session Low
+	   93.85	MA (W)
+	   93.67	MA (D)
+	   91.93	MA1DB (D)
+	   90.45	MA1DB (M)
+	   90.18	MA2DB (D)
+	   90.15	MA1DB (W)
+	   86.44	MA2DB (W)
+	   75.04	MA2DB (M)
+
+
+
+	2023-11-16	MSFT		  376.17
+	  370.18	 - 	  376.35
+
+	  383.99	MA2DA (D)
+	  379.10	MA2DA (M)
+	  376.35	Last Session High
+	  376.17	Last Session Close
+	  373.68	MA1DA (D)
+	  372.08	MA2DA (W)
+	  370.18	Last Session Low
+	  363.38	MA (D)
+	  357.83	MA1DA (W)
+	  353.07	MA1DB (D)
+	  347.25	MA1DA (M)
+	  343.57	MA (W)
+	  342.76	MA2DB (D)
+	  329.31	MA1DB (W)
+	  315.41	MA (M)
+	  315.06	MA2DB (W)
+	  283.57	MA1DB (M)
+	  251.73	MA2DB (M)
+
+
+
+	2023-11-16	NKE		  107.61
+	  107.00	 - 	  108.00
+
+	  126.39	MA2DA (M)
+	  117.53	MA1DA (M)
+	  110.54	MA2DA (W)
+	  109.72	MA2DA (D)
+	  108.67	MA (M)
+	  108.08	MA1DA (D)
+	  108.00	Last Session High
+	  107.61	Last Session Close
+	  107.00	Last Session Low
+	  106.75	MA1DA (W)
+	  106.45	MA (D)
+	  104.81	MA1DB (D)
+	  103.18	MA2DB (D)
+	  102.95	MA (W)
+	   99.80	MA1DB (M)
+	   99.15	MA1DB (W)
+	   95.35	MA2DB (W)
+	   90.94	MA2DB (M)
+
+
+
+	2023-11-16	PG		  152.83
+	  151.31	 - 	  152.89
+
+	  156.29	MA2DA (M)
+	  153.96	MA2DA (W)
+	  153.22	MA2DA (D)
+	  152.89	Last Session High
+	  152.83	Last Session Close
+	  152.49	MA1DA (M)
+	  152.21	MA1DA (D)
+	  151.95	MA1DA (W)
+	  151.31	Last Session Low
+	  151.21	MA (D)
+	  150.20	MA1DB (D)
+	  149.94	MA (W)
+	  149.20	MA2DB (D)
+	  148.69	MA (M)
+	  147.93	MA1DB (W)
+	  145.92	MA2DB (W)
+	  144.89	MA1DB (M)
+	  141.09	MA2DB (M)
+
+
+
+	2023-11-16	TRV		  171.69
+	  169.18	 - 	  172.81
+
+	  181.26	MA2DA (M)
+	  175.88	MA1DA (M)
+	  172.81	Last Session High
+	  172.30	MA2DA (D)
+	  172.22	MA2DA (W)
+	  171.69	Last Session Close
+	  170.72	MA1DA (D)
+	  170.51	MA (M)
+	  169.35	MA1DA (W)
+	  169.18	Last Session Low
+	  169.13	MA (D)
+	  167.55	MA1DB (D)
+	  166.49	MA (W)
+	  165.96	MA2DB (D)
+	  165.14	MA1DB (M)
+	  163.62	MA1DB (W)
+	  160.75	MA2DB (W)
+	  159.77	MA2DB (M)
+
+
+
+	2023-11-16	UNH		  539.82
+	  537.47	 - 	  544.86
+
+	  555.25	MA2DA (W)
+	  544.86	Last Session High
+	  544.04	MA2DA (D)
+	  544.03	MA2DA (M)
+	  540.79	MA1DA (D)
+	  539.82	Last Session Close
+	  539.26	MA1DA (W)
+	  537.53	MA (D)
+	  537.47	Last Session Low
+	  534.28	MA1DB (D)
+	  531.03	MA2DB (D)
+	  523.99	MA1DA (M)
+	  523.27	MA (W)
+	  507.28	MA1DB (W)
+	  503.95	MA (M)
+	  491.29	MA2DB (W)
+	  483.91	MA1DB (M)
+	  463.87	MA2DB (M)
+
+
+
+	2023-11-16	V		  248.57
+	  247.27	 - 	  249.45
+
+	  252.99	MA2DA (M)
+	  251.60	MA2DA (D)
+	  249.45	Last Session High
+	  249.01	MA2DA (W)
+	  248.57	Last Session Close
+	  248.05	MA1DA (D)
+	  247.27	Last Session Low
+	  244.50	MA (D)
+	  244.39	MA1DA (W)
+	  241.89	MA1DA (M)
+	  240.96	MA1DB (D)
+	  239.78	MA (W)
+	  237.41	MA2DB (D)
+	  235.16	MA1DB (W)
+	  230.78	MA (M)
+	  230.55	MA2DB (W)
+	  219.67	MA1DB (M)
+	  208.56	MA2DB (M)
+
+
+
+	2023-11-16	VZ		   36.18
+	   35.93	 - 	   36.38
+
+	   44.65	MA2DA (M)
+	   40.79	MA1DA (M)
+	   37.06	MA2DA (W)
+	   36.96	MA2DA (D)
+	   36.92	MA (M)
+	   36.38	Last Session High
+	   36.32	MA1DA (D)
+	   36.18	Last Session Close
+	   35.93	Last Session Low
+	   35.68	MA (D)
+	   35.57	MA1DA (W)
+	   35.05	MA1DB (D)
+	   34.41	MA2DB (D)
+	   34.08	MA (W)
+	   33.06	MA1DB (M)
+	   32.59	MA1DB (W)
+	   31.10	MA2DB (W)
+	   29.19	MA2DB (M)
+
+
+
+	2023-11-16	WBA		   20.75
+	   20.60	 - 	   21.67
+
+	   41.54	MA2DA (M)
+	   35.29	MA1DA (M)
+	   29.05	MA (M)
+	   26.08	MA2DA (W)
+	   24.19	MA1DA (W)
+	   22.81	MA1DB (M)
+	   22.30	MA (W)
+	   21.88	MA2DA (D)
+	   21.67	Last Session High
+	   21.49	MA1DA (D)
+	   21.10	MA (D)
+	   20.75	Last Session Close
+	   20.72	MA1DB (D)
+	   20.60	Last Session Low
+	   20.41	MA1DB (W)
+	   20.33	MA2DB (D)
+	   18.52	MA2DB (W)
+	   16.57	MA2DB (M)
+
+
+
+	2023-11-16	WMT		  156.04
+	  155.50	 - 	  159.45
+
+	  170.20	MA2DA (D)
+	  169.06	MA2DA (M)
+	  167.31	MA1DA (D)
+	  165.78	MA2DA (W)
+	  164.43	MA (D)
+	  163.51	MA1DA (W)
+	  161.54	MA1DB (D)
+	  161.37	MA1DA (M)
+	  161.24	MA (W)
+	  159.45	Last Session High
+	  158.97	MA1DB (W)
+	  158.65	MA2DB (D)
+	  156.69	MA2DB (W)
+	  156.04	Last Session Close
+	  155.50	Last Session Low
+	  153.68	MA (M)
+	  145.99	MA1DB (M)
+	  138.30	MA2DB (M)
+
+
+
